@@ -6,6 +6,6 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   // GitHub Pages serves project sites under /<repo-name>/.
   // Muss zum Repository-Namen passen (siehe README, Abschnitt "Deployment").
-  base: '/sozialraum-felix/',
+  base: '/sozialraum-kita-zuehlsdorfer-strasse/',
   plugins: [react(), tailwindcss()],
 })

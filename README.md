@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-Die Website ist danach unter `http://localhost:5173/sozialraum-felix/` erreichbar. Die Karte nutzt OpenStreetMap über Leaflet und **benötigt keinen API-Key** – sie funktioniert direkt nach `npm install`.
+Die Website ist danach unter `http://localhost:5173/sozialraum-kita-zuehlsdorfer-strasse/` erreichbar. Die Karte nutzt OpenStreetMap über Leaflet und **benötigt keinen API-Key** – sie funktioniert direkt nach `npm install`.
 
 ## 5. Kartendienst (Leaflet / OpenStreetMap)
 
@@ -86,18 +86,18 @@ Die Website ist eine statische Single-Page-App (Ergebnis von `npm run build` im 
 Dieses Projekt enthält bereits einen fertigen GitHub-Actions-Workflow (`.github/workflows/deploy.yml`), der bei jedem Push auf `main` automatisch baut und auf GitHub Pages veröffentlicht.
 
 1. **GitHub-Account anlegen** (falls noch nicht vorhanden): <https://github.com/signup>
-2. **Neues, öffentliches Repository erstellen**, z. B. mit dem Namen `sozialraum-felix` (Name ist wichtig, siehe Schritt 5).
+2. **Neues, öffentliches Repository erstellen**, z. B. mit dem Namen `sozialraum-kita-zuehlsdorfer-strasse` (Name ist wichtig, siehe Schritt 5).
 3. Dieses lokale Projekt zum neuen Repository pushen:
    ```bash
-   git remote add origin https://github.com/<dein-github-name>/sozialraum-felix.git
+   git remote add origin https://github.com/<dein-github-name>/sozialraum-kita-zuehlsdorfer-strasse.git
    git branch -M main
    git push -u origin main
    ```
 4. Im Repository unter **Settings → Pages** bei „Build and deployment“ → **Source: GitHub Actions** auswählen (nicht „Deploy from a branch“).
-5. Falls das Repository **nicht** `sozialraum-felix` heißt: In [`vite.config.ts`](vite.config.ts) den Wert von `base` an den tatsächlichen Repository-Namen anpassen (`base: '/dein-repo-name/'`), committen und pushen – sonst werden CSS/JS-Dateien nicht gefunden.
+5. Falls das Repository **nicht** `sozialraum-kita-zuehlsdorfer-strasse` heißt: In [`vite.config.ts`](vite.config.ts) den Wert von `base` an den tatsächlichen Repository-Namen anpassen (`base: '/dein-repo-name/'`), committen und pushen – sonst werden CSS/JS-Dateien nicht gefunden.
 6. Nach dem nächsten Push läuft der Workflow automatisch (Tab **Actions** im Repository zeigt den Fortschritt). Der fertige Link erscheint unter **Settings → Pages** und hat die Form:
    ```
-   https://<dein-github-name>.github.io/sozialraum-felix/
+   https://<dein-github-name>.github.io/sozialraum-kita-zuehlsdorfer-strasse/
    ```
    Diesen Link kannst du direkt an den Dozenten / die Dozentin weitergeben.
 

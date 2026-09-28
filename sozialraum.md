@@ -68,4 +68,4 @@ Alle Angaben (Adressen, Angebote, Zielgruppen) wurden vor der Umsetzung anhand o
 
 Eine interaktive, mehrsprachige (Deutsch, Englisch, Albanisch, Vietnamesisch, Französisch, Türkisch, Arabisch) Sozialraumkarte als React-Webanwendung, die genau diesen fachlichen Zusammenhang für Eltern und pädagogische Fachkräfte erlebbar macht: Karte mit Zonen-Visualisierung, Filter nach Kategorie/Zielgruppe, Detailansichten je Einrichtung, direkte Wegweiser (Route/Website). Technische Details siehe README.md.
 
-Live-Link: https://kagnech-ship-it.github.io/sozialraum-felix/
+Live-Link: https://kagnech-ship-it.github.io/sozialraum-kita-zuehlsdorfer-strasse/
