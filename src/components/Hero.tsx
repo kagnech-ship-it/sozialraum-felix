@@ -1,4 +1,6 @@
 import { ArrowRight, MapPin } from 'lucide-react';
+import { categoryList } from '../data/categories';
+import { institutions } from '../data/institutions';
 
 export default function Hero() {
   return (
@@ -46,12 +48,12 @@ export default function Hero() {
           <dl className="mx-auto mt-14 grid max-w-xl grid-cols-3 gap-4 text-white/85">
             <div>
               <dt className="sr-only">Anzahl Einrichtungen</dt>
-              <dd className="font-display text-2xl font-bold text-white sm:text-3xl">12</dd>
+              <dd className="font-display text-2xl font-bold text-white sm:text-3xl">{institutions.length}</dd>
               <dd className="text-xs text-white/60 sm:text-sm">Einrichtungen</dd>
             </div>
             <div>
               <dt className="sr-only">Anzahl Kategorien</dt>
-              <dd className="font-display text-2xl font-bold text-white sm:text-3xl">8</dd>
+              <dd className="font-display text-2xl font-bold text-white sm:text-3xl">{categoryList.length}</dd>
               <dd className="text-xs text-white/60 sm:text-sm">Kategorien</dd>
             </div>
             <div>

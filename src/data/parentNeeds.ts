@@ -3,27 +3,9 @@ import type { ParentNeed } from '../types/institution';
 export const parentNeeds: ParentNeed[] = [
   {
     id: 'familie',
-    label: 'Unterstützung für Familien',
+    label: 'Familienangebote',
     icon: '👨‍👩‍👧',
     categories: ['familie'],
-  },
-  {
-    id: 'bildung',
-    label: 'Bildung & Lernen',
-    icon: '📚',
-    categories: ['bildung'],
-  },
-  {
-    id: 'sport',
-    label: 'Sport & Freizeit',
-    icon: '⚽',
-    categories: ['sport', 'kultur'],
-  },
-  {
-    id: 'jugend',
-    label: 'Angebote für Kinder & Jugendliche',
-    icon: '🧑‍🤝‍🧑',
-    categories: ['jugend', 'beteiligung', 'inklusion'],
   },
   {
     id: 'beratung',
@@ -32,9 +14,41 @@ export const parentNeeds: ParentNeed[] = [
     categories: ['beratung'],
   },
   {
-    id: 'schwierig',
-    label: 'Unterstützung in schwierigen Situationen',
-    icon: '❤️',
-    categories: ['beratung', 'familie'],
+    id: 'bildung',
+    label: 'Bildung & Lesen',
+    icon: '📚',
+    categories: ['bildung'],
+  },
+  {
+    id: 'sport',
+    label: 'Sport & Bewegung',
+    icon: '⚽',
+    categories: ['sport'],
+  },
+  {
+    id: 'kultur',
+    label: 'Kreativität & Kultur',
+    icon: '🎨',
+    categories: ['kultur', 'freizeit'],
+  },
+  {
+    id: 'kinder',
+    label: 'Angebote für Kinder',
+    icon: '🧒',
+    categories: [],
+    audiences: ['kind', 'kleinkind'],
+  },
+  {
+    id: 'jugendliche',
+    label: 'Angebote für Jugendliche',
+    icon: '🧑‍🤝‍🧑',
+    categories: ['jugend'],
+    audiences: ['jugendlicher'],
+  },
+  {
+    id: 'antraege',
+    label: 'Anträge & Leistungen',
+    icon: '🏛️',
+    categories: ['verwaltung'],
   },
 ];

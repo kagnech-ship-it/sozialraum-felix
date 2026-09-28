@@ -97,7 +97,7 @@ export default function InstitutionModal({ institution, onClose }: InstitutionMo
             {fullAddress(institution)}
           </p>
 
-          {institution.outsideLocalArea && (
+          {institution.zone === 'ausserhalb' && (
             <p className="mt-3 rounded-xl bg-white/70 px-3 py-2 text-xs font-medium text-[var(--color-alert)]">
               Außerhalb des engeren Sozialraums – trotzdem wichtige Anlaufstelle
             </p>

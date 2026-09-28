@@ -1,6 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import AboutSection from '../components/AboutSection';
 import CategoryLegend from '../components/CategoryLegend';
+import DirectHelp from '../components/DirectHelp';
 import FilterBar from '../components/FilterBar';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
@@ -10,16 +11,20 @@ import SocialMap from '../components/Map';
 import Navbar from '../components/Navbar';
 import OutsideAreaSection from '../components/OutsideAreaSection';
 import ParentNeeds from '../components/ParentNeeds';
+import SozialraumFlow from '../components/SozialraumFlow';
 import { KITA } from '../data/kita';
 import { localInstitutions } from '../data/institutions';
 import { useDistances } from '../hooks/useDistances';
-import type { Category, Institution, ParentNeed } from '../types/institution';
+import type { Audience, Category, Institution, ParentNeed } from '../types/institution';
 import { matchesSearch } from '../utils/filter';
+import { sortInstitutions, sortOptions, type SortOption } from '../utils/sort';
 
 export default function Home() {
   const [search, setSearch] = useState('');
   const [activeCategories, setActiveCategories] = useState<Category[]>([]);
+  const [activeAudiences, setActiveAudiences] = useState<Audience[]>([]);
   const [activeNeedId, setActiveNeedId] = useState<string | null>(null);
+  const [sortBy, setSortBy] = useState<SortOption>('naehe');
   const [focusedInstitution, setFocusedInstitution] = useState<Institution | null>(null);
   const [modalInstitution, setModalInstitution] = useState<Institution | null>(null);
 
@@ -27,35 +32,43 @@ export default function Home() {
 
   const distances = useDistances(KITA, localInstitutions);
 
-  const filteredInstitutions = useMemo(
-    () =>
-      localInstitutions.filter(
-        (inst) =>
-          (activeCategories.length === 0 || activeCategories.includes(inst.category)) &&
-          matchesSearch(inst, search),
-      ),
-    [activeCategories, search],
-  );
+  const filteredInstitutions = useMemo(() => {
+    const filtered = localInstitutions.filter(
+      (inst) =>
+        (activeCategories.length === 0 || activeCategories.includes(inst.category)) &&
+        (activeAudiences.length === 0 || activeAudiences.some((a) => inst.audiences.includes(a))) &&
+        matchesSearch(inst, search),
+    );
+    return sortInstitutions(filtered, sortBy, distances);
+  }, [activeCategories, activeAudiences, search, sortBy, distances]);
 
   function handleCategoryChange(category: Category | 'alle') {
     setActiveNeedId(null);
     setActiveCategories(category === 'alle' ? [] : [category]);
   }
 
-  function handleParentNeedSelect(need: ParentNeed) {
+  function handleAudienceToggle(audience: Audience) {
+    setActiveNeedId(null);
+    setActiveAudiences((prev) => (prev.includes(audience) ? prev.filter((a) => a !== audience) : [...prev, audience]));
+  }
+
+  function handleNeedSelect(need: ParentNeed) {
     if (activeNeedId === need.id) {
       setActiveNeedId(null);
       setActiveCategories([]);
+      setActiveAudiences([]);
       return;
     }
     setActiveNeedId(need.id);
     setActiveCategories(need.categories);
+    setActiveAudiences(need.audiences ?? []);
     mapSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function handleLegendSelect(category: Category) {
     setActiveNeedId(null);
     setActiveCategories([category]);
+    setActiveAudiences([]);
     mapSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
@@ -71,9 +84,11 @@ export default function Home() {
       <main id="main">
         <Hero />
 
-        <ParentNeeds onSelect={handleParentNeedSelect} activeNeedId={activeNeedId} />
+        <ParentNeeds onSelect={handleNeedSelect} activeNeedId={activeNeedId} />
 
         <CategoryLegend onSelect={handleLegendSelect} />
+
+        <SozialraumFlow />
 
         <section id="karte" aria-labelledby="map-heading" className="bg-[var(--color-mist)] py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" ref={mapSectionRef}>
@@ -93,6 +108,10 @@ export default function Home() {
                 onSearchChange={setSearch}
                 activeCategories={activeCategories}
                 onCategoryChange={handleCategoryChange}
+                activeAudiences={activeAudiences}
+                onAudienceToggle={handleAudienceToggle}
+                sortBy={sortBy}
+                onSortChange={setSortBy}
                 resultCount={filteredInstitutions.length}
               />
             </div>
@@ -115,7 +134,8 @@ export default function Home() {
             </h2>
             <p className="mt-3 max-w-2xl text-base text-[var(--color-ink-soft)]">
               Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem
-              Zugang zu Route und Website.
+              Zugang zu Route und Website. Sortiert nach:{' '}
+              {sortOptions.find((o) => o.id === sortBy)?.label}.
             </p>
 
             {filteredInstitutions.length === 0 ? (
@@ -141,6 +161,8 @@ export default function Home() {
             )}
           </div>
         </section>
+
+        <DirectHelp onSelect={handleNeedSelect} />
 
         <OutsideAreaSection onOpenDetails={setModalInstitution} />
 

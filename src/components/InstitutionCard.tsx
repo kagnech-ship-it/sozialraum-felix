@@ -1,6 +1,7 @@
 import { Bike, ExternalLink, MapPin, Navigation2, Star, Target } from 'lucide-react';
 import type { DistanceInfo } from '../hooks/useDistances';
 import { categories } from '../data/categories';
+import { zoneMeta } from '../data/zones';
 import type { Institution } from '../types/institution';
 import { buildDirectionsUrl, fullAddress } from '../utils/links';
 import { estimateCyclingMinutes, formatDistanceMeters } from '../utils/distance';
@@ -48,10 +49,16 @@ export default function InstitutionCard({
             {meta.label}
           </span>
         )}
-        {institution.outsideLocalArea && (
+        {institution.zone === 'ausserhalb' ? (
           <span className="rounded-full bg-[var(--color-alert-soft)] px-2 py-1 text-[10px] font-semibold text-[var(--color-alert)]">
             außerhalb
           </span>
+        ) : (
+          !institution.isPraxisstelle && (
+            <span className="rounded-full bg-[var(--color-mist)] px-2 py-1 text-[10px] font-medium text-[var(--color-ink-soft)]">
+              {zoneMeta[institution.zone].label}
+            </span>
+          )
         )}
       </div>
 

@@ -1,4 +1,5 @@
 import { Home as HomeIcon, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { KITA } from '../data/kita';
 import { fullAddress } from '../utils/links';
 
@@ -33,16 +34,30 @@ export default function Footer() {
             <a href="#ueber" className="hover:text-white">
               Über das Projekt
             </a>
+            <Link to="/quellen" className="hover:text-white">
+              Quellen
+            </Link>
           </nav>
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/50">
           <p>
-            Diese Website entstand als schulisches Projekt (LEK, Lernfeld 5) zur Praxisstelle
-            Humanistische Kita / Familienhaus Felix, Zühlsdorfer Straße 18, 12679 Berlin. Alle
-            Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle
+            Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt.
+            Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder,
+            Eltern und Familien im Umfeld der Praxisstelle.
+          </p>
+          <p className="mt-2">
+            Fachliche Grundlage: Gartinger, Silvia et al.: <em>Erzieherinnen + Erzieher</em>. Band 1.
+            2. Auflage. Cornelsen, 2020, S. 662–677.
+          </p>
+          <p className="mt-2">
+            Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle
             Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je
-            Einrichtung finden sich in der jeweiligen Detailansicht.
+            Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der{' '}
+            <Link to="/quellen" className="underline hover:text-white">
+              Quellen-Seite
+            </Link>
+            .
           </p>
           <p className="mt-2">Kein kommerzielles Angebot · nicht-offizielle Projektwebsite.</p>
         </div>

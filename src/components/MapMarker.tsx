@@ -32,9 +32,10 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
       zIndexOffset={institution.isPraxisstelle ? 1000 : selected ? 500 : 0}
       icon={createMarkerIcon({
         color: institution.isPraxisstelle ? '#1d4ed8' : meta.color,
+        emoji: meta.emoji,
         selected,
         isPraxisstelle: institution.isPraxisstelle,
-        outsideLocalArea: institution.outsideLocalArea,
+        zone: institution.zone,
       })}
       eventHandlers={{
         click: () => onSelect(institution),

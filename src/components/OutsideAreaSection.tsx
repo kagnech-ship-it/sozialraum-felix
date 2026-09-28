@@ -26,7 +26,7 @@ export default function OutsideAreaSection({ onOpenDetails }: OutsideAreaSection
           </div>
         </div>
 
-        <div className="mt-8 grid gap-5 sm:grid-cols-2">
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {outsideInstitutions.map((inst) => (
             <div
               key={inst.id}

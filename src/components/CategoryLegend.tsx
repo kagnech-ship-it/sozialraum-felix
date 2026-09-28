@@ -2,14 +2,16 @@ import { categoryList } from '../data/categories';
 import type { Category } from '../types/institution';
 
 const DESCRIPTIONS: Record<Category, string> = {
-  familie: 'Familienangebote, Beratung, Eltern-Kind-Angebote, Familiencafé',
+  familie: 'Familienangebote, Eltern-Kind-Gruppen, Familiencafé',
   bildung: 'Bücher, Medien, Leseförderung, Lernangebote',
-  jugend: 'Offene Kinder- und Jugendarbeit, Kreativangebote, Treffpunkte',
-  beratung: 'Erziehungs-, Familien- und Lebensberatung, Behördenbegleitung',
+  jugend: 'Offene Kinder- und Jugendarbeit, Treffpunkte',
+  beratung: 'Erziehungs-, Familien- und Lebensberatung',
   sport: 'Bewegung, Mannschafts- und Kampfsport, Fitness',
-  kultur: 'Kultur, Zirkuspädagogik, Freizeit- und Veranstaltungsangebote',
-  beteiligung: 'Kinderrechte, Mitbestimmung, Projekte und Workshops',
-  inklusion: 'Offene Arbeit mit und ohne Behinderung, Barrierefreiheit',
+  freizeit: 'Spiel-, Bewegungs- und Aufenthaltsorte',
+  kultur: 'Kultur, Zirkuspädagogik, Veranstaltungen',
+  beteiligung: 'Kinderrechte, Mitbestimmung, Projekte',
+  inklusion: 'Offene Arbeit mit und ohne Behinderung',
+  verwaltung: 'Anträge, Leistungen, behördliche Erstberatung',
 };
 
 interface CategoryLegendProps {
@@ -40,11 +42,11 @@ export default function CategoryLegend({ onSelect }: CategoryLegendProps) {
                 style={{ background: cat.colorSoft }}
               >
                 <span
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold text-white"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full text-sm"
                   style={{ background: cat.color }}
                   aria-hidden="true"
                 >
-                  {cat.label.slice(0, 1)}
+                  {cat.emoji}
                 </span>
                 <span className="font-display text-sm font-bold" style={{ color: cat.textOn }}>
                   {cat.label}
