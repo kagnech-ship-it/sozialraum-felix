@@ -42,7 +42,7 @@ npm install
 npm run dev
 ```
 
-Die Website ist danach unter `http://localhost:5173/sozialraum-kita-zuehlsdorfer-strasse/` erreichbar. Die Karte nutzt OpenStreetMap über Leaflet und **benötigt keinen API-Key** – sie funktioniert direkt nach `npm install`.
+Die Website ist danach unter `http://localhost:5173/` erreichbar. Die Karte nutzt OpenStreetMap über Leaflet und **benötigt keinen API-Key** – sie funktioniert direkt nach `npm install`.
 
 ## 5. Kartendienst (Leaflet / OpenStreetMap)
 
@@ -85,20 +85,27 @@ Die Website ist eine statische Single-Page-App (Ergebnis von `npm run build` im 
 
 Dieses Projekt enthält bereits einen fertigen GitHub-Actions-Workflow (`.github/workflows/deploy.yml`), der bei jedem Push auf `main` automatisch baut und auf GitHub Pages veröffentlicht.
 
+Die Website läuft als **Organisations-Seite** direkt unter der Wurzel der Adresse:
+
+```
+https://sozialraum-kita-zuehlsdorfer-strasse.github.io/
+```
+
+Dafür gehört das Repository der GitHub-Organisation `sozialraum-kita-zuehlsdorfer-strasse` und heißt exakt `sozialraum-kita-zuehlsdorfer-strasse.github.io` – nur bei diesem Namensschema liefert GitHub Pages die Seite ohne Unterpfad aus. Entsprechend steht in [`vite.config.ts`](vite.config.ts) `base: '/'`.
+
+Einrichtung von Grund auf (falls das Projekt neu aufgesetzt werden muss):
+
 1. **GitHub-Account anlegen** (falls noch nicht vorhanden): <https://github.com/signup>
-2. **Neues, öffentliches Repository erstellen**, z. B. mit dem Namen `sozialraum-kita-zuehlsdorfer-strasse` (Name ist wichtig, siehe Schritt 5).
-3. Dieses lokale Projekt zum neuen Repository pushen:
+2. **Organisation anlegen** (kostenlos): oben rechts „+“ → **New organization** → **Free**, Name `sozialraum-kita-zuehlsdorfer-strasse`. Der Name der Organisation wird zur Subdomain des Links.
+3. In der Organisation ein **öffentliches Repository** mit dem Namen `sozialraum-kita-zuehlsdorfer-strasse.github.io` erstellen und dieses Projekt dorthin pushen:
    ```bash
-   git remote add origin https://github.com/<dein-github-name>/sozialraum-kita-zuehlsdorfer-strasse.git
+   git remote add origin https://github.com/sozialraum-kita-zuehlsdorfer-strasse/sozialraum-kita-zuehlsdorfer-strasse.github.io.git
    git branch -M main
    git push -u origin main
    ```
 4. Im Repository unter **Settings → Pages** bei „Build and deployment“ → **Source: GitHub Actions** auswählen (nicht „Deploy from a branch“).
-5. Falls das Repository **nicht** `sozialraum-kita-zuehlsdorfer-strasse` heißt: In [`vite.config.ts`](vite.config.ts) den Wert von `base` an den tatsächlichen Repository-Namen anpassen (`base: '/dein-repo-name/'`), committen und pushen – sonst werden CSS/JS-Dateien nicht gefunden.
-6. Nach dem nächsten Push läuft der Workflow automatisch (Tab **Actions** im Repository zeigt den Fortschritt). Der fertige Link erscheint unter **Settings → Pages** und hat die Form:
-   ```
-   https://<dein-github-name>.github.io/sozialraum-kita-zuehlsdorfer-strasse/
-   ```
+5. Soll die Seite stattdessen in einem normalen Repository (Link der Form `https://<name>.github.io/<repo-name>/`) laufen, muss `base` in [`vite.config.ts`](vite.config.ts) auf `'/<repo-name>/'` gesetzt werden – sonst werden CSS/JS-Dateien nicht gefunden.
+6. Nach dem nächsten Push läuft der Workflow automatisch (Tab **Actions** im Repository zeigt den Fortschritt).
    Diesen Link kannst du direkt an den Dozenten / die Dozentin weitergeben.
 
 Ein manueller Redeploy (z. B. nach einer Datenänderung) passiert automatisch bei jedem `git push` auf `main` – oder manuell über den Button **Run workflow** im Actions-Tab.
