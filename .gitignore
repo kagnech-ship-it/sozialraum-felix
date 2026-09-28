@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Environment variables (contains the Google Maps API key) — never commit
+# Environment variables — never commit
 .env
 .env.local
 .env.*.local

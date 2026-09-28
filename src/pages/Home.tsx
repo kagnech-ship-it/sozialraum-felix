@@ -1,4 +1,3 @@
-import { useJsApiLoader } from '@react-google-maps/api';
 import { useMemo, useRef, useState } from 'react';
 import AboutSection from '../components/AboutSection';
 import CategoryLegend from '../components/CategoryLegend';
@@ -7,7 +6,7 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import InstitutionCard from '../components/InstitutionCard';
 import InstitutionModal from '../components/InstitutionModal';
-import SocialMap, { GOOGLE_MAPS_API_KEY } from '../components/Map';
+import SocialMap from '../components/Map';
 import Navbar from '../components/Navbar';
 import OutsideAreaSection from '../components/OutsideAreaSection';
 import ParentNeeds from '../components/ParentNeeds';
@@ -18,11 +17,6 @@ import type { Category, Institution, ParentNeed } from '../types/institution';
 import { matchesSearch } from '../utils/filter';
 
 export default function Home() {
-  const { isLoaded, loadError } = useJsApiLoader({
-    id: 'sozialraum-felix-google-maps',
-    googleMapsApiKey: GOOGLE_MAPS_API_KEY ?? '',
-  });
-
   const [search, setSearch] = useState('');
   const [activeCategories, setActiveCategories] = useState<Category[]>([]);
   const [activeNeedId, setActiveNeedId] = useState<string | null>(null);
@@ -31,7 +25,7 @@ export default function Home() {
 
   const mapSectionRef = useRef<HTMLDivElement>(null);
 
-  const distances = useDistances(KITA, localInstitutions, Boolean(GOOGLE_MAPS_API_KEY) && isLoaded);
+  const distances = useDistances(KITA, localInstitutions);
 
   const filteredInstitutions = useMemo(
     () =>
@@ -109,8 +103,6 @@ export default function Home() {
                 selectedInstitution={focusedInstitution}
                 onSelectInstitution={setFocusedInstitution}
                 onOpenDetails={setModalInstitution}
-                isLoaded={isLoaded}
-                loadError={loadError}
               />
             </div>
           </div>

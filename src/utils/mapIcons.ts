@@ -1,3 +1,5 @@
+import L from 'leaflet';
+
 interface MarkerIconOptions {
   color: string;
   selected?: boolean;
@@ -13,7 +15,7 @@ function pinSvg({ color, selected, isPraxisstelle, outsideLocalArea }: MarkerIco
     : '<circle cx="16" cy="15" r="4" fill="#ffffff"/>';
 
   return `
-  <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 32 40">
+  <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size * 1.25}" viewBox="0 0 32 40">
     <ellipse cx="16" cy="37" rx="6" ry="2" fill="rgba(15,23,42,0.18)"/>
     <path d="M16 0C7.16 0 0 7.16 0 16c0 11 16 24 16 24s16-13 16-24C32 7.16 24.84 0 16 0Z"
       fill="${color}" stroke="${strokeColor}" stroke-width="2.5"/>
@@ -22,14 +24,14 @@ function pinSvg({ color, selected, isPraxisstelle, outsideLocalArea }: MarkerIco
   </svg>`.trim();
 }
 
-export function createMarkerIcon(
-  options: MarkerIconOptions,
-): google.maps.Icon {
-  const svg = pinSvg(options);
+export function createMarkerIcon(options: MarkerIconOptions): L.DivIcon {
   const size = options.isPraxisstelle ? 52 : options.selected ? 44 : 38;
-  return {
-    url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`,
-    scaledSize: new window.google.maps.Size(size, size * 1.25),
-    anchor: new window.google.maps.Point(size / 2, size * 1.25),
-  };
+  const height = size * 1.25;
+  return L.divIcon({
+    html: pinSvg(options),
+    className: '',
+    iconSize: [size, height],
+    iconAnchor: [size / 2, height],
+    popupAnchor: [0, -height + 6],
+  });
 }

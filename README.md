@@ -8,11 +8,10 @@ Entstanden als schulisches Projekt (LEK, Lernfeld 5, Ausbildung zum Erzieher) zu
 
 - **Praxisstelle / Zentrum der Karte:** Familienzentrum Felix, Zühlsdorfer Straße 16–18, 12679 Berlin
 - **12 Einrichtungen** im und um den Sozialraum, kategorisiert (Familie, Bildung, Jugend, Beratung, Sport, Kultur, Beteiligung, Inklusion)
-- Interaktive **Google-Maps-Karte** mit kategorie-spezifischen Markern, Info-Fenstern und Karten-/Listen-Synchronisation
+- Interaktive **Karte (Leaflet + OpenStreetMap)** mit kategorie-spezifischen Markern, Popups und Karten-/Listen-Synchronisation – **läuft ohne jeden API-Key**
 - **Filter** nach Kategorie, **Volltextsuche**, thematische Schnellzugriffe („Was suchst du?“)
 - Detailansicht je Einrichtung (Modal) mit Angeboten, Zielgruppen, Route- und Website-Links sowie Quellenangabe
-- Ehrliche **Entfernungsangaben**: Luftlinie (immer berechnet aus echten Koordinaten) und – sobald Google Maps geladen ist – echte Rad-Routendistanz via Distance Matrix
-- Läuft **auch ohne Google-Maps-API-Key vollständig** (Listen-Fallback)
+- Ehrliche **Entfernungsangaben**: Luftlinie, immer berechnet aus echten, recherchierten Koordinaten – nie erfundene Werte
 - Barrierearm: Tastaturnavigation, sichtbarer Fokus, semantisches HTML, aria-Labels, Farbe nie als einziger Informationsträger
 
 ## 2. Tech-Stack
@@ -20,7 +19,7 @@ Entstanden als schulisches Projekt (LEK, Lernfeld 5, Ausbildung zum Erzieher) zu
 - [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/)
 - [Tailwind CSS v4](https://tailwindcss.com/) (über das offizielle `@tailwindcss/vite`-Plugin)
 - [Lucide Icons](https://lucide.dev/) (`lucide-react`)
-- [`@react-google-maps/api`](https://www.npmjs.com/package/@react-google-maps/api) als React-Wrapper für die Google Maps JavaScript API
+- [Leaflet](https://leafletjs.com/) + [react-leaflet](https://react-leaflet.js.org/) mit **OpenStreetMap**-Kartenkacheln (kostenlos, kein API-Key nötig)
 
 ## 3. Installation
 
@@ -36,41 +35,15 @@ npm install
 npm run dev
 ```
 
-Die Website ist danach unter `http://localhost:5173` erreichbar. Sie funktioniert **auch ohne Google-Maps-API-Key** – die Karte zeigt dann einen Hinweis, alle Einrichtungen sind trotzdem vollständig als Liste sichtbar (siehe Abschnitt 5).
+Die Website ist danach unter `http://localhost:5173/sozialraum-felix/` erreichbar. Die Karte nutzt OpenStreetMap über Leaflet und **benötigt keinen API-Key** – sie funktioniert direkt nach `npm install`.
 
-## 5. Google Maps API-Key einrichten
+## 5. Kartendienst (Leaflet / OpenStreetMap)
 
-Die Website nutzt die **Google Maps JavaScript API** für die interaktive Karte, die Marker und (optional) die Rad-Routendistanzen.
+Anders als ursprünglich mit der Google Maps JavaScript API geplant, nutzt die Website jetzt **Leaflet** mit **OpenStreetMap**-Kartenkacheln. Das hat für die Abgabe einen entscheidenden Vorteil: **kein API-Key, keine Google-Cloud-Einrichtung, keine Abrechnung** – die Karte funktioniert bei jedem, der den Link öffnet, sofort und garantiert.
 
-### Key erstellen
-
-1. Google Cloud Console öffnen: <https://console.cloud.google.com/>
-2. Ein Projekt anlegen (oder ein bestehendes verwenden).
-3. Unter **APIs & Dienste → Bibliothek** aktivieren:
-   - **Maps JavaScript API**
-   - **Distance Matrix API** (optional, für echte Rad-Routendistanzen – ohne sie wird automatisch die berechnete Luftlinie angezeigt)
-4. Unter **APIs & Dienste → Anmeldedaten** einen neuen **API-Schlüssel** erstellen.
-5. Den Schlüssel einschränken (empfohlen):
-   - **Anwendungseinschränkung:** HTTP-Referrer (Websites), z. B. `http://localhost:5173/*` für die lokale Entwicklung
-   - **API-Einschränkung:** nur die oben aktivierten APIs zulassen
-
-### Key eintragen
-
-```bash
-cp .env.example .env
-```
-
-In der neu erstellten `.env`-Datei den Key eintragen:
-
-```bash
-VITE_GOOGLE_MAPS_API_KEY=dein-eigener-key-hier
-```
-
-Danach den Dev-Server neu starten (`npm run dev`). Die `.env`-Datei wird von Git ignoriert (siehe `.gitignore`) – der Key landet also nicht im Repository.
-
-### Ohne API-Key
-
-Fehlt der Key oder schlägt das Laden fehl, zeigt die Karte automatisch den Hinweis „Google Maps API-Key fehlt“. Die Website bleibt **vollständig nutzbar**: Alle 12 Einrichtungen werden weiterhin als Karten-Liste mit Adresse, Beschreibung, Angeboten, Routen-Link (öffnet Google Maps in einem neuen Tab) und Website-Link angezeigt. Entfernungen werden in diesem Fall als „Luftlinie“ aus den hinterlegten, recherchierten Koordinaten berechnet – es werden nie erfundene Werte angezeigt.
+- Kartenkacheln: `tile.openstreetmap.org` (offizieller, kostenloser OSM-Tile-Server)
+- Pflicht-Attribution „© OpenStreetMap-Mitwirkende" wird automatisch unten rechts auf der Karte angezeigt (siehe [OSM-Nutzungsbedingungen](https://www.openstreetmap.org/copyright))
+- „Route öffnen“-Links führen weiterhin zu Google Maps (reine Weblinks, keine JavaScript API, kein Key nötig) – dort hat praktisch jeder Nutzer bereits eine App/einen Account
 
 ## 6. Build
 
@@ -88,9 +61,7 @@ npm run preview
 
 ## 7. Deployment
 
-Die Website ist eine statische Single-Page-App (Ergebnis von `npm run build` im Ordner `dist/`) und kann auf jedem statischen Hoster ausgeliefert werden, z. B. Netlify, Vercel, GitHub Pages oder ein eigener Webserver.
-
-Wichtig: Den `VITE_GOOGLE_MAPS_API_KEY` beim Deployment als **Umgebungsvariable der Hosting-Plattform** setzen (nicht die lokale `.env`-Datei deployen) und den API-Key in der Google Cloud Console auf die produktive Domain einschränken.
+Die Website ist eine statische Single-Page-App (Ergebnis von `npm run build` im Ordner `dist/`) und kann auf jedem statischen Hoster ausgeliefert werden, z. B. Netlify, Vercel, GitHub Pages oder ein eigener Webserver. Da kein API-Key benötigt wird, ist dafür keine zusätzliche Konfiguration nötig.
 
 ### Deployment auf GitHub Pages (empfohlener Weg für die Abgabe)
 
@@ -106,8 +77,7 @@ Dieses Projekt enthält bereits einen fertigen GitHub-Actions-Workflow (`.github
    ```
 4. Im Repository unter **Settings → Pages** bei „Build and deployment“ → **Source: GitHub Actions** auswählen (nicht „Deploy from a branch“).
 5. Falls das Repository **nicht** `sozialraum-felix` heißt: In [`vite.config.ts`](vite.config.ts) den Wert von `base` an den tatsächlichen Repository-Namen anpassen (`base: '/dein-repo-name/'`), committen und pushen – sonst werden CSS/JS-Dateien nicht gefunden.
-6. **(Optional, für eine funktionierende Karte)** Unter **Settings → Secrets and variables → Actions → New repository secret** ein Secret namens `VITE_GOOGLE_MAPS_API_KEY` mit deinem Key anlegen. Ohne dieses Secret baut die Seite trotzdem – die Karte zeigt dann den „API-Key fehlt“-Hinweis mit vollständiger Liste (siehe Abschnitt 5).
-7. Nach dem nächsten Push läuft der Workflow automatisch (Tab **Actions** im Repository zeigt den Fortschritt). Der fertige Link erscheint unter **Settings → Pages** und hat die Form:
+6. Nach dem nächsten Push läuft der Workflow automatisch (Tab **Actions** im Repository zeigt den Fortschritt). Der fertige Link erscheint unter **Settings → Pages** und hat die Form:
    ```
    https://<dein-github-name>.github.io/sozialraum-felix/
    ```
@@ -125,10 +95,10 @@ src/
                    AboutSection, Footer
   data/           institutions.ts (zentrale Datenquelle), categories.ts,
                    kita.ts, parentNeeds.ts
-  hooks/          useDistances.ts (Luftlinie + optionale Distance-Matrix-Routendistanz)
+  hooks/          useDistances.ts (Luftlinien-Entfernung aus recherchierten Koordinaten)
   pages/          Home.tsx
   types/          institution.ts
-  utils/          distance.ts, filter.ts, links.ts, mapIcons.ts, mapStyle.ts
+  utils/          distance.ts, filter.ts, links.ts, mapIcons.ts
 ```
 
 ## 9. Verwendete Quellen
@@ -156,7 +126,6 @@ Die jeweilige Quelle ist zusätzlich direkt in der Detailansicht (Modal) jeder E
 
 ## 10. Vor der Abgabe noch zu prüfen
 
-- [ ] Eigenen Google-Maps-API-Key eintragen und die Karte einmal live mit Key testen (Marker, Info-Fenster, Zoom/Pan, Klick-Synchronisation mit den Cards)
 - [ ] Prüfen, ob sich die Trägerschaft/Adresse von CABUWAZI Springling zum Abgabezeitpunkt geändert hat (bei der Recherche wurde ein kürzlicher Trägerwechsel am Standort festgestellt)
 - [ ] Aktualität der Öffnungszeiten/Kontaktdaten bei Bedarf direkt bei den Einrichtungen nachprüfen, falls diese für die Abgabe relevant sind (auf der Website bewusst nicht dargestellt, um keine veralteten Angaben zu riskieren)
 - [ ] Eigene Screenshots/Notizen zur Abgabe ergänzen, falls die LEK das verlangt

@@ -23,9 +23,7 @@ export default function InstitutionCard({
   onHover,
 }: InstitutionCardProps) {
   const meta = categories[institution.category];
-  const cyclingMinutes = distance
-    ? distance.cyclingMinutes ?? estimateCyclingMinutes(distance.meters)
-    : undefined;
+  const cyclingMinutes = distance ? estimateCyclingMinutes(distance.meters) : undefined;
 
   return (
     <article
@@ -73,7 +71,7 @@ export default function InstitutionCard({
       {distance && !institution.isPraxisstelle && (
         <p className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full bg-[var(--color-mist)] px-2.5 py-1 text-xs font-medium text-[var(--color-ink-soft)]">
           <Bike size={13} aria-hidden="true" />
-          {distance.routed ? formatDistanceMeters(distance.meters) : `Luftlinie ${formatDistanceMeters(distance.meters)}`}
+          Luftlinie {formatDistanceMeters(distance.meters)}
           {cyclingMinutes ? ` · ca. ${cyclingMinutes} Min. Rad` : ''}
         </p>
       )}
