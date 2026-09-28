@@ -1,12 +1,14 @@
-import { ExternalLink } from 'lucide-react';
+import { CalendarCheck, ExternalLink, Info } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import { institutions } from '../data/institutions';
+import { RESEARCH_DATE } from '../data/site';
+import { formatLongDate, formatMonthYear } from '../utils/date';
 
 export default function QuellenPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -20,8 +22,16 @@ export default function QuellenPage() {
         <h1 className="mt-4 font-display text-3xl font-extrabold text-[var(--color-ink)] sm:text-4xl">
           {t('quellen.title')}
         </h1>
+        <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-[var(--color-mist)] px-3 py-1 text-xs font-semibold text-[var(--color-ink-soft)]">
+          <CalendarCheck size={14} aria-hidden="true" />
+          {t('common.asOf', { date: formatMonthYear(RESEARCH_DATE, i18n.language) })}
+        </p>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-[var(--color-ink-soft)]">
           {t('quellen.intro')}
+        </p>
+        <p className="mt-4 flex max-w-2xl items-start gap-2 rounded-xl border border-[var(--color-line)] px-4 py-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
+          <Info size={16} className="mt-0.5 shrink-0" aria-hidden="true" />
+          {t('quellen.disclaimer')}
         </p>
 
         <section aria-labelledby="q-fachlich" className="mt-10">
@@ -66,6 +76,9 @@ export default function QuellenPage() {
             {t('quellen.institutionsTitle')}
           </h2>
           <p className="mt-2 text-sm text-[var(--color-ink-soft)]">{t('quellen.institutionsNote')}</p>
+          <p className="mt-1 text-sm text-[var(--color-ink-soft)]">
+            {t('quellen.retrieved', { date: formatLongDate(RESEARCH_DATE, i18n.language) })}
+          </p>
           <ul className="mt-4 divide-y divide-[var(--color-line)] rounded-2xl border border-[var(--color-line)]">
             {institutions.map((inst) => (
               <li key={inst.id} className="flex flex-wrap items-center justify-between gap-2 px-4 py-3 text-sm">

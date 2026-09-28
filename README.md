@@ -1,4 +1,4 @@
-# Sozialraum Felix
+# Sozialraum Zühlsdorfer Straße
 
 Eine interaktive Sozialraumkarte rund um die **Humanistische Kita Zühlsdorfer Straße** (Zühlsdorfer Straße 18, 12679 Berlin-Marzahn) – die Praxisstelle. Die Website zeigt Eltern und pädagogischen Fachkräften, welche Unterstützungssysteme – Beratung, Bildung, Freizeit, Beteiligung u. a. – im Sozialraum rund um die Kita zu finden sind.
 

@@ -198,6 +198,7 @@
     "back": "← Ana sayfaya dön",
     "title": "Kaynaklar",
     "intro": "Bu sosyal çevre haritası için kullanılan tüm kaynakların genel görünümü. Uydurma bilgi yoktur – her adres, her hizmet ve her mesafe burada bağlantısı verilen, herkese açık bir kaynaktan alınmıştır.",
+    "disclaimer": "Bilgiler garanti edilmez: hizmetler, çalışma saatleri ve iletişim bilgileri değişebilir – lütfen ziyaretten önce ilgili kurumun web sitesini kontrol edin.",
     "academicTitle": "Uzmanlık Temeli",
     "mapDataTitle": "Harita Verileri",
     "mapDataIntro": "Etkileşimli harita",
@@ -205,6 +206,10 @@
     "mapDataOutro": "kaynağını kullanır. Koordinatlar, araştırılan adreslerin coğrafi kodlamasıyla elde edilmiştir (sokak düzeyinde hassasiyet). Mesafeler bu koordinatlardan hesaplanan gerçek kuş uçuşu mesafeleridir – asla uydurma değerler değildir. “Yol tarifini aç” bağlantıları Google Maps'e yönlendirir (yalnızca web bağlantısıdır, API anahtarı kullanılmaz).",
     "institutionsTitle": "Kurumlar ve Kuruluş Web Siteleri",
     "institutionsNote": "Öncelik sırası: berlin.de → resmi kurum web sitesi → resmi kuruluş → Familienportal Berlin. Wikipedia ana kaynak olarak kullanılmamıştır.",
+    "retrieved": "Tüm çevrimiçi kaynaklara en son {{date}} tarihinde erişilmiş ve kontrol edilmiştir.",
     "websiteLabel": "Web Sitesi"
+  },
+  "common": {
+    "asOf": "Son güncelleme: {{date}}"
   }
 }

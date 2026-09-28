@@ -2,12 +2,14 @@ import { Home as HomeIcon, MapPin } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { KITA } from '../data/kita';
+import { RESEARCH_DATE, SITE_NAME } from '../data/site';
+import { formatMonthYear } from '../utils/date';
 import { fullAddress } from '../utils/links';
 
 const base = import.meta.env.BASE_URL;
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <footer className="border-t border-[var(--color-line)] bg-[var(--color-ink)] py-12 text-white/70">
@@ -18,7 +20,7 @@ export default function Footer() {
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[var(--color-brand)]">
                 <HomeIcon size={18} strokeWidth={2.4} aria-hidden="true" />
               </span>
-              Sozialraum Felix
+              {SITE_NAME.full}
             </div>
             <p className="mt-3 flex items-start gap-1.5 text-sm">
               <MapPin size={15} className="mt-0.5 shrink-0" aria-hidden="true" />
@@ -59,6 +61,7 @@ export default function Footer() {
             .
           </p>
           <p className="mt-2">{t('footer.nonCommercial')}</p>
+          <p className="mt-2">{t('common.asOf', { date: formatMonthYear(RESEARCH_DATE, i18n.language) })}</p>
         </div>
       </div>
     </footer>

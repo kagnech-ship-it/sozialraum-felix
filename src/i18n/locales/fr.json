@@ -198,6 +198,7 @@
     "back": "← Retour à l'accueil",
     "title": "Sources",
     "intro": "Aperçu de toutes les sources utilisées pour cette carte de quartier. Aucune information inventée – chaque adresse, chaque offre et chaque distance provient d'une source publique reliée ici.",
+    "disclaimer": "Informations sans garantie : les offres, horaires d'ouverture et coordonnées peuvent changer – veuillez consulter le site web de l'établissement avant toute visite.",
     "academicTitle": "Fondement théorique",
     "mapDataTitle": "Données cartographiques",
     "mapDataIntro": "La carte interactive utilise",
@@ -205,6 +206,10 @@
     "mapDataOutro": "Les coordonnées sont géocodées à partir des adresses vérifiées (précision au niveau de la rue). Les distances sont de véritables calculs à vol d'oiseau à partir de ces coordonnées – jamais de valeurs inventées. Les liens « Ouvrir l'itinéraire » renvoient vers Google Maps (simples liens web, sans clé API).",
     "institutionsTitle": "Structures & sites des organismes",
     "institutionsNote": "Priorité : berlin.de → site officiel de la structure → organisme officiel → Familienportal Berlin. Pas de Wikipédia comme source principale.",
+    "retrieved": "Toutes les sources en ligne ont été consultées et vérifiées pour la dernière fois le {{date}}.",
     "websiteLabel": "Site web"
+  },
+  "common": {
+    "asOf": "Mise à jour : {{date}}"
   }
 }

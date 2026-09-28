@@ -30,15 +30,42 @@
     "subtitle": "Çdo institucion i përket një kategorie – e dallueshme në hartë me ngjyra dhe etiketa."
   },
   "category": {
-    "familie": { "label": "Familja", "description": "Oferta për familje, grupe prind-fëmijë, kafene familjare" },
-    "bildung": { "label": "Arsimi", "description": "Libra, media, nxitje e leximit, oferta mësimore" },
-    "jugend": { "label": "Të rinjtë", "description": "Punë e hapur me fëmijë dhe të rinj, vende takimi" },
-    "beratung": { "label": "Këshillim", "description": "Këshillim për edukimin, familjen dhe jetën" },
-    "sport": { "label": "Sporti & Lëvizja", "description": "Lëvizje, sporte ekipore dhe marciale, fitnes" },
-    "freizeit": { "label": "Koha e lirë", "description": "Vende për lojë, lëvizje dhe qëndrim" },
-    "kultur": { "label": "Kultura", "description": "Kulturë, pedagogji cirku, evente" },
-    "beteiligung": { "label": "Pjesëmarrja", "description": "Të drejtat e fëmijëve, bashkëvendimmarrje, projekte" },
-    "inklusion": { "label": "Përfshirja", "description": "Punë e hapur me dhe pa aftësi të kufizuara" }
+    "familie": {
+      "label": "Familja",
+      "description": "Oferta për familje, grupe prind-fëmijë, kafene familjare"
+    },
+    "bildung": {
+      "label": "Arsimi",
+      "description": "Libra, media, nxitje e leximit, oferta mësimore"
+    },
+    "jugend": {
+      "label": "Të rinjtë",
+      "description": "Punë e hapur me fëmijë dhe të rinj, vende takimi"
+    },
+    "beratung": {
+      "label": "Këshillim",
+      "description": "Këshillim për edukimin, familjen dhe jetën"
+    },
+    "sport": {
+      "label": "Sporti & Lëvizja",
+      "description": "Lëvizje, sporte ekipore dhe marciale, fitnes"
+    },
+    "freizeit": {
+      "label": "Koha e lirë",
+      "description": "Vende për lojë, lëvizje dhe qëndrim"
+    },
+    "kultur": {
+      "label": "Kultura",
+      "description": "Kulturë, pedagogji cirku, evente"
+    },
+    "beteiligung": {
+      "label": "Pjesëmarrja",
+      "description": "Të drejtat e fëmijëve, bashkëvendimmarrje, projekte"
+    },
+    "inklusion": {
+      "label": "Përfshirja",
+      "description": "Punë e hapur me dhe pa aftësi të kufizuara"
+    }
   },
   "audience": {
     "kleinkind": "Fëmijë i vogël",
@@ -71,8 +98,14 @@
     "center": "Qendra · Vendi i praktikës"
   },
   "zone": {
-    "nahbereich": { "label": "Zona e afërt", "description": "Në distancë këmbësore rreth kopshtit – hapësira sociale më e ngushtë." },
-    "sozialraum": { "label": "Hapësira sociale e zgjeruar", "description": "Pak më larg, por ende brenda hapësirës sociale të kopshtit." },
+    "nahbereich": {
+      "label": "Zona e afërt",
+      "description": "Në distancë këmbësore rreth kopshtit – hapësira sociale më e ngushtë."
+    },
+    "sozialraum": {
+      "label": "Hapësira sociale e zgjeruar",
+      "description": "Pak më larg, por ende brenda hapësirës sociale të kopshtit."
+    },
     "ausserhalb": {
       "label": "Jashtë hapësirës sociale të ngushtë",
       "description": "Jo në afërsi të menjëhershme, por pikë e rëndësishme kontakti."
@@ -88,8 +121,12 @@
     "label": "Kërko institucione",
     "reset": "Rivendos kërkimin"
   },
-  "categoryFilter": { "all": "Të gjitha" },
-  "audienceFilter": { "ariaLabel": "Filtro sipas grupit të synuar" },
+  "categoryFilter": {
+    "all": "Të gjitha"
+  },
+  "audienceFilter": {
+    "ariaLabel": "Filtro sipas grupit të synuar"
+  },
   "sort": {
     "label": "Rendit sipas:",
     "naehe": "Afërsia me kopshtin",
@@ -161,6 +198,7 @@
     "back": "← Kthehu te faqja kryesore",
     "title": "Burimet",
     "intro": "Përmbledhje e të gjitha burimeve të përdorura për këtë hartë të hapësirës sociale. Asnjë të dhënë e trilluar – çdo adresë, çdo ofertë dhe çdo distancë vjen nga një burim publik i lidhur këtu.",
+    "disclaimer": "Pa garanci: ofertat, oraret e hapjes dhe të dhënat e kontaktit mund të ndryshojnë – ju lutemi kontrolloni faqen e internetit të institucionit përkatës përpara vizitës.",
     "academicTitle": "Baza profesionale",
     "mapDataTitle": "Të dhënat e hartës",
     "mapDataIntro": "Harta interaktive përdor",
@@ -168,6 +206,10 @@
     "mapDataOutro": "Koordinatat janë gjeokodime të adresave të kërkuara (saktësi rruge). Distancat janë llogaritje reale në vijë ajrore nga këto koordinata – asnjëherë vlera të trilluara. Lidhjet „Hap itinerarin“ çojnë te Google Maps (thjesht lidhje uebi, pa çelës API).",
     "institutionsTitle": "Institucionet & faqet e internetit të organizatave mbajtëse",
     "institutionsNote": "Përparësi: berlin.de → faqja zyrtare e institucionit → organizata zyrtare mbajtëse → Familienportal Berlin. Wikipedia nuk përdoret si burim kryesor.",
+    "retrieved": "Të gjitha burimet online u konsultuan dhe u verifikuan për herë të fundit më {{date}}.",
     "websiteLabel": "Faqja e internetit"
+  },
+  "common": {
+    "asOf": "Përditësuar: {{date}}"
   }
 }

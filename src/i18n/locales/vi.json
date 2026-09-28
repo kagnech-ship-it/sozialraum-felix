@@ -30,15 +30,42 @@
     "subtitle": "Mỗi cơ sở được xếp vào một danh mục – có thể nhận biết trên bản đồ qua màu sắc và nhãn."
   },
   "category": {
-    "familie": { "label": "Gia đình", "description": "Chương trình cho gia đình, nhóm cha mẹ – con, quán cà phê gia đình" },
-    "bildung": { "label": "Giáo dục", "description": "Sách, phương tiện truyền thông, hỗ trợ đọc, chương trình học tập" },
-    "jugend": { "label": "Thanh thiếu niên", "description": "Hoạt động mở cho trẻ em và thanh thiếu niên, điểm gặp gỡ" },
-    "beratung": { "label": "Tư vấn", "description": "Tư vấn giáo dục, gia đình và cuộc sống" },
-    "sport": { "label": "Thể thao & Vận động", "description": "Vận động, thể thao đồng đội và võ thuật, thể hình" },
-    "freizeit": { "label": "Giải trí", "description": "Nơi vui chơi, vận động và sinh hoạt" },
-    "kultur": { "label": "Văn hóa", "description": "Văn hóa, giáo dục xiếc, sự kiện" },
-    "beteiligung": { "label": "Tham gia", "description": "Quyền trẻ em, đồng quyết định, dự án" },
-    "inklusion": { "label": "Hòa nhập", "description": "Hoạt động mở cho người có và không có khuyết tật" }
+    "familie": {
+      "label": "Gia đình",
+      "description": "Chương trình cho gia đình, nhóm cha mẹ – con, quán cà phê gia đình"
+    },
+    "bildung": {
+      "label": "Giáo dục",
+      "description": "Sách, phương tiện truyền thông, hỗ trợ đọc, chương trình học tập"
+    },
+    "jugend": {
+      "label": "Thanh thiếu niên",
+      "description": "Hoạt động mở cho trẻ em và thanh thiếu niên, điểm gặp gỡ"
+    },
+    "beratung": {
+      "label": "Tư vấn",
+      "description": "Tư vấn giáo dục, gia đình và cuộc sống"
+    },
+    "sport": {
+      "label": "Thể thao & Vận động",
+      "description": "Vận động, thể thao đồng đội và võ thuật, thể hình"
+    },
+    "freizeit": {
+      "label": "Giải trí",
+      "description": "Nơi vui chơi, vận động và sinh hoạt"
+    },
+    "kultur": {
+      "label": "Văn hóa",
+      "description": "Văn hóa, giáo dục xiếc, sự kiện"
+    },
+    "beteiligung": {
+      "label": "Tham gia",
+      "description": "Quyền trẻ em, đồng quyết định, dự án"
+    },
+    "inklusion": {
+      "label": "Hòa nhập",
+      "description": "Hoạt động mở cho người có và không có khuyết tật"
+    }
   },
   "audience": {
     "kleinkind": "Trẻ nhỏ",
@@ -71,8 +98,14 @@
     "center": "Trung tâm · Cơ sở thực hành"
   },
   "zone": {
-    "nahbereich": { "label": "Khu vực lân cận", "description": "Trong phạm vi đi bộ quanh nhà trẻ – khu vực xã hội gần nhất." },
-    "sozialraum": { "label": "Khu vực xã hội mở rộng", "description": "Xa hơn một chút, nhưng vẫn trong khu vực xã hội của nhà trẻ." },
+    "nahbereich": {
+      "label": "Khu vực lân cận",
+      "description": "Trong phạm vi đi bộ quanh nhà trẻ – khu vực xã hội gần nhất."
+    },
+    "sozialraum": {
+      "label": "Khu vực xã hội mở rộng",
+      "description": "Xa hơn một chút, nhưng vẫn trong khu vực xã hội của nhà trẻ."
+    },
     "ausserhalb": {
       "label": "Ngoài khu vực xã hội gần",
       "description": "Không ở ngay xung quanh, nhưng là điểm liên hệ quan trọng."
@@ -88,8 +121,12 @@
     "label": "Tìm kiếm cơ sở",
     "reset": "Đặt lại tìm kiếm"
   },
-  "categoryFilter": { "all": "Tất cả" },
-  "audienceFilter": { "ariaLabel": "Lọc theo nhóm đối tượng" },
+  "categoryFilter": {
+    "all": "Tất cả"
+  },
+  "audienceFilter": {
+    "ariaLabel": "Lọc theo nhóm đối tượng"
+  },
   "sort": {
     "label": "Sắp xếp theo:",
     "naehe": "Khoảng cách đến nhà trẻ",
@@ -161,6 +198,7 @@
     "back": "← Về trang chủ",
     "title": "Nguồn",
     "intro": "Tổng quan tất cả các nguồn được sử dụng cho bản đồ khu vực xã hội này. Không có thông tin bịa đặt – mỗi địa chỉ, mỗi dịch vụ và mỗi khoảng cách đều xuất phát từ một nguồn công khai được liên kết tại đây.",
+    "disclaimer": "Thông tin không đảm bảo: các dịch vụ, giờ mở cửa và thông tin liên hệ có thể thay đổi – vui lòng kiểm tra trang web của cơ sở trước khi đến.",
     "academicTitle": "Cơ sở chuyên môn",
     "mapDataTitle": "Dữ liệu bản đồ",
     "mapDataIntro": "Bản đồ tương tác sử dụng",
@@ -168,6 +206,10 @@
     "mapDataOutro": "Tọa độ là kết quả mã hóa địa lý (geocoding) của các địa chỉ đã được nghiên cứu (độ chính xác cấp đường phố). Khoảng cách là các phép tính đường chim bay thực tế từ những tọa độ này – không bao giờ là số liệu bịa đặt. Các liên kết „Mở chỉ đường“ dẫn đến Google Maps (chỉ là liên kết web thông thường, không dùng API-Key).",
     "institutionsTitle": "Cơ sở & trang web của các tổ chức chủ quản",
     "institutionsNote": "Thứ tự ưu tiên: berlin.de → trang web chính thức của cơ sở → tổ chức chủ quản chính thức → Familienportal Berlin. Không dùng Wikipedia làm nguồn chính.",
+    "retrieved": "Tất cả nguồn trực tuyến được truy cập và kiểm tra lần cuối vào {{date}}.",
     "websiteLabel": "Trang web"
+  },
+  "common": {
+    "asOf": "Cập nhật: {{date}}"
   }
 }

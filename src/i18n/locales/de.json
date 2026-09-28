@@ -198,6 +198,7 @@
     "back": "← Zurück zur Startseite",
     "title": "Quellen",
     "intro": "Übersicht aller Quellen, die für diese Sozialraumkarte verwendet wurden. Keine erfundenen Angaben – jede Adresse, jedes Angebot und jede Entfernung stammt aus einer hier verlinkten, öffentlich zugänglichen Quelle.",
+    "disclaimer": "Angaben ohne Gewähr: Angebote, Öffnungszeiten und Kontaktdaten können sich ändern – bitte vor einem Besuch auf der Website der jeweiligen Einrichtung nachsehen.",
     "academicTitle": "Fachliche Grundlage",
     "mapDataTitle": "Kartendaten",
     "mapDataIntro": "Die interaktive Karte nutzt",
@@ -205,6 +206,10 @@
     "mapDataOutro": "Koordinaten sind Geokodierungen der recherchierten Adressen (Straßen-Genauigkeit). Entfernungen sind echte Luftlinien-Berechnungen aus diesen Koordinaten – niemals erfundene Werte. „Route öffnen“-Links führen zu Google Maps (reine Weblinks, ohne API-Key).",
     "institutionsTitle": "Einrichtungen & Trägerwebseiten",
     "institutionsNote": "Priorität: berlin.de → offizielle Einrichtungswebsite → offizieller Träger → Familienportal Berlin. Keine Wikipedia als Hauptquelle.",
+    "retrieved": "Alle Online-Quellen wurden zuletzt am {{date}} abgerufen und geprüft.",
     "websiteLabel": "Website"
+  },
+  "common": {
+    "asOf": "Stand: {{date}}"
   }
 }

@@ -198,6 +198,7 @@
     "back": "← Back to homepage",
     "title": "Sources",
     "intro": "An overview of all sources used for this neighbourhood map. No invented information – every address, every service and every distance comes from a publicly available source linked here.",
+    "disclaimer": "No guarantee of accuracy: services, opening hours and contact details may change – please check the institution's website before visiting.",
     "academicTitle": "Academic basis",
     "mapDataTitle": "Map data",
     "mapDataIntro": "The interactive map uses",
@@ -205,6 +206,10 @@
     "mapDataOutro": "Coordinates are geocoded from the researched addresses (street-level accuracy). Distances are real straight-line calculations from these coordinates – never invented values. \"Open route\" links go to Google Maps (plain web links, no API key).",
     "institutionsTitle": "Services & provider websites",
     "institutionsNote": "Priority: berlin.de → official service website → official provider → Familienportal Berlin. No Wikipedia as a primary source.",
+    "retrieved": "All online sources were last accessed and checked on {{date}}.",
     "websiteLabel": "Website"
+  },
+  "common": {
+    "asOf": "As of {{date}}"
   }
 }

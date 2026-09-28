@@ -1,4 +1,4 @@
-# Sozialraum Felix – Thema & fachlicher Hintergrund
+# Sozialraum Zühlsdorfer Straße – Thema & fachlicher Hintergrund
 
 ## Aufgabenstellung (LEK, Lernfeld 5)
 
