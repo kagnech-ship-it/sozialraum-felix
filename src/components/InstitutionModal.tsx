@@ -1,5 +1,5 @@
 import { ExternalLink, MapPin, Navigation2, Star, X } from 'lucide-react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { categories } from '../data/categories';
 import { useLocalizedInstitution } from '../hooks/useLocalizedInstitution';
@@ -33,16 +33,28 @@ function iconForTargetGroup(germanLabel: string): string {
   return '👥';
 }
 
+const CLOSE_ANIMATION_MS = 180;
+
 export default function InstitutionModal({ institution, onClose }: InstitutionModalProps) {
   const { t } = useTranslation();
   const dialogRef = useRef<HTMLDivElement>(null);
   const meta = categories[institution.category];
   const content = useLocalizedInstitution(institution);
+  const [closing, setClosing] = useState(false);
+
+  function requestClose() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      onClose();
+      return;
+    }
+    setClosing(true);
+    window.setTimeout(onClose, CLOSE_ANIMATION_MS);
+  }
 
   useEffect(() => {
     dialogRef.current?.focus();
     const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === 'Escape') requestClose();
     };
     document.addEventListener('keydown', onKeyDown);
     document.body.style.overflow = 'hidden';
@@ -50,12 +62,15 @@ export default function InstitutionModal({ institution, onClose }: InstitutionMo
       document.removeEventListener('keydown', onKeyDown);
       document.body.style.overflow = '';
     };
-  }, [onClose]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-end justify-center bg-[var(--color-ink)]/60 p-0 backdrop-blur-sm animate-fade-in sm:items-center sm:p-4"
-      onClick={onClose}
+      className={`fixed inset-0 z-[100] flex items-end justify-center bg-[var(--color-ink)]/60 p-0 backdrop-blur-sm sm:items-center sm:p-4 ${
+        closing ? 'opacity-0 transition-opacity duration-150' : 'animate-fade-in'
+      }`}
+      onClick={requestClose}
     >
       <div
         ref={dialogRef}
@@ -64,7 +79,11 @@ export default function InstitutionModal({ institution, onClose }: InstitutionMo
         aria-labelledby="institution-modal-title"
         tabIndex={-1}
         onClick={(e) => e.stopPropagation()}
-        className="animate-pop-in max-h-[92vh] w-full max-w-lg overflow-y-auto rounded-t-3xl bg-white shadow-[var(--shadow-pop)] sm:rounded-3xl"
+        className={`max-h-[92vh] w-full max-w-lg overflow-y-auto rounded-t-3xl bg-white shadow-[var(--shadow-pop)] sm:rounded-3xl ${
+          closing
+            ? 'scale-[0.98] opacity-0 transition-[transform,opacity] duration-150'
+            : 'animate-pop-in'
+        }`}
       >
         <div
           className="relative px-6 pb-6 pt-7 sm:px-8 sm:pt-8"
@@ -72,7 +91,7 @@ export default function InstitutionModal({ institution, onClose }: InstitutionMo
         >
           <button
             type="button"
-            onClick={onClose}
+            onClick={requestClose}
             aria-label={t('modal.close')}
             className="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/80 text-[var(--color-ink)] shadow-sm hover:bg-white rtl:right-auto rtl:left-4"
           >

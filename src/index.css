@@ -32,6 +32,19 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/*
+ * Globales Tap-/Klick-Feedback für Buttons: kurzer, GPU-günstiger
+ * transform-Effekt (kein width/height/margin -> kein Layout-Reflow),
+ * damit sich jeder Tap auf Touch-Geräten sofort und hochwertig anfühlt.
+ */
+button:not(:disabled) {
+  transition: transform 120ms ease-out;
+}
+
+button:not(:disabled):active {
+  transform: scale(0.97);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

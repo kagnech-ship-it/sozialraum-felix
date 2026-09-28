@@ -8,6 +8,8 @@ import { useLocalizedInstitution } from '../hooks/useLocalizedInstitution';
 import type { Institution } from '../types/institution';
 import { buildDirectionsUrl } from '../utils/links';
 import { createMarkerIcon } from '../utils/mapIcons';
+import { prefersReducedMotion } from '../utils/motion';
+import { PAN_DURATION_S } from './Map';
 
 interface MapMarkerProps {
   institution: Institution;
@@ -25,8 +27,18 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
   useEffect(() => {
     const marker = markerRef.current;
     if (!marker) return;
-    if (selected) marker.openPopup();
-    else marker.closePopup();
+
+    if (!selected) {
+      marker.closePopup();
+      return;
+    }
+
+    // Popup erst öffnen, wenn der (smoothe) Kartenschwenk fertig ist – sonst
+    // rechnet Leaflets Popup-autoPan mit einer noch bewegten Kartenmitte und
+    // positioniert das Popup falsch.
+    const delayMs = prefersReducedMotion() ? 0 : PAN_DURATION_S * 1000 + 30;
+    const timer = window.setTimeout(() => marker.openPopup(), delayMs);
+    return () => window.clearTimeout(timer);
   }, [selected]);
 
   return (

@@ -150,7 +150,10 @@ export default function Home() {
                 <p className="mt-1 text-sm text-[var(--color-ink-soft)]">{t('home.emptySubtitle')}</p>
               </div>
             ) : (
-              <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div
+                key={`${activeCategories.join(',')}|${activeAudiences.join(',')}|${search}|${sortBy}`}
+                className="animate-fade-in mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              >
                 {filteredInstitutions.map((inst) => (
                   <InstitutionCard
                     key={inst.id}

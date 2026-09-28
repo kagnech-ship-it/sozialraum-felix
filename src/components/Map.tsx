@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { MapContainer, TileLayer, useMap, useMapEvents } from 'react-leaflet';
 import { MAP_CENTER, MAP_DEFAULT_ZOOM } from '../data/kita';
 import type { Institution } from '../types/institution';
+import { prefersReducedMotion } from '../utils/motion';
 import MapMarker from './MapMarker';
 
 interface SocialMapProps {
@@ -17,16 +18,23 @@ function ClickToDeselect({ onDeselect }: { onDeselect: () => void }) {
   return null;
 }
 
+/**
+ * Sekunden für den animierten Kartenschwenk. MapMarker verzögert das Öffnen
+ * seines Popups um denselben Zeitraum (siehe PAN_DURATION_MS dort) – so
+ * bleibt der Schwenk smooth, ohne dass Leaflets Popup-autoPan mit der noch
+ * laufenden View-Animation kollidiert und das Popup falsch positioniert.
+ */
+export const PAN_DURATION_S = 0.35;
+
 function PanToSelected({ institution }: { institution: Institution | null }) {
   const map = useMap();
 
   useEffect(() => {
     if (!institution) return;
-    // Ein einziger, unanimierter setView-Aufruf statt panTo()+setZoom():
-    // zwei getrennte, animierte View-Änderungen können sich mit Leaflets
-    // eigenem Popup-autoPan überschneiden und das Popup fehlpositionieren.
+    const reduceMotion = prefersReducedMotion();
     map.setView([institution.latitude, institution.longitude], Math.max(map.getZoom(), 16), {
-      animate: false,
+      animate: !reduceMotion,
+      duration: reduceMotion ? 0 : PAN_DURATION_S,
     });
   }, [institution, map]);
 
