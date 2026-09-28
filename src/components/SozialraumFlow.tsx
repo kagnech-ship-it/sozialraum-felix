@@ -27,17 +27,20 @@ export default function SozialraumFlow() {
 
   return (
     <section aria-labelledby="flow-heading" className="bg-white pb-16 sm:pb-20">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 id="flow-heading" className="sr-only">
           {t('flow.sectionLabel')}
         </h2>
         <p className="mx-auto mb-4 max-w-2xl text-center text-sm text-[var(--color-ink-soft)]">
           {t('flow.caption', { name: praxisstelle.name })}
         </p>
-        <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
+        {/* min-w-0 auf allen Flex-Ebenen, damit die vier Schritte sich die
+            Breite teilen und Text umbricht, statt die Zeile über den Rand
+            hinauszuschieben. Nebeneinander erst ab lg, darunter gestapelt. */}
+        <div className="flex flex-col gap-3 lg:flex-row">
           {steps.map((step, i) => (
-            <div key={step.key} className="flex flex-1 items-center gap-3">
-              <div className="flex flex-1 items-center gap-3 rounded-2xl border border-[var(--color-line)] bg-white px-4 py-3 shadow-[var(--shadow-card)]">
+            <div key={step.key} className="flex min-w-0 flex-1 items-stretch gap-3">
+              <div className="flex min-w-0 flex-1 items-center gap-3 rounded-2xl border border-[var(--color-line)] bg-white px-4 py-3 shadow-[var(--shadow-card)]">
                 <span
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-base"
                   style={{ background: `color-mix(in srgb, ${step.color} 15%, white)` }}
@@ -46,17 +49,17 @@ export default function SozialraumFlow() {
                   {step.emoji}
                 </span>
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-bold text-[var(--color-ink)]">
+                  <p className="text-sm leading-snug font-bold text-[var(--color-ink)]">
                     {step.label}
                     {counts[i] > 0 && <span className="ms-1.5 font-normal text-[var(--color-ink-soft)]">({counts[i]})</span>}
                   </p>
-                  <p className="truncate text-xs text-[var(--color-ink-soft)]">{step.sub}</p>
+                  <p className="mt-0.5 text-xs leading-snug text-[var(--color-ink-soft)]">{step.sub}</p>
                 </div>
               </div>
               {i < steps.length - 1 && (
                 <ArrowRight
                   size={18}
-                  className="hidden shrink-0 text-[var(--color-line)] sm:block rtl:rotate-180"
+                  className="hidden shrink-0 self-center text-[var(--color-line)] lg:block rtl:rotate-180"
                   aria-hidden="true"
                 />
               )}

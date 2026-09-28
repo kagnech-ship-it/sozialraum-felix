@@ -14,7 +14,7 @@
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
     "title": "Unterstützung im Sozialraum",
-    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützungssysteme für Kinder, Eltern und Familien im Sozialraum rund um {{name}}.",
+    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützungssysteme für Kinder, Eltern und Familien im Sozialraum rund um die {{name}}.",
     "ctaPrimary": "Sozialraum entdecken",
     "ctaSecondary": "Alle Einrichtungen anzeigen",
     "statInstitutions": "Einrichtungen",
@@ -186,7 +186,7 @@
     "nonCommercial": "Kein kommerzielles Angebot · nicht-offizielle Projektwebsite."
   },
   "home": {
-    "mapHeading": "Der Sozialraum rund um {{name}}",
+    "mapHeading": "Der Sozialraum rund um die {{name}}",
     "mapSubtitle": "Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu erfahren.",
     "listHeading": "Einrichtungen im Sozialraum",
     "listSubtitle": "Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem Zugang zu Route und Website.",
