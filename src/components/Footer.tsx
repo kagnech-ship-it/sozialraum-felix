@@ -61,7 +61,16 @@ export default function Footer() {
             .
           </p>
           <p className="mt-2">{t('footer.nonCommercial')}</p>
-          <p className="mt-2">{t('common.asOf', { date: formatMonthYear(RESEARCH_DATE, i18n.language) })}</p>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-1 border-t border-white/10 pt-6 text-sm text-white/70 sm:flex-row sm:items-center sm:justify-between">
+          <p>
+            {/* bdi: im Arabischen (RTL) sonst "… Straße 2026 ©" */}
+            <bdi>
+              © {RESEARCH_DATE.getFullYear()} {SITE_NAME.full}
+            </bdi>
+          </p>
+          <p>{t('common.asOf', { date: formatMonthYear(RESEARCH_DATE, i18n.language) })}</p>
         </div>
       </div>
     </footer>

@@ -27,11 +27,11 @@ export default function Navbar() {
         className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-2 px-4 sm:px-6 lg:px-8"
         aria-label="Hauptnavigation"
       >
-        <Link to="/" className="flex items-center gap-2.5 font-display text-lg font-bold text-[var(--color-ink)]">
+        <Link to="/" className="flex shrink-0 items-center gap-2.5 font-display text-lg font-bold text-[var(--color-ink)]">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--color-brand)] text-white shadow-sm">
             <HomeIcon size={18} strokeWidth={2.4} aria-hidden="true" />
           </span>
-          <span className="hidden flex-col leading-none sm:flex">
+          <span className="flex flex-col whitespace-nowrap leading-none">
             <span>{SITE_NAME.primary}</span>
             <span className="mt-0.5 text-xs font-semibold text-[var(--color-ink-soft)]">{SITE_NAME.secondary}</span>
           </span>
@@ -58,8 +58,10 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <div className="flex items-center gap-2">
-          <LanguageSwitcher className="hidden sm:inline-flex" />
+        <div className="flex min-w-0 items-center gap-2">
+          {/* Auch auf dem Handy sichtbar, damit Eltern die Sprache sofort finden;
+              darf schrumpfen, damit der Seitenname oben links nicht umbricht. */}
+          <LanguageSwitcher className="min-w-0" />
 
           <a
             href={`${base}#karte`}

@@ -13,7 +13,7 @@ export default function LanguageSwitcher({ className = '' }: { className?: strin
         value={i18n.resolvedLanguage ?? 'de'}
         onChange={(e) => i18n.changeLanguage(e.target.value)}
         aria-label={t('nav.language')}
-        className="rounded-lg border-0 bg-transparent py-1 pe-6 text-sm font-medium text-[var(--color-ink-soft)] focus:bg-white"
+        className="min-w-0 truncate rounded-lg border-0 bg-transparent py-1 pe-6 text-sm font-medium text-[var(--color-ink-soft)] focus:bg-white"
       >
         {LOCALES.map((locale) => (
           <option key={locale.code} value={locale.code}>
