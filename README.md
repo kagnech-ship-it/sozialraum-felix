@@ -92,6 +92,29 @@ Die Website ist eine statische Single-Page-App (Ergebnis von `npm run build` im 
 
 Wichtig: Den `VITE_GOOGLE_MAPS_API_KEY` beim Deployment als **Umgebungsvariable der Hosting-Plattform** setzen (nicht die lokale `.env`-Datei deployen) und den API-Key in der Google Cloud Console auf die produktive Domain einschränken.
 
+### Deployment auf GitHub Pages (empfohlener Weg für die Abgabe)
+
+Dieses Projekt enthält bereits einen fertigen GitHub-Actions-Workflow (`.github/workflows/deploy.yml`), der bei jedem Push auf `main` automatisch baut und auf GitHub Pages veröffentlicht.
+
+1. **GitHub-Account anlegen** (falls noch nicht vorhanden): <https://github.com/signup>
+2. **Neues, öffentliches Repository erstellen**, z. B. mit dem Namen `sozialraum-felix` (Name ist wichtig, siehe Schritt 5).
+3. Dieses lokale Projekt zum neuen Repository pushen:
+   ```bash
+   git remote add origin https://github.com/<dein-github-name>/sozialraum-felix.git
+   git branch -M main
+   git push -u origin main
+   ```
+4. Im Repository unter **Settings → Pages** bei „Build and deployment“ → **Source: GitHub Actions** auswählen (nicht „Deploy from a branch“).
+5. Falls das Repository **nicht** `sozialraum-felix` heißt: In [`vite.config.ts`](vite.config.ts) den Wert von `base` an den tatsächlichen Repository-Namen anpassen (`base: '/dein-repo-name/'`), committen und pushen – sonst werden CSS/JS-Dateien nicht gefunden.
+6. **(Optional, für eine funktionierende Karte)** Unter **Settings → Secrets and variables → Actions → New repository secret** ein Secret namens `VITE_GOOGLE_MAPS_API_KEY` mit deinem Key anlegen. Ohne dieses Secret baut die Seite trotzdem – die Karte zeigt dann den „API-Key fehlt“-Hinweis mit vollständiger Liste (siehe Abschnitt 5).
+7. Nach dem nächsten Push läuft der Workflow automatisch (Tab **Actions** im Repository zeigt den Fortschritt). Der fertige Link erscheint unter **Settings → Pages** und hat die Form:
+   ```
+   https://<dein-github-name>.github.io/sozialraum-felix/
+   ```
+   Diesen Link kannst du direkt an den Dozenten / die Dozentin weitergeben.
+
+Ein manueller Redeploy (z. B. nach einer Datenänderung) passiert automatisch bei jedem `git push` auf `main` – oder manuell über den Button **Run workflow** im Actions-Tab.
+
 ## 8. Projektstruktur
 
 ```
