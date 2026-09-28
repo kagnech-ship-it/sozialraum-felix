@@ -1,210 +1,210 @@
 {
   "nav": {
-    "skipToContent": "Zum Inhalt springen",
-    "map": "Karte",
-    "institutions": "Einrichtungen",
-    "categories": "Kategorien",
-    "about": "Über das Projekt",
-    "sources": "Quellen",
-    "discover": "Sozialraum entdecken",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
-    "language": "Sprache"
+    "skipToContent": "الانتقال إلى المحتوى",
+    "map": "الخريطة",
+    "institutions": "المؤسسات",
+    "categories": "الفئات",
+    "about": "عن المشروع",
+    "sources": "المصادر",
+    "discover": "استكشاف المحيط الاجتماعي",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "language": "اللغة"
   },
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
-    "title": "Unterstützung im Sozialraum",
-    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützung rund um das Familienhaus Felix.",
-    "ctaPrimary": "Sozialraum entdecken",
-    "ctaSecondary": "Alle Einrichtungen anzeigen",
-    "statInstitutions": "Einrichtungen",
-    "statCategories": "Kategorien",
-    "statSocialSpace": "Sozialraum"
+    "title": "الدعم في المحيط الاجتماعي",
+    "subtitle": "اكتشف مراكز الاستشارة والعروض التعليمية وأنشطة أوقات الفراغ وأنظمة الدعم الأخرى للأطفال والوالدين والأسر في المحيط الاجتماعي حول {{name}}.",
+    "ctaPrimary": "استكشاف المحيط الاجتماعي",
+    "ctaSecondary": "عرض جميع المؤسسات",
+    "statInstitutions": "مؤسسة",
+    "statCategories": "فئة",
+    "statSocialSpace": "المحيط الاجتماعي"
   },
   "parentNeeds": {
-    "title": "Was suchst du?",
-    "subtitle": "Wähle einen Bereich – wir zeigen dir passende Einrichtungen im Sozialraum."
+    "title": "عمّ تبحث؟",
+    "subtitle": "اختر مجالاً – وسنعرض لك المؤسسات المناسبة في المحيط الاجتماعي."
   },
   "categoryLegend": {
-    "title": "Kategorien im Sozialraum",
-    "subtitle": "Jede Einrichtung ist einer Kategorie zugeordnet – auf der Karte farblich und mit Beschriftung erkennbar."
+    "title": "الفئات في المحيط الاجتماعي",
+    "subtitle": "كل مؤسسة مصنّفة ضمن فئة معينة – يمكن التعرف عليها على الخريطة من خلال اللون والتسمية."
   },
   "category": {
     "familie": {
-      "label": "Familie",
-      "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé"
+      "label": "الأسرة",
+      "description": "عروض أسرية، مجموعات الوالدين والأطفال، مقهى الأسرة"
     },
     "bildung": {
-      "label": "Bildung",
-      "description": "Bücher, Medien, Leseförderung, Lernangebote"
+      "label": "التعليم",
+      "description": "كتب، وسائط، تعزيز القراءة، عروض تعليمية"
     },
     "jugend": {
-      "label": "Jugend",
-      "description": "Offene Kinder- und Jugendarbeit, Treffpunkte"
+      "label": "الشباب",
+      "description": "العمل المفتوح مع الأطفال والشباب، نقاط التقاء"
     },
     "beratung": {
-      "label": "Beratung",
-      "description": "Erziehungs-, Familien- und Lebensberatung"
+      "label": "الاستشارة",
+      "description": "استشارات تربوية وأسرية وحياتية"
     },
     "sport": {
-      "label": "Sport & Bewegung",
-      "description": "Bewegung, Mannschafts- und Kampfsport, Fitness"
+      "label": "الرياضة والحركة",
+      "description": "الحركة، الرياضات الجماعية والقتالية، اللياقة البدنية"
     },
     "freizeit": {
-      "label": "Freizeit",
-      "description": "Spiel-, Bewegungs- und Aufenthaltsorte"
+      "label": "أوقات الفراغ",
+      "description": "أماكن للعب والحركة والتواجد"
     },
     "kultur": {
-      "label": "Kultur",
-      "description": "Kultur, Zirkuspädagogik, Veranstaltungen"
+      "label": "الثقافة",
+      "description": "الثقافة، تربية السيرك، الفعاليات"
     },
     "beteiligung": {
-      "label": "Beteiligung",
-      "description": "Kinderrechte, Mitbestimmung, Projekte"
+      "label": "المشاركة",
+      "description": "حقوق الطفل، المشاركة في القرار، المشاريع"
     },
     "inklusion": {
-      "label": "Inklusion",
-      "description": "Offene Arbeit mit und ohne Behinderung"
+      "label": "الدمج",
+      "description": "عمل مفتوح مع وبدون إعاقة"
     }
   },
   "audience": {
-    "kleinkind": "Kleinkind",
-    "kind": "Kind",
-    "jugendlicher": "Jugendlicher",
-    "familie": "Familie",
-    "eltern": "Eltern",
-    "fachkraft": "Pädagogische Fachkraft"
+    "kleinkind": "طفل صغير",
+    "kind": "طفل",
+    "jugendlicher": "مراهق",
+    "familie": "أسرة",
+    "eltern": "الوالدان",
+    "fachkraft": "مختص تربوي"
   },
   "need": {
-    "familie": "Familienangebote",
-    "beratung": "Beratung",
-    "bildung": "Bildung & Lesen",
-    "sport": "Sport & Bewegung",
-    "kultur": "Kreativität & Kultur",
-    "kinder": "Angebote für Kinder",
-    "jugendliche": "Angebote für Jugendliche",
-    "antraege": "Anträge & Leistungen"
+    "familie": "عروض أسرية",
+    "beratung": "استشارة",
+    "bildung": "تعليم وقراءة",
+    "sport": "رياضة وحركة",
+    "kultur": "إبداع وثقافة",
+    "kinder": "عروض للأطفال",
+    "jugendliche": "عروض للشباب",
+    "antraege": "الطلبات والخدمات"
   },
   "directHelpOption": {
-    "dh-beratung": "Ich brauche Beratung",
-    "dh-familie": "Ich suche ein Familienangebot",
-    "dh-kind": "Ich suche etwas für mein Kind",
-    "dh-antrag": "Ich suche Unterstützung bei einem Antrag",
-    "dh-freizeit": "Ich suche Freizeitangebote"
+    "dh-beratung": "أحتاج إلى استشارة",
+    "dh-familie": "أبحث عن عرض أسري",
+    "dh-kind": "أبحث عن شيء لطفلي",
+    "dh-antrag": "أبحث عن دعم في تقديم طلب",
+    "dh-freizeit": "أبحث عن أنشطة لوقت الفراغ"
   },
   "flow": {
-    "sectionLabel": "Aufbau des Sozialraums",
-    "caption": "{{name}} ist der Ausgangspunkt – die Auswahl der Einrichtungen folgt einem echten Sozialraum-Konzept, keiner zufälligen Berlin-weiten Liste.",
-    "center": "Zentrum · Praxisstelle"
+    "sectionLabel": "بنية المحيط الاجتماعي",
+    "caption": "تُعد {{name}} نقطة الانطلاق – واختيار المؤسسات يتبع مفهومًا حقيقيًا للمحيط الاجتماعي، وليس قائمة عشوائية تشمل برلين بأكملها.",
+    "center": "المركز · موقع التدريب العملي"
   },
   "zone": {
     "nahbereich": {
-      "label": "Nahbereich",
-      "description": "Fußläufig rund um die Kita – der engste Sozialraum."
+      "label": "المحيط القريب",
+      "description": "المنطقة المحيطة بالحضانة على مسافة قريبة يمكن الوصول إليها سيرًا على الأقدام – أضيق محيط اجتماعي."
     },
     "sozialraum": {
-      "label": "Weiterer Sozialraum",
-      "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita."
+      "label": "المحيط الاجتماعي الأوسع",
+      "description": "أبعد قليلاً، لكنه لا يزال ضمن المحيط الاجتماعي للحضانة."
     },
     "ausserhalb": {
-      "label": "Außerhalb des engeren Sozialraums",
-      "description": "Nicht im unmittelbaren Umfeld, aber wichtige Anlaufstelle."
+      "label": "خارج المحيط الاجتماعي القريب",
+      "description": "ليست في الجوار المباشر، لكنها نقطة اتصال مهمة."
     }
   },
   "filterBar": {
-    "audienceLabel": "Für wen suchst du?",
-    "resultCount_one": "{{count}} Einrichtung gefunden",
-    "resultCount_other": "{{count}} Einrichtungen gefunden"
+    "audienceLabel": "لمن تبحث؟",
+    "resultCount_one": "تم العثور على {{count}} مؤسسة",
+    "resultCount_other": "تم العثور على {{count}} مؤسسات"
   },
   "search": {
-    "placeholder": "Wonach suchst du? z. B. „Beratung“, „Sport“, „Bibliothek“ …",
-    "label": "Einrichtungen durchsuchen",
-    "reset": "Suche zurücksetzen"
+    "placeholder": "عمّ تبحث؟ مثلاً: «استشارة»، «رياضة»، «مكتبة» …",
+    "label": "البحث في المؤسسات",
+    "reset": "إعادة تعيين البحث"
   },
   "categoryFilter": {
-    "all": "Alle"
+    "all": "الكل"
   },
   "audienceFilter": {
-    "ariaLabel": "Nach Zielgruppe filtern"
+    "ariaLabel": "التصفية حسب الفئة المستهدفة"
   },
   "sort": {
-    "label": "Sortieren:",
-    "naehe": "Nähe zur Kita",
-    "kategorie": "Kategorie",
-    "alphabet": "Alphabet",
-    "relevanz": "Relevanz für Familien"
+    "label": "الترتيب حسب:",
+    "naehe": "القرب من الحضانة",
+    "kategorie": "الفئة",
+    "alphabet": "الترتيب الأبجدي",
+    "relevanz": "الأهمية بالنسبة للأسر"
   },
   "map": {
-    "details": "Details",
-    "route": "Route",
-    "website": "Website",
-    "praxisstelle": "Praxisstelle"
+    "details": "التفاصيل",
+    "route": "المسار",
+    "website": "الموقع الإلكتروني",
+    "praxisstelle": "موقع التدريب العملي"
   },
   "card": {
-    "praxisstelle": "Praxisstelle",
-    "airline": "Luftlinie",
-    "byBike": "ca. {{minutes}} Min. Rad",
-    "details": "Details",
-    "focusOnMap": "{{name}} auf der Karte anzeigen",
-    "routeTo": "Route zu {{name}} öffnen",
-    "websiteOf": "Website von {{name}} öffnen"
+    "praxisstelle": "موقع التدريب العملي",
+    "airline": "خط مستقيم",
+    "byBike": "حوالي {{minutes}} دقيقة بالدراجة",
+    "details": "التفاصيل",
+    "focusOnMap": "عرض {{name}} على الخريطة",
+    "routeTo": "فتح المسار إلى {{name}}",
+    "websiteOf": "فتح الموقع الإلكتروني لـ {{name}}"
   },
   "modal": {
-    "offers": "Angebote",
-    "forWhom": "Für wen?",
-    "source": "Quelle",
-    "officialWebsite": "Offizielle Website",
-    "toSource": "zur Quelle",
-    "planRoute": "Route planen",
-    "visitWebsite": "Website besuchen",
-    "outsideNote": "Außerhalb des engeren Sozialraums – trotzdem wichtige Anlaufstelle",
-    "close": "Schließen"
+    "offers": "الخدمات",
+    "forWhom": "لمن؟",
+    "source": "المصدر",
+    "officialWebsite": "الموقع الرسمي",
+    "toSource": "الانتقال إلى المصدر",
+    "planRoute": "تخطيط المسار",
+    "visitWebsite": "زيارة الموقع الإلكتروني",
+    "outsideNote": "خارج المحيط الاجتماعي القريب – ومع ذلك فهي نقطة اتصال مهمة",
+    "close": "إغلاق"
   },
   "outsideArea": {
-    "title": "Wichtige Anlaufstellen außerhalb des direkten Umfelds",
-    "subtitle": "Diese Stellen liegen nicht im unmittelbaren Umfeld der Kita, sind aber für Familien bei bestimmten Anliegen wichtige Anlaufstellen.",
-    "badge": "Außerhalb des engeren Sozialraums"
+    "title": "نقاط اتصال مهمة خارج المحيط المباشر",
+    "subtitle": "لا تقع هذه الجهات في المحيط المباشر للحضانة، لكنها تمثل نقاط اتصال مهمة للأسر في حالات معينة.",
+    "badge": "خارج المحيط الاجتماعي القريب"
   },
   "about": {
-    "badge": "LEK · Lernfeld 5",
-    "title": "Über diese Sozialraumkarte",
-    "p1": "Diese digitale Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 entwickelt. Ziel ist es, Unterstützungssysteme im Sozialraum sichtbar und für Eltern und pädagogische Fachkräfte leicht zugänglich zu machen.",
-    "p2": "Die Praxisstelle befindet sich im Zentrum der Karte. Die dargestellten Einrichtungen wurden nach ihrer möglichen Bedeutung für Kinder, Eltern und Familien ausgewählt.",
-    "flowNote": "Kita → Eltern → Kinder → Sozialraum → Unterstützungssysteme: Die Bildungs- und Erziehungspartnerschaft lebt vom Zusammenspiel aller Beteiligten im Umfeld der Kita.",
-    "sourceTitle": "Fachliche Grundlage",
-    "sourceNote": "Diese Literatur ist die fachliche Grundlage der schulischen Aufgabenstellung."
+    "badge": "LEK · مجال التعلّم 5",
+    "title": "عن خريطة المحيط الاجتماعي هذه",
+    "p1": "تم تطوير خريطة المحيط الاجتماعي الرقمية هذه في إطار التدريب المهني لمربي الأطفال (Erzieher) ضمن مجال التعلّم 5. الهدف هو إبراز أنظمة الدعم في المحيط الاجتماعي وجعلها سهلة الوصول للوالدين والمختصين التربويين.",
+    "p2": "يقع موقع التدريب العملي في مركز الخريطة. وقد تم اختيار المؤسسات المعروضة بناءً على أهميتها المحتملة بالنسبة للأطفال والوالدين والأسر.",
+    "flowNote": "الحضانة ← الوالدان ← الأطفال ← المحيط الاجتماعي ← أنظمة الدعم: تعيش شراكة التربية والتعليم من خلال تفاعل جميع الأطراف المعنية في محيط الحضانة.",
+    "sourceTitle": "الأساس العلمي",
+    "sourceNote": "تشكل هذه المراجع الأساس العلمي للمهمة الدراسية المدرسية."
   },
   "directHelp": {
-    "title": "Du weißt nicht, wo du anfangen sollst?",
-    "subtitle": "Kein Problem. Wähle aus, wobei du Unterstützung suchst."
+    "title": "لا تعرف من أين تبدأ؟",
+    "subtitle": "لا مشكلة. اختر المجال الذي تبحث فيه عن الدعم."
   },
   "footer": {
-    "disclaimer1": "Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt. Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder, Eltern und Familien im Umfeld der Praxisstelle.",
-    "sourceLabel": "Fachliche Grundlage:",
-    "sourcesNote": "Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der",
-    "sourcesLinkLabel": "Quellen-Seite",
-    "nonCommercial": "Kein kommerzielles Angebot · nicht-offizielle Projektwebsite."
+    "disclaimer1": "تم إعداد خريطة المحيط الاجتماعي هذه في إطار التدريب المهني لمربي الأطفال (Erzieher) ضمن مجال التعلّم 5. وهي تهدف إلى تقديم توجيه ميسّر حول عروض الدعم المتاحة للأطفال والوالدين والأسر في محيط موقع التدريب العملي.",
+    "sourceLabel": "الأساس العلمي:",
+    "sourcesNote": "تم التحقق من جميع المعلومات المتعلقة بالمؤسسات استنادًا إلى مصادر رسمية (berlin.de، المواقع الرسمية للجهات والمؤسسات، Familienportal Berlin) – يمكن الاطلاع على تفاصيل المصادر لكل مؤسسة في صفحتها التفصيلية، وبشكل مجمّع في",
+    "sourcesLinkLabel": "صفحة المصادر",
+    "nonCommercial": "هذا ليس عرضًا تجاريًا · وهو موقع مشروع غير رسمي."
   },
   "home": {
-    "mapHeading": "Der Sozialraum rund um das Familienhaus Felix",
-    "mapSubtitle": "Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu erfahren.",
-    "listHeading": "Einrichtungen im Sozialraum",
-    "listSubtitle": "Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem Zugang zu Route und Website.",
-    "sortedBy": "Sortiert nach: {{option}}.",
-    "emptyTitle": "Keine Einrichtungen gefunden",
-    "emptySubtitle": "Versuche einen anderen Suchbegriff oder wähle „Alle“ bei den Kategorien."
+    "mapHeading": "المحيط الاجتماعي حول {{name}}",
+    "mapSubtitle": "انقر على علامة على الخريطة أو على إحدى البطاقات أدناه لمعرفة المزيد عن إحدى المؤسسات.",
+    "listHeading": "المؤسسات في المحيط الاجتماعي",
+    "listSubtitle": "جميع المؤسسات في المحيط القريب من الحضانة – مع الخدمات المقدَّمة والفئات المستهدفة وإمكانية الوصول المباشر إلى المسار والموقع الإلكتروني.",
+    "sortedBy": "الترتيب حسب: {{option}}.",
+    "emptyTitle": "لم يتم العثور على أي مؤسسة",
+    "emptySubtitle": "جرّب كلمة بحث أخرى أو اختر «الكل» في الفئات."
   },
   "quellen": {
-    "back": "← Zurück zur Startseite",
-    "title": "Quellen",
-    "intro": "Übersicht aller Quellen, die für diese Sozialraumkarte verwendet wurden. Keine erfundenen Angaben – jede Adresse, jedes Angebot und jede Entfernung stammt aus einer hier verlinkten, öffentlich zugänglichen Quelle.",
-    "academicTitle": "Fachliche Grundlage",
-    "mapDataTitle": "Kartendaten",
-    "mapDataIntro": "Die interaktive Karte nutzt",
-    "mapDataMid": "mit Kartenkacheln von",
-    "mapDataOutro": "Koordinaten sind Geokodierungen der recherchierten Adressen (Straßen-Genauigkeit). Entfernungen sind echte Luftlinien-Berechnungen aus diesen Koordinaten – niemals erfundene Werte. „Route öffnen“-Links führen zu Google Maps (reine Weblinks, ohne API-Key).",
-    "institutionsTitle": "Einrichtungen & Trägerwebseiten",
-    "institutionsNote": "Priorität: berlin.de → offizielle Einrichtungswebsite → offizieller Träger → Familienportal Berlin. Keine Wikipedia als Hauptquelle.",
-    "websiteLabel": "Website"
+    "back": "← العودة إلى الصفحة الرئيسية",
+    "title": "المصادر",
+    "intro": "نظرة عامة على جميع المصادر المستخدمة في إعداد خريطة المحيط الاجتماعي هذه. لا توجد معلومات مختلَقة – كل عنوان وكل خدمة وكل مسافة مأخوذة من مصدر متاح للجميع تمت الإشارة إلى رابطه هنا.",
+    "academicTitle": "الأساس العلمي",
+    "mapDataTitle": "بيانات الخريطة",
+    "mapDataIntro": "تستخدم الخريطة التفاعلية",
+    "mapDataMid": "مع بلاطات خرائط من",
+    "mapDataOutro": ". الإحداثيات هي نتيجة ترميز جغرافي للعناوين التي تم البحث عنها (بدقة مستوى الشارع). المسافات هي مسافات خط مستقيم فعلية محسوبة من هذه الإحداثيات – وليست أبدًا قيمًا مُختلَقة. روابط «فتح المسار» تؤدي إلى Google Maps (روابط ويب فقط، دون مفتاح API).",
+    "institutionsTitle": "المؤسسات ومواقع الجهات المسؤولة",
+    "institutionsNote": "الأولوية: berlin.de ← الموقع الرسمي للمؤسسة ← الجهة الرسمية المسؤولة ← Familienportal Berlin. لا يتم اعتماد ويكيبيديا كمصدر رئيسي.",
+    "websiteLabel": "الموقع الإلكتروني"
   }
 }

@@ -1,210 +1,210 @@
 {
   "nav": {
-    "skipToContent": "Zum Inhalt springen",
-    "map": "Karte",
-    "institutions": "Einrichtungen",
-    "categories": "Kategorien",
-    "about": "Über das Projekt",
-    "sources": "Quellen",
-    "discover": "Sozialraum entdecken",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
-    "language": "Sprache"
+    "skipToContent": "İçeriğe geç",
+    "map": "Harita",
+    "institutions": "Kurumlar",
+    "categories": "Kategoriler",
+    "about": "Proje Hakkında",
+    "sources": "Kaynaklar",
+    "discover": "Sosyal çevreyi keşfet",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "language": "Dil"
   },
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
-    "title": "Unterstützung im Sozialraum",
-    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützung rund um das Familienhaus Felix.",
-    "ctaPrimary": "Sozialraum entdecken",
-    "ctaSecondary": "Alle Einrichtungen anzeigen",
-    "statInstitutions": "Einrichtungen",
-    "statCategories": "Kategorien",
-    "statSocialSpace": "Sozialraum"
+    "title": "Sosyal Çevrede Destek",
+    "subtitle": "{{name}} çevresindeki sosyal çevrede çocuklar, ebeveynler ve aileler için danışmanlık merkezlerini, eğitim olanaklarını, boş zaman etkinliklerini ve diğer destek sistemlerini keşfet.",
+    "ctaPrimary": "Sosyal çevreyi keşfet",
+    "ctaSecondary": "Tüm kurumları görüntüle",
+    "statInstitutions": "Kurum",
+    "statCategories": "Kategori",
+    "statSocialSpace": "Sosyal Çevre"
   },
   "parentNeeds": {
-    "title": "Was suchst du?",
-    "subtitle": "Wähle einen Bereich – wir zeigen dir passende Einrichtungen im Sozialraum."
+    "title": "Ne arıyorsun?",
+    "subtitle": "Bir alan seç – sana sosyal çevredeki uygun kurumları gösterelim."
   },
   "categoryLegend": {
-    "title": "Kategorien im Sozialraum",
-    "subtitle": "Jede Einrichtung ist einer Kategorie zugeordnet – auf der Karte farblich und mit Beschriftung erkennbar."
+    "title": "Sosyal Çevredeki Kategoriler",
+    "subtitle": "Her kurum bir kategoriye ayrılmıştır – haritada renk ve etiketle tanınabilir."
   },
   "category": {
     "familie": {
-      "label": "Familie",
-      "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé"
+      "label": "Aile",
+      "description": "Aile etkinlikleri, ebeveyn-çocuk grupları, aile kafesi"
     },
     "bildung": {
-      "label": "Bildung",
-      "description": "Bücher, Medien, Leseförderung, Lernangebote"
+      "label": "Eğitim",
+      "description": "Kitaplar, medya, okuma teşviki, öğrenme imkânları"
     },
     "jugend": {
-      "label": "Jugend",
-      "description": "Offene Kinder- und Jugendarbeit, Treffpunkte"
+      "label": "Gençlik",
+      "description": "Açık çocuk ve gençlik çalışması, buluşma noktaları"
     },
     "beratung": {
-      "label": "Beratung",
-      "description": "Erziehungs-, Familien- und Lebensberatung"
+      "label": "Danışmanlık",
+      "description": "Eğitim, aile ve yaşam danışmanlığı"
     },
     "sport": {
-      "label": "Sport & Bewegung",
-      "description": "Bewegung, Mannschafts- und Kampfsport, Fitness"
+      "label": "Spor ve Hareket",
+      "description": "Hareket, takım ve mücadele sporları, fitness"
     },
     "freizeit": {
-      "label": "Freizeit",
-      "description": "Spiel-, Bewegungs- und Aufenthaltsorte"
+      "label": "Boş Zaman",
+      "description": "Oyun, hareket ve buluşma alanları"
     },
     "kultur": {
-      "label": "Kultur",
-      "description": "Kultur, Zirkuspädagogik, Veranstaltungen"
+      "label": "Kültür",
+      "description": "Kültür, sirk pedagojisi, etkinlikler"
     },
     "beteiligung": {
-      "label": "Beteiligung",
-      "description": "Kinderrechte, Mitbestimmung, Projekte"
+      "label": "Katılım",
+      "description": "Çocuk hakları, ortak karar alma, projeler"
     },
     "inklusion": {
-      "label": "Inklusion",
-      "description": "Offene Arbeit mit und ohne Behinderung"
+      "label": "Kapsayıcılık",
+      "description": "Engelli ve engelsiz bireylerle birlikte açık çalışma"
     }
   },
   "audience": {
-    "kleinkind": "Kleinkind",
-    "kind": "Kind",
-    "jugendlicher": "Jugendlicher",
-    "familie": "Familie",
-    "eltern": "Eltern",
-    "fachkraft": "Pädagogische Fachkraft"
+    "kleinkind": "Küçük çocuk",
+    "kind": "Çocuk",
+    "jugendlicher": "Genç",
+    "familie": "Aile",
+    "eltern": "Ebeveynler",
+    "fachkraft": "Pedagojik uzman"
   },
   "need": {
-    "familie": "Familienangebote",
-    "beratung": "Beratung",
-    "bildung": "Bildung & Lesen",
-    "sport": "Sport & Bewegung",
-    "kultur": "Kreativität & Kultur",
-    "kinder": "Angebote für Kinder",
-    "jugendliche": "Angebote für Jugendliche",
-    "antraege": "Anträge & Leistungen"
+    "familie": "Aile etkinlikleri",
+    "beratung": "Danışmanlık",
+    "bildung": "Eğitim ve Okuma",
+    "sport": "Spor ve Hareket",
+    "kultur": "Yaratıcılık ve Kültür",
+    "kinder": "Çocuklar için etkinlikler",
+    "jugendliche": "Gençler için etkinlikler",
+    "antraege": "Başvurular ve Hizmetler"
   },
   "directHelpOption": {
-    "dh-beratung": "Ich brauche Beratung",
-    "dh-familie": "Ich suche ein Familienangebot",
-    "dh-kind": "Ich suche etwas für mein Kind",
-    "dh-antrag": "Ich suche Unterstützung bei einem Antrag",
-    "dh-freizeit": "Ich suche Freizeitangebote"
+    "dh-beratung": "Danışmanlığa ihtiyacım var",
+    "dh-familie": "Bir aile etkinliği arıyorum",
+    "dh-kind": "Çocuğum için bir şey arıyorum",
+    "dh-antrag": "Bir başvuruda destek arıyorum",
+    "dh-freizeit": "Boş zaman etkinlikleri arıyorum"
   },
   "flow": {
-    "sectionLabel": "Aufbau des Sozialraums",
-    "caption": "{{name}} ist der Ausgangspunkt – die Auswahl der Einrichtungen folgt einem echten Sozialraum-Konzept, keiner zufälligen Berlin-weiten Liste.",
-    "center": "Zentrum · Praxisstelle"
+    "sectionLabel": "Sosyal Çevrenin Yapısı",
+    "caption": "{{name}} başlangıç noktasıdır – kurumların seçimi rastgele Berlin çapında bir listeye değil, gerçek bir sosyal çevre kavramına dayanır.",
+    "center": "Merkez · Uygulama Yeri"
   },
   "zone": {
     "nahbereich": {
-      "label": "Nahbereich",
-      "description": "Fußläufig rund um die Kita – der engste Sozialraum."
+      "label": "Yakın Çevre",
+      "description": "Kreşin yürüme mesafesindeki yakın çevresi – en yakın sosyal çevre."
     },
     "sozialraum": {
-      "label": "Weiterer Sozialraum",
-      "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita."
+      "label": "Geniş Sosyal Çevre",
+      "description": "Biraz daha uzakta, ama hâlâ kreşin sosyal çevresinde."
     },
     "ausserhalb": {
-      "label": "Außerhalb des engeren Sozialraums",
-      "description": "Nicht im unmittelbaren Umfeld, aber wichtige Anlaufstelle."
+      "label": "Yakın Sosyal Çevrenin Dışında",
+      "description": "Doğrudan çevrede değil, ama önemli bir başvuru noktası."
     }
   },
   "filterBar": {
-    "audienceLabel": "Für wen suchst du?",
-    "resultCount_one": "{{count}} Einrichtung gefunden",
-    "resultCount_other": "{{count}} Einrichtungen gefunden"
+    "audienceLabel": "Kimin için arıyorsun?",
+    "resultCount_one": "{{count}} kurum bulundu",
+    "resultCount_other": "{{count}} kurum bulundu"
   },
   "search": {
-    "placeholder": "Wonach suchst du? z. B. „Beratung“, „Sport“, „Bibliothek“ …",
-    "label": "Einrichtungen durchsuchen",
-    "reset": "Suche zurücksetzen"
+    "placeholder": "Ne arıyorsun? örn. “Danışmanlık”, “Spor”, “Kütüphane” …",
+    "label": "Kurumlarda ara",
+    "reset": "Aramayı sıfırla"
   },
   "categoryFilter": {
-    "all": "Alle"
+    "all": "Tümü"
   },
   "audienceFilter": {
-    "ariaLabel": "Nach Zielgruppe filtern"
+    "ariaLabel": "Hedef gruba göre filtrele"
   },
   "sort": {
-    "label": "Sortieren:",
-    "naehe": "Nähe zur Kita",
-    "kategorie": "Kategorie",
-    "alphabet": "Alphabet",
-    "relevanz": "Relevanz für Familien"
+    "label": "Sırala:",
+    "naehe": "Kreşe yakınlık",
+    "kategorie": "Kategori",
+    "alphabet": "Alfabetik",
+    "relevanz": "Aileler için önem"
   },
   "map": {
-    "details": "Details",
-    "route": "Route",
-    "website": "Website",
-    "praxisstelle": "Praxisstelle"
+    "details": "Detaylar",
+    "route": "Yol Tarifi",
+    "website": "Web Sitesi",
+    "praxisstelle": "Uygulama Yeri"
   },
   "card": {
-    "praxisstelle": "Praxisstelle",
-    "airline": "Luftlinie",
-    "byBike": "ca. {{minutes}} Min. Rad",
-    "details": "Details",
-    "focusOnMap": "{{name}} auf der Karte anzeigen",
-    "routeTo": "Route zu {{name}} öffnen",
-    "websiteOf": "Website von {{name}} öffnen"
+    "praxisstelle": "Uygulama Yeri",
+    "airline": "Kuş uçuşu",
+    "byBike": "yakl. {{minutes}} dk. bisikletle",
+    "details": "Detaylar",
+    "focusOnMap": "{{name}} kurumunu haritada göster",
+    "routeTo": "{{name}} için yol tarifini aç",
+    "websiteOf": "{{name}} web sitesini aç"
   },
   "modal": {
-    "offers": "Angebote",
-    "forWhom": "Für wen?",
-    "source": "Quelle",
-    "officialWebsite": "Offizielle Website",
-    "toSource": "zur Quelle",
-    "planRoute": "Route planen",
-    "visitWebsite": "Website besuchen",
-    "outsideNote": "Außerhalb des engeren Sozialraums – trotzdem wichtige Anlaufstelle",
-    "close": "Schließen"
+    "offers": "Hizmetler",
+    "forWhom": "Kimler için?",
+    "source": "Kaynak",
+    "officialWebsite": "Resmi Web Sitesi",
+    "toSource": "kaynağa git",
+    "planRoute": "Yol tarifi planla",
+    "visitWebsite": "Web sitesini ziyaret et",
+    "outsideNote": "Yakın sosyal çevrenin dışında – yine de önemli bir başvuru noktası",
+    "close": "Kapat"
   },
   "outsideArea": {
-    "title": "Wichtige Anlaufstellen außerhalb des direkten Umfelds",
-    "subtitle": "Diese Stellen liegen nicht im unmittelbaren Umfeld der Kita, sind aber für Familien bei bestimmten Anliegen wichtige Anlaufstellen.",
-    "badge": "Außerhalb des engeren Sozialraums"
+    "title": "Yakın Çevrenin Dışındaki Önemli Başvuru Noktaları",
+    "subtitle": "Bu kurumlar kreşin hemen çevresinde yer almasa da, belirli konularda aileler için önemli başvuru noktalarıdır.",
+    "badge": "Yakın Sosyal Çevrenin Dışında"
   },
   "about": {
-    "badge": "LEK · Lernfeld 5",
-    "title": "Über diese Sozialraumkarte",
-    "p1": "Diese digitale Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 entwickelt. Ziel ist es, Unterstützungssysteme im Sozialraum sichtbar und für Eltern und pädagogische Fachkräfte leicht zugänglich zu machen.",
-    "p2": "Die Praxisstelle befindet sich im Zentrum der Karte. Die dargestellten Einrichtungen wurden nach ihrer möglichen Bedeutung für Kinder, Eltern und Familien ausgewählt.",
-    "flowNote": "Kita → Eltern → Kinder → Sozialraum → Unterstützungssysteme: Die Bildungs- und Erziehungspartnerschaft lebt vom Zusammenspiel aller Beteiligten im Umfeld der Kita.",
-    "sourceTitle": "Fachliche Grundlage",
-    "sourceNote": "Diese Literatur ist die fachliche Grundlage der schulischen Aufgabenstellung."
+    "badge": "LEK · 5. Öğrenim Alanı",
+    "title": "Bu Sosyal Çevre Haritası Hakkında",
+    "p1": "Bu dijital sosyal çevre haritası, çocuk eğitmenliği (Erzieher) eğitiminin 5. Öğrenim Alanı kapsamında geliştirilmiştir. Amaç, sosyal çevredeki destek sistemlerini görünür kılmak ve ebeveynler ile pedagojik uzmanlar için kolay erişilebilir hâle getirmektir.",
+    "p2": "Uygulama yeri haritanın merkezinde yer almaktadır. Gösterilen kurumlar, çocuklar, ebeveynler ve aileler için olası önemlerine göre seçilmiştir.",
+    "flowNote": "Kreş → Ebeveynler → Çocuklar → Sosyal Çevre → Destek Sistemleri: Eğitim ve yetiştirme ortaklığı, kreşin çevresindeki tüm paydaşların iş birliğiyle yaşam bulur.",
+    "sourceTitle": "Uzmanlık Temeli",
+    "sourceNote": "Bu literatür, okul görevinin uzmanlık temelini oluşturmaktadır."
   },
   "directHelp": {
-    "title": "Du weißt nicht, wo du anfangen sollst?",
-    "subtitle": "Kein Problem. Wähle aus, wobei du Unterstützung suchst."
+    "title": "Nereden başlayacağını bilmiyor musun?",
+    "subtitle": "Sorun değil. Ne konuda destek aradığını seç."
   },
   "footer": {
-    "disclaimer1": "Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt. Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder, Eltern und Familien im Umfeld der Praxisstelle.",
-    "sourceLabel": "Fachliche Grundlage:",
-    "sourcesNote": "Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der",
-    "sourcesLinkLabel": "Quellen-Seite",
-    "nonCommercial": "Kein kommerzielles Angebot · nicht-offizielle Projektwebsite."
+    "disclaimer1": "Bu sosyal çevre haritası, çocuk eğitmenliği (Erzieher) eğitiminin 5. Öğrenim Alanı kapsamında hazırlanmıştır. Uygulama yeri çevresindeki çocuklar, ebeveynler ve aileler için destek imkânları hakkında kolay erişilebilir bir yönlendirme sağlamayı amaçlar.",
+    "sourceLabel": "Uzmanlık Temeli:",
+    "sourcesNote": "Kurumlarla ilgili tüm bilgiler resmi kaynaklar (berlin.de, resmi kurum ve kuruluş web siteleri, Familienportal Berlin) üzerinden kontrol edilmiştir – her kurum için kaynak bilgileri ilgili detay sayfasında ve toplu olarak",
+    "sourcesLinkLabel": "Kaynaklar sayfasında",
+    "nonCommercial": "Ticari bir hizmet değildir · resmi olmayan proje web sitesidir."
   },
   "home": {
-    "mapHeading": "Der Sozialraum rund um das Familienhaus Felix",
-    "mapSubtitle": "Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu erfahren.",
-    "listHeading": "Einrichtungen im Sozialraum",
-    "listSubtitle": "Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem Zugang zu Route und Website.",
-    "sortedBy": "Sortiert nach: {{option}}.",
-    "emptyTitle": "Keine Einrichtungen gefunden",
-    "emptySubtitle": "Versuche einen anderen Suchbegriff oder wähle „Alle“ bei den Kategorien."
+    "mapHeading": "{{name}} Çevresindeki Sosyal Çevre",
+    "mapSubtitle": "Bir kurum hakkında daha fazla bilgi edinmek için aşağıdaki bir işarete veya karta tıkla.",
+    "listHeading": "Sosyal Çevredeki Kurumlar",
+    "listSubtitle": "Kreşin yakın çevresindeki tüm kurumlar – sundukları hizmetler, hedef gruplar ve doğrudan yol tarifi ile web sitesi erişimiyle birlikte.",
+    "sortedBy": "Sıralama ölçütü: {{option}}.",
+    "emptyTitle": "Kurum bulunamadı",
+    "emptySubtitle": "Farklı bir arama terimi dene ya da kategorilerde “Tümü”nü seç."
   },
   "quellen": {
-    "back": "← Zurück zur Startseite",
-    "title": "Quellen",
-    "intro": "Übersicht aller Quellen, die für diese Sozialraumkarte verwendet wurden. Keine erfundenen Angaben – jede Adresse, jedes Angebot und jede Entfernung stammt aus einer hier verlinkten, öffentlich zugänglichen Quelle.",
-    "academicTitle": "Fachliche Grundlage",
-    "mapDataTitle": "Kartendaten",
-    "mapDataIntro": "Die interaktive Karte nutzt",
-    "mapDataMid": "mit Kartenkacheln von",
-    "mapDataOutro": "Koordinaten sind Geokodierungen der recherchierten Adressen (Straßen-Genauigkeit). Entfernungen sind echte Luftlinien-Berechnungen aus diesen Koordinaten – niemals erfundene Werte. „Route öffnen“-Links führen zu Google Maps (reine Weblinks, ohne API-Key).",
-    "institutionsTitle": "Einrichtungen & Trägerwebseiten",
-    "institutionsNote": "Priorität: berlin.de → offizielle Einrichtungswebsite → offizieller Träger → Familienportal Berlin. Keine Wikipedia als Hauptquelle.",
-    "websiteLabel": "Website"
+    "back": "← Ana sayfaya dön",
+    "title": "Kaynaklar",
+    "intro": "Bu sosyal çevre haritası için kullanılan tüm kaynakların genel görünümü. Uydurma bilgi yoktur – her adres, her hizmet ve her mesafe burada bağlantısı verilen, herkese açık bir kaynaktan alınmıştır.",
+    "academicTitle": "Uzmanlık Temeli",
+    "mapDataTitle": "Harita Verileri",
+    "mapDataIntro": "Etkileşimli harita",
+    "mapDataMid": "kütüphanesini, harita karoları için de",
+    "mapDataOutro": "kaynağını kullanır. Koordinatlar, araştırılan adreslerin coğrafi kodlamasıyla elde edilmiştir (sokak düzeyinde hassasiyet). Mesafeler bu koordinatlardan hesaplanan gerçek kuş uçuşu mesafeleridir – asla uydurma değerler değildir. “Yol tarifini aç” bağlantıları Google Maps'e yönlendirir (yalnızca web bağlantısıdır, API anahtarı kullanılmaz).",
+    "institutionsTitle": "Kurumlar ve Kuruluş Web Siteleri",
+    "institutionsNote": "Öncelik sırası: berlin.de → resmi kurum web sitesi → resmi kuruluş → Familienportal Berlin. Wikipedia ana kaynak olarak kullanılmamıştır.",
+    "websiteLabel": "Web Sitesi"
   }
 }
