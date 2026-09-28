@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "skipToContent": "Skip to content",
+    "map": "Map",
+    "institutions": "Services",
+    "categories": "Categories",
+    "about": "About this project",
+    "sources": "Sources",
+    "discover": "Explore the area",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "{{name}} · Berlin-Marzahn",
+    "title": "Support in your neighbourhood",
+    "subtitle": "Discover counselling services, education, leisure activities and other support around the Familienhaus Felix.",
+    "ctaPrimary": "Explore the area",
+    "ctaSecondary": "Show all services",
+    "statInstitutions": "Services",
+    "statCategories": "Categories",
+    "statSocialSpace": "Neighbourhood"
+  },
+  "parentNeeds": {
+    "title": "What are you looking for?",
+    "subtitle": "Choose an area – we'll show you matching services nearby."
+  },
+  "categoryLegend": {
+    "title": "Categories in the neighbourhood",
+    "subtitle": "Every service belongs to a category – recognisable on the map by colour and label."
+  },
+  "category": {
+    "familie": { "label": "Family", "description": "Family services, parent-child groups, family café" },
+    "bildung": { "label": "Education", "description": "Books, media, reading support, learning programmes" },
+    "jugend": { "label": "Youth", "description": "Open youth work, meeting places" },
+    "beratung": { "label": "Counselling", "description": "Parenting, family and life counselling" },
+    "sport": { "label": "Sport & Movement", "description": "Team sports, martial arts, fitness" },
+    "freizeit": { "label": "Leisure", "description": "Play, movement and recreation spaces" },
+    "kultur": { "label": "Culture", "description": "Culture, circus arts, events" },
+    "beteiligung": { "label": "Participation", "description": "Children's rights, participation, projects" },
+    "inklusion": { "label": "Inclusion", "description": "Open activities with and without disabilities" },
+    "verwaltung": { "label": "Administration & Benefits", "description": "Applications, benefits, first official advice" }
+  },
+  "audience": {
+    "kleinkind": "Toddler",
+    "kind": "Child",
+    "jugendlicher": "Teenager",
+    "familie": "Family",
+    "eltern": "Parents",
+    "fachkraft": "Early-years professional"
+  },
+  "need": {
+    "familie": "Family services",
+    "beratung": "Counselling",
+    "bildung": "Education & reading",
+    "sport": "Sport & movement",
+    "kultur": "Creativity & culture",
+    "kinder": "Activities for children",
+    "jugendliche": "Activities for teenagers",
+    "antraege": "Applications & benefits"
+  },
+  "directHelpOption": {
+    "dh-beratung": "I need counselling",
+    "dh-familie": "I'm looking for a family service",
+    "dh-kind": "I'm looking for something for my child",
+    "dh-antrag": "I need help with an application",
+    "dh-freizeit": "I'm looking for leisure activities"
+  },
+  "flow": {
+    "sectionLabel": "How the neighbourhood is structured",
+    "caption": "{{name}} is the starting point – these services were chosen following a real neighbourhood concept, not a random Berlin-wide list.",
+    "center": "Centre · Placement site"
+  },
+  "zone": {
+    "nahbereich": { "label": "Nearby", "description": "Walking distance from the Kita – the closest neighbourhood area." },
+    "sozialraum": { "label": "Wider neighbourhood", "description": "A bit further away, but still within the Kita's neighbourhood." },
+    "ausserhalb": {
+      "label": "Outside the immediate area",
+      "description": "Not right nearby, but an important place to know about."
+    }
+  },
+  "filterBar": {
+    "audienceLabel": "Who are you looking for?",
+    "resultCount_one": "{{count}} service found",
+    "resultCount_other": "{{count}} services found"
+  },
+  "search": {
+    "placeholder": "What are you looking for? e.g. \"counselling\", \"sport\", \"library\" …",
+    "label": "Search services",
+    "reset": "Clear search"
+  },
+  "categoryFilter": { "all": "All" },
+  "audienceFilter": { "ariaLabel": "Filter by audience" },
+  "sort": {
+    "label": "Sort by:",
+    "naehe": "Distance to the Kita",
+    "kategorie": "Category",
+    "alphabet": "Alphabetical",
+    "relevanz": "Relevance for families"
+  },
+  "map": {
+    "details": "Details",
+    "route": "Route",
+    "website": "Website",
+    "praxisstelle": "Placement site"
+  },
+  "card": {
+    "praxisstelle": "Placement site",
+    "airline": "Straight-line",
+    "byBike": "approx. {{minutes}} min by bike",
+    "details": "Details",
+    "focusOnMap": "Show {{name}} on the map",
+    "routeTo": "Open route to {{name}}",
+    "websiteOf": "Open website of {{name}}"
+  },
+  "modal": {
+    "offers": "Services offered",
+    "forWhom": "Who is it for?",
+    "source": "Source",
+    "officialWebsite": "Official website",
+    "toSource": "go to source",
+    "planRoute": "Plan route",
+    "visitWebsite": "Visit website",
+    "outsideNote": "Outside the immediate neighbourhood – still an important place to know about",
+    "close": "Close"
+  },
+  "outsideArea": {
+    "title": "Important places outside the immediate area",
+    "subtitle": "These places aren't right around the corner from the Kita, but they're important contacts for families with certain needs.",
+    "badge": "Outside the immediate area"
+  },
+  "about": {
+    "badge": "Vocational training · Module 5",
+    "title": "About this neighbourhood map",
+    "p1": "This digital neighbourhood map was developed as part of early-years educator training (Lernfeld 5). Its goal is to make support systems in the neighbourhood visible and easily accessible for parents and early-years professionals.",
+    "p2": "The placement site is at the centre of the map. The services shown were selected for their potential relevance to children, parents and families.",
+    "flowNote": "Kita → parents → children → neighbourhood → support systems: the partnership between education and upbringing lives from everyone around the Kita working together.",
+    "sourceTitle": "Academic basis",
+    "sourceNote": "This literature is the academic basis for the school assignment."
+  },
+  "directHelp": {
+    "title": "Not sure where to start?",
+    "subtitle": "No problem. Choose what you need support with."
+  },
+  "footer": {
+    "disclaimer1": "This neighbourhood map was created as part of early-years educator training (Lernfeld 5). It provides easy, low-barrier orientation about support services for children, parents and families around the placement site.",
+    "sourceLabel": "Academic basis:",
+    "sourcesNote": "All information about services was checked against official sources (berlin.de, official provider and organisation websites, Familienportal Berlin) – sources for each service can be found in its detail view and collected on the",
+    "sourcesLinkLabel": "sources page",
+    "nonCommercial": "Not a commercial offer · unofficial project website."
+  },
+  "home": {
+    "mapHeading": "The neighbourhood around Familienhaus Felix",
+    "mapSubtitle": "Click a marker or a card below to learn more about a service.",
+    "listHeading": "Services in the neighbourhood",
+    "listSubtitle": "All services in the Kita's immediate neighbourhood – with offers, target groups and direct links to routes and websites.",
+    "sortedBy": "Sorted by: {{option}}.",
+    "emptyTitle": "No services found",
+    "emptySubtitle": "Try a different search term or select \"All\" under categories."
+  },
+  "quellen": {
+    "back": "← Back to homepage",
+    "title": "Sources",
+    "intro": "An overview of all sources used for this neighbourhood map. No invented information – every address, every service and every distance comes from a publicly available source linked here.",
+    "academicTitle": "Academic basis",
+    "mapDataTitle": "Map data",
+    "mapDataIntro": "The interactive map uses",
+    "mapDataMid": "with map tiles from",
+    "mapDataOutro": "Coordinates are geocoded from the researched addresses (street-level accuracy). Distances are real straight-line calculations from these coordinates – never invented values. \"Open route\" links go to Google Maps (plain web links, no API key).",
+    "institutionsTitle": "Services & provider websites",
+    "institutionsNote": "Priority: berlin.de → official service website → official provider → Familienportal Berlin. No Wikipedia as a primary source.",
+    "websiteLabel": "Website"
+  }
+}

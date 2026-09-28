@@ -13,6 +13,10 @@ import type { Institution } from '../types/institution';
  * Sozialraum) und "ausserhalb" (>~2,5 km, wichtige Anlaufstelle außerhalb
  * des engeren Umfelds). Die Grenzen sind bewusst nachvollziehbar aus den
  * echten Koordinaten abgeleitet, nicht willkürlich gesetzt.
+ *
+ * `translations`: Beschreibung/Angebote/Zielgruppen je Sprache (Name und
+ * Adresse bleiben als Eigennamen unübersetzt). Deutsch (Felder oben) ist
+ * die Quelle; fehlt eine Übersetzung, wird ehrlich darauf zurückgefallen.
  */
 export const institutions: Institution[] = [
   {
@@ -41,6 +45,34 @@ export const institutions: Institution[] = [
     sourceLabel: 'Humanistischer Verband Berlin-Brandenburg (Träger)',
     latitude: 52.5472,
     longitude: 13.5482,
+    translations: {
+      en: {
+        description:
+          "A low-threshold point of contact for families with a range of services and support options. Kita and open family centre under one roof, with a focus on movement, inclusion and diversity.",
+        offers: [
+          'Family counselling',
+          'Parent-child activities',
+          'Family café',
+          '"wellcome" support during baby\'s first year',
+          'Open drop-ins and courses',
+          'Family outings and Family Night',
+        ],
+        targetGroups: ['Families', 'Children (0–6 years)', 'Parents'],
+      },
+      fr: {
+        description:
+          "Un point de contact facile d'accès pour les familles, avec diverses offres et possibilités de soutien. Crèche et centre familial ouvert sous un même toit, avec un accent sur le mouvement, l'inclusion et la diversité.",
+        offers: [
+          'Conseil familial',
+          'Activités parents-enfants',
+          'Café familial',
+          'Soutien « wellcome » pendant la première année de vie',
+          'Rencontres et cours ouverts',
+          'Sorties familiales et soirée familiale',
+        ],
+        targetGroups: ['Familles', 'Enfants (0–6 ans)', 'Parents'],
+      },
+    },
   },
   {
     id: 'freizeitforum-marzahn',
@@ -66,6 +98,20 @@ export const institutions: Institution[] = [
     sourceLabel: 'berlin.de / GSE gGmbH (Betreiber)',
     latitude: 52.5468,
     longitude: 13.5567,
+    translations: {
+      en: {
+        description:
+          'The largest culture and leisure centre in north-east Berlin, with a swimming pool, halls, a sports hall and a wide programme of events for the whole family.',
+        offers: ['Swimming pool with sauna', "Women's sports hall", 'Bowling alley', 'Event halls and cultural programme', 'Café'],
+        targetGroups: ['Families', 'Children', 'Adults', 'Clubs and associations'],
+      },
+      fr: {
+        description:
+          "La plus grande structure culturelle et de loisirs du nord-est de Berlin, avec piscine, salles, salle de sport et un large programme d'événements pour toute la famille.",
+        offers: ['Piscine avec sauna', 'Salle de sport pour femmes', 'Bowling', 'Salles de spectacle et programme culturel', 'Café'],
+        targetGroups: ['Familles', 'Enfants', 'Adultes', 'Associations'],
+      },
+    },
   },
   {
     id: 'mark-twain-bibliothek',
@@ -92,6 +138,34 @@ export const institutions: Institution[] = [
     sourceLabel: 'berlin.de – Stadtbibliothek Marzahn-Hellersdorf',
     latitude: 52.5468,
     longitude: 13.5567,
+    translations: {
+      en: {
+        description:
+          "The district central library of Marzahn-Hellersdorf, inside the Freizeitforum Marzahn – three floors with a large selection of media and reading-support programmes, including in many of the district's languages of origin.",
+        offers: [
+          'Books, audiobooks, DVDs and games',
+          'Foreign-language media (incl. Vietnamese, Arabic, Turkish, Russian, Persian, Ukrainian)',
+          'Music library and art lending library',
+          'Reading support and story time for kitas/schools',
+          'Wi-Fi and workspaces',
+          'Exhibitions and events',
+        ],
+        targetGroups: ['Children', 'Teenagers', 'Families', 'Schools', 'Early-years professionals'],
+      },
+      fr: {
+        description:
+          "La bibliothèque centrale de l'arrondissement de Marzahn-Hellersdorf, au sein du Freizeitforum Marzahn – trois étages avec un vaste choix de médias et des programmes d'aide à la lecture, y compris dans de nombreuses langues d'origine de l'arrondissement.",
+        offers: [
+          'Livres, livres audio, DVD et jeux',
+          'Médias en langues étrangères (dont vietnamien, arabe, turc, russe, persan, ukrainien)',
+          'Médiathèque musicale et artothèque',
+          'Aide à la lecture et heures du conte pour crèches/écoles',
+          'Wi-Fi et postes de travail',
+          'Expositions et événements',
+        ],
+        targetGroups: ['Enfants', 'Adolescents', 'Familles', 'Écoles', 'Professionnel·le·s de la petite enfance'],
+      },
+    },
   },
   {
     id: 'fair-jugendfreizeiteinrichtung',
@@ -117,6 +191,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'Humanistischer Verband Berlin-Brandenburg (Träger)',
     latitude: 52.5467,
     longitude: 13.5555,
+    translations: {
+      en: {
+        description:
+          'Open youth centre focused on cultural education and participation – from the music and recording studio to the blacklight theatre.',
+        offers: [
+          'Open area and youth café',
+          'Music and recording studio',
+          'Blacklight theatre, dance, cooking',
+          'Graffiti projects',
+          'Table tennis, foosball, billiards',
+        ],
+        targetGroups: ['Children and teenagers (8–18 years)'],
+      },
+      fr: {
+        description:
+          "Structure de jeunesse ouverte axée sur l'éducation culturelle et la participation – du studio de musique et d'enregistrement au théâtre en lumière noire.",
+        offers: [
+          'Espace ouvert et café jeunesse',
+          "Studio de musique et d'enregistrement",
+          'Théâtre en lumière noire, danse, cuisine',
+          'Projets de graffiti',
+          'Tennis de table, babyfoot, billard',
+        ],
+        targetGroups: ['Enfants et adolescents (8–18 ans)'],
+      },
+    },
   },
   {
     id: 'kinder-jugendbeteiligungsbuero',
@@ -142,6 +242,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'Kinder- und Jugendbeteiligungsbüro Marzahn-Hellersdorf',
     latitude: 52.5467,
     longitude: 13.5555,
+    translations: {
+      en: {
+        description:
+          "The central point of contact for child and youth participation in the Marzahn-Hellersdorf district – from the children's jury to the youth parliament.",
+        offers: [
+          "Children's and youth jury",
+          "Children's and youth parliament",
+          "Education on children's rights",
+          'Surveys and action days',
+          'Projects and workshops',
+        ],
+        targetGroups: ['Children', 'Teenagers', 'Families in the district'],
+      },
+      fr: {
+        description:
+          "Le point de contact central pour la participation des enfants et des jeunes dans l'arrondissement de Marzahn-Hellersdorf – du jury d'enfants au parlement des jeunes.",
+        offers: [
+          "Jury d'enfants et de jeunes",
+          'Parlement des enfants et des jeunes',
+          "Sensibilisation aux droits de l'enfant",
+          "Sondages et journées d'action",
+          'Projets et ateliers',
+        ],
+        targetGroups: ['Enfants', 'Adolescents', "Familles de l'arrondissement"],
+      },
+    },
   },
   {
     id: 'gangway-marzahn',
@@ -167,6 +293,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'Gangway e.V. (offizielle Trägerwebsite)',
     latitude: 52.5436,
     longitude: 13.5468,
+    translations: {
+      en: {
+        description:
+          'Mobile street-based social work for teenagers and young adults: Gangway is present wherever young people spend time, offering low-threshold support through difficult phases of life.',
+        offers: [
+          'Outreach street-based social work',
+          'Support with problems involving parents, school or police',
+          'Help with school, training and jobs',
+          'Accompaniment to official appointments',
+          'Leisure and sports projects',
+        ],
+        targetGroups: ['Teenagers and young adults (approx. 14–27 years)'],
+      },
+      fr: {
+        description:
+          "Travail social de rue mobile pour les adolescents et jeunes adultes : Gangway est présent là où se trouvent les jeunes, et les accompagne de façon accessible à travers les périodes difficiles de leur vie.",
+        offers: [
+          'Travail social de rue itinérant',
+          "Conseil en cas de problèmes avec les parents, l'école ou la police",
+          "Soutien pour l'école, la formation et l'emploi",
+          'Accompagnement auprès des administrations',
+          'Projets de loisirs et de sport',
+        ],
+        targetGroups: ['Adolescents et jeunes adultes (environ 14–27 ans)'],
+      },
+    },
   },
   {
     id: 'sportjugendclub-marzahn',
@@ -186,6 +338,20 @@ export const institutions: Institution[] = [
     sourceLabel: 'SportJugendClub Marzahn (offizielle Website)',
     latitude: 52.546,
     longitude: 13.551,
+    translations: {
+      en: {
+        description:
+          'Open sports and youth club with a wide range of activities – from judo to climbing – for children and teenagers from across the neighbourhood.',
+        offers: ['Football and basketball', 'Judo', 'Climbing', 'Strength and fitness equipment', 'Table tennis, billiards, darts'],
+        targetGroups: ['Children and teenagers (approx. 7–21 years)'],
+      },
+      fr: {
+        description:
+          "Club de sport et de jeunesse ouvert avec une large offre de mouvement – du judo à l'escalade – pour les enfants et adolescents de tout le quartier.",
+        offers: ['Football et basketball', 'Judo', 'Escalade', 'Appareils de musculation et de fitness', 'Tennis de table, billard, fléchettes'],
+        targetGroups: ['Enfants et adolescents (environ 7–21 ans)'],
+      },
+    },
   },
   {
     id: 'jfe-impuls',
@@ -211,6 +377,20 @@ export const institutions: Institution[] = [
     sourceLabel: 'Kinderring Berlin e.V. (Träger)',
     latitude: 52.5517,
     longitude: 13.5646,
+    translations: {
+      en: {
+        description:
+          'Inclusive, wheelchair-accessible children\'s and youth centre where children and teenagers with and without disabilities spend their free time together.',
+        offers: ['Open area and projects', 'Music and recording studio', 'Homework support', 'Holiday trips and international exchanges', 'Garden'],
+        targetGroups: ['Teenagers (approx. 10–27 years)', 'with and without disabilities'],
+      },
+      fr: {
+        description:
+          "Structure inclusive et accessible en fauteuil roulant pour enfants et jeunes, où des jeunes avec et sans handicap passent leur temps libre ensemble.",
+        offers: ['Espace ouvert et projets', "Studio de musique et d'enregistrement", 'Aide aux devoirs', 'Voyages de vacances et rencontres internationales', 'Jardin'],
+        targetGroups: ['Adolescents (environ 10–27 ans)', 'avec et sans handicap'],
+      },
+    },
   },
   {
     id: 'cabuwazi-springling',
@@ -230,6 +410,20 @@ export const institutions: Institution[] = [
     sourceLabel: 'CABUWAZI (offizielle Website)',
     latitude: 52.5519,
     longitude: 13.5477,
+    translations: {
+      en: {
+        description:
+          'Children\'s and youth circus since 1992: hands-on circus education – from juggling to the trapeze – plus project weeks for kitas and schools.',
+        offers: ['Circus training (acrobatics, juggling, trampoline)', 'Trapeze and tightrope walking', 'Dance', 'School and holiday project weeks', 'Shows'],
+        targetGroups: ['Children', 'Teenagers', 'Kita and school groups'],
+      },
+      fr: {
+        description:
+          "Cirque pour enfants et jeunes depuis 1992 : pédagogie du cirque à pratiquer soi-même – de la jonglerie au trapèze – ainsi que des semaines de projet pour crèches et écoles.",
+        offers: ['Entraînement de cirque (acrobatie, jonglerie, trampoline)', 'Trapèze et fil tendu', 'Danse', 'Semaines de projet scolaires et de vacances', 'Spectacles'],
+        targetGroups: ['Enfants', 'Adolescents', "Groupes de crèches et d'écoles"],
+      },
+    },
   },
   {
     id: 'immanuel-beratungszentrum-marzahn',
@@ -255,6 +449,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'Immanuel Albertinen Diakonie (Träger)',
     latitude: 52.5385,
     longitude: 13.5319,
+    translations: {
+      en: {
+        description:
+          'Psychological counselling centre run by Immanuel Albertinen Diakonie, offering a wide range of support for families, couples and young people in difficult life situations.',
+        offers: [
+          'Parenting and family counselling',
+          'Separation and divorce counselling',
+          'Psychotherapy for children and teenagers',
+          '"IMAL" women\'s café',
+          'Social and migration counselling',
+        ],
+        targetGroups: ['Families', 'Couples', 'Children and teenagers', 'Refugee women'],
+      },
+      fr: {
+        description:
+          "Centre de conseil psychologique de la Diaconie Immanuel Albertinen, proposant une large offre de soutien pour les familles, les couples et les jeunes en situation de vie difficile.",
+        offers: [
+          'Conseil éducatif et familial',
+          'Conseil en séparation et divorce',
+          'Psychothérapie pour enfants et adolescents',
+          'Café des femmes « IMAL »',
+          'Conseil social et en matière de migration',
+        ],
+        targetGroups: ['Familles', 'Couples', 'Enfants et adolescents', 'Femmes réfugiées'],
+      },
+    },
   },
   {
     id: 'aha-elterntreff',
@@ -281,6 +501,34 @@ export const institutions: Institution[] = [
     sourceLabel: 'pad gGmbH (Träger)',
     latitude: 52.5276,
     longitude: 13.5457,
+    translations: {
+      en: {
+        description:
+          'Cross-generational family education and meeting service in the multi-generation house for Marzahn-Süd/Biesdorf, run by pad gGmbH.',
+        offers: [
+          'Baby massage courses',
+          'Parent-child groups',
+          'Conflict and parenting counselling',
+          'Open garden with play and movement activities',
+          '"Welcome to the neighbourhood, baby" for newborns',
+          'Neighbourhood café and cross-generational courses',
+        ],
+        targetGroups: ['Parents', 'Families with infants/toddlers', 'All generations'],
+      },
+      fr: {
+        description:
+          "Offre d'éducation familiale et de rencontre intergénérationnelle dans la maison multigénérationnelle pour Marzahn-Sud/Biesdorf, gérée par pad gGmbH.",
+        offers: [
+          'Cours de massage pour bébés',
+          'Groupes parents-enfants',
+          'Conseil en cas de conflit et conseil éducatif',
+          'Jardin ouvert avec activités de jeu et de mouvement',
+          '« Bienvenue dans le quartier, bébé » pour les nouveau-nés',
+          'Café de quartier et cours intergénérationnels',
+        ],
+        targetGroups: ['Parents', 'Familles avec nourrissons/tout-petits', 'Toutes générations'],
+      },
+    },
   },
   {
     id: 'kjfz-drehkreuz',
@@ -307,6 +555,34 @@ export const institutions: Institution[] = [
     sourceLabel: 'DRK-Kreisverband Berlin-Nordost e.V. (Träger)',
     latitude: 52.5527,
     longitude: 13.5586,
+    translations: {
+      en: {
+        description:
+          'DRK children\'s, youth and family centre focused on strengthening the parent-child relationship and parenting skills.',
+        offers: [
+          'Parenting counselling and coaching',
+          'Parent-child groups (0–3 years)',
+          'Family breakfasts and family afternoons',
+          'Language café',
+          'Supervised contact visits (contact café)',
+          'Homework support for primary-school children',
+        ],
+        targetGroups: ['Families with young children', 'Parents', 'Separated parents'],
+      },
+      fr: {
+        description:
+          "Centre pour enfants, jeunes et familles de la Croix-Rouge allemande (DRK), axé sur le renforcement de la relation parent-enfant et des compétences parentales.",
+        offers: [
+          'Conseil et coaching éducatif',
+          'Groupes parents-enfants (0–3 ans)',
+          'Petits-déjeuners et après-midis en famille',
+          'Café des langues',
+          'Visites accompagnées (café de médiation)',
+          'Aide aux devoirs pour les enfants du primaire',
+        ],
+        targetGroups: ['Familles avec jeunes enfants', 'Parents', 'Parents séparés'],
+      },
+    },
   },
   {
     id: 'kjfz-haus-windspiel',
@@ -333,6 +609,34 @@ export const institutions: Institution[] = [
     sourceLabel: 'JAO gGmbH (Jugendwerk Aufbau Ost, Träger)',
     latitude: 52.5672,
     longitude: 13.5799,
+    translations: {
+      en: {
+        description:
+          'Open children\'s, youth and family centre run by JAO gGmbH in the "Haus Windspiel" – in the same building as the youth welfare office\'s parenting and family counselling service, but an independent offer from a different provider.',
+        offers: [
+          'Family meeting point with parenting courses and family celebrations',
+          'Open consultation hours with neighbourhood mothers',
+          'Sewing workshop',
+          'Parent-child groups',
+          'Homework help',
+          'Summer holiday programme',
+        ],
+        targetGroups: ['Families with children (0–18 years)', 'Parents'],
+      },
+      fr: {
+        description:
+          "Centre ouvert pour enfants, jeunes et familles géré par JAO gGmbH dans la « Haus Windspiel » – dans le même bâtiment que le service de conseil éducatif et familial de l'office de la jeunesse, mais une offre indépendante d'un autre organisme.",
+        offers: [
+          'Lieu de rencontre familial avec cours pour parents et fêtes de famille',
+          'Permanence ouverte des mères de quartier',
+          'Atelier de couture',
+          'Groupes parents-enfants',
+          'Aide aux devoirs',
+          "Programme d'été",
+        ],
+        targetGroups: ['Familles avec enfants (0–18 ans)', 'Parents'],
+      },
+    },
   },
   {
     id: 'familienservicebuero-mh',
@@ -358,6 +662,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'berlin.de – Bezirksamt Marzahn-Hellersdorf',
     latitude: 52.5374,
     longitude: 13.6034,
+    translations: {
+      en: {
+        description:
+          "A central first point of contact for families needing support, information or guidance within the district's support system. A joint service point run by the youth welfare office and pad gGmbH.",
+        offers: [
+          'Initial counselling for families',
+          'Help with applications: parental allowance, kita/after-school-care voucher, advance maintenance payments',
+          'Advice on custody rights and paternity acknowledgement',
+          'Referral to specialist counselling services',
+          'Outreach/mobile counselling',
+        ],
+        targetGroups: ['Families in the district', 'Expectant parents', 'Single parents'],
+      },
+      fr: {
+        description:
+          "Un premier point de contact central pour les familles ayant besoin de soutien, d'informations ou d'orientation dans le système d'aide de l'arrondissement. Point de contact commun de l'office de la jeunesse et de pad gGmbH.",
+        offers: [
+          'Premier conseil pour les familles',
+          'Aide aux démarches : allocation parentale, chèque crèche/périscolaire, avance sur pension alimentaire',
+          'Conseil sur le droit de garde et la reconnaissance de paternité',
+          'Orientation vers des services de conseil spécialisés',
+          'Conseil itinérant/mobile',
+        ],
+        targetGroups: ["Familles de l'arrondissement", 'Futurs parents', 'Familles monoparentales'],
+      },
+    },
   },
   {
     id: 'familienhaus-kastanie',
@@ -384,6 +714,34 @@ export const institutions: Institution[] = [
     sourceLabel: 'pad gGmbH (Träger)',
     latitude: 52.5401,
     longitude: 13.5996,
+    translations: {
+      en: {
+        description:
+          'A meeting point for all families in Hellersdorf-Nord to come together, exchange ideas and get advice, run by pad gGmbH.',
+        offers: [
+          'Social-pedagogical counselling',
+          'Help with applications and forms',
+          'Crying-baby clinic',
+          'Baby consultation hours',
+          'Breastfeeding and nutrition counselling',
+          'Kastanie neighbourhood meeting point',
+        ],
+        targetGroups: ['Families', 'Parents with infants'],
+      },
+      fr: {
+        description:
+          "Point de rencontre pour toutes les familles de Hellersdorf-Nord, pour se retrouver, échanger et se faire conseiller, géré par pad gGmbH.",
+        offers: [
+          'Conseil socio-éducatif',
+          'Aide aux démarches et formulaires',
+          'Consultation pour bébés qui pleurent beaucoup',
+          'Permanence bébé',
+          'Conseil en allaitement et nutrition',
+          'Point de rencontre de quartier Kastanie',
+        ],
+        targetGroups: ['Familles', 'Parents avec nourrissons'],
+      },
+    },
   },
   {
     id: 'jfe-treibhaus',
@@ -409,6 +767,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'Agrarbörse Deutschland Ost e.V. (Träger)',
     latitude: 52.5386,
     longitude: 13.5615,
+    translations: {
+      en: {
+        description:
+          'Open children\'s and youth centre offering a reliable point of contact for children and teenagers facing difficult life circumstances.',
+        offers: [
+          'Open leisure meeting point (foosball, billiards)',
+          'Youth and social counselling',
+          'Environmental education',
+          'Holiday activities',
+          'Weekly food distribution and cooking together',
+        ],
+        targetGroups: ['Primary-school-age children', 'Teenagers'],
+      },
+      fr: {
+        description:
+          "Structure ouverte pour enfants et jeunes, offrant un point de contact fiable pour les enfants et adolescents en situation de vie difficile.",
+        offers: [
+          'Point de rencontre de loisirs ouvert (babyfoot, billard)',
+          'Conseil jeunesse et social',
+          "Éducation à l'environnement",
+          'Activités de vacances',
+          'Distribution alimentaire hebdomadaire et cuisine partagée',
+        ],
+        targetGroups: ['Enfants d\'âge scolaire primaire', 'Adolescents'],
+      },
+    },
   },
   {
     id: 'kiezpark-schoenagelstrasse',
@@ -433,6 +817,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'berlin.de – Stadtumbau Ost',
     latitude: 52.5494,
     longitude: 13.5704,
+    translations: {
+      en: {
+        description:
+          'A leisure and movement space: a barrier-free, inclusive neighbourhood park with themed areas for different age groups – not a traditional counselling service, but a place to play, climb and spend time.',
+        offers: [
+          '"Desert & steppe" play area (2–6 years)',
+          '"Forest and meadow" climbing trail (6–12 years)',
+          'Movement activities for all generations',
+          '"Jungle" chill-out and sports area (12–16 years)',
+          'Adjoining "Paradiesgärten" neighbourhood garden',
+        ],
+        targetGroups: ['Families with children', 'All generations', 'Newly arrived residents'],
+      },
+      fr: {
+        description:
+          "Un lieu de loisirs et de mouvement : parc de quartier inclusif et sans obstacles avec des espaces thématiques pour différents groupes d'âge – pas un service de conseil classique, mais un lieu pour jouer, grimper et se détendre.",
+        offers: [
+          'Aire de jeux « Désert & steppe » (2–6 ans)',
+          'Parcours d\'escalade « Forêt et prairie » (6–12 ans)',
+          'Activités de mouvement pour toutes les générations',
+          'Espace détente et sport « Jungle » (12–16 ans)',
+          'Jardin de quartier attenant « Paradiesgärten »',
+        ],
+        targetGroups: ['Familles avec enfants', 'Toutes générations', 'Nouveaux habitants du quartier'],
+      },
+    },
   },
   {
     id: 'erziehungs-familienberatung-marzahn',
@@ -460,6 +870,32 @@ export const institutions: Institution[] = [
     sourceLabel: 'berlin.de – Bezirksamt Marzahn-Hellersdorf',
     latitude: 52.5672,
     longitude: 13.5799,
+    translations: {
+      en: {
+        description:
+          'Parenting and family counselling service of the Marzahn-Hellersdorf youth welfare office, located in the "Haus Windspiel" – counselling and therapy for parenting questions and family crises. In the same building as the KJFZ Haus Windspiel, but an independent service run by the district office.',
+        offers: [
+          'Counselling on parenting questions',
+          'Separation and divorce counselling',
+          'Advice on parental custody',
+          'Therapy for behavioural and developmental difficulties',
+          'Support with school problems',
+        ],
+        targetGroups: ['Families with children'],
+      },
+      fr: {
+        description:
+          "Service de conseil éducatif et familial de l'office de la jeunesse de Marzahn-Hellersdorf, situé dans la « Haus Windspiel » – conseil et thérapie pour les questions éducatives et les crises familiales. Dans le même bâtiment que le KJFZ Haus Windspiel, mais un service indépendant géré par l'arrondissement.",
+        offers: [
+          'Conseil sur les questions éducatives',
+          'Conseil en séparation et divorce',
+          "Conseil sur l'autorité parentale",
+          'Thérapie en cas de troubles du comportement et du développement',
+          'Soutien en cas de difficultés scolaires',
+        ],
+        targetGroups: ['Familles avec enfants'],
+      },
+    },
   },
   {
     id: 'jugendamt-marzahn-hellersdorf',
@@ -485,6 +921,20 @@ export const institutions: Institution[] = [
     sourceLabel: 'berlin.de – Bezirksamt Marzahn-Hellersdorf',
     latitude: 52.5315,
     longitude: 13.6157,
+    translations: {
+      en: {
+        description:
+          "The district youth welfare office is responsible for youth support services across the whole of Marzahn-Hellersdorf – from kita registration to child protection.",
+        offers: ['Kita registration and kita vouchers', 'Childminding services', 'Family counselling', 'Advance maintenance payments', 'Child protection'],
+        targetGroups: ['Parents', 'Families', 'Children and teenagers in the district'],
+      },
+      fr: {
+        description:
+          "L'office de la jeunesse de l'arrondissement est responsable des prestations d'aide à la jeunesse pour tout l'arrondissement de Marzahn-Hellersdorf – de l'inscription en crèche à la protection de l'enfance.",
+        offers: ['Inscription en crèche et chèques crèche', 'Accueil familial de jour', 'Conseil familial', 'Avance sur pension alimentaire', "Protection de l'enfance"],
+        targetGroups: ['Parents', 'Familles', "Enfants et adolescents de l'arrondissement"],
+      },
+    },
   },
 ];
 

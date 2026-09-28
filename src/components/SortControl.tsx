@@ -1,4 +1,5 @@
 import { ArrowUpDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { sortOptions, type SortOption } from '../utils/sort';
 
 interface SortControlProps {
@@ -7,10 +8,12 @@ interface SortControlProps {
 }
 
 export default function SortControl({ value, onChange }: SortControlProps) {
+  const { t } = useTranslation();
+
   return (
     <label className="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-ink-soft)]">
       <ArrowUpDown size={15} aria-hidden="true" />
-      <span className="sr-only sm:not-sr-only">Sortieren:</span>
+      <span className="sr-only sm:not-sr-only">{t('sort.label')}</span>
       <select
         value={value}
         onChange={(e) => onChange(e.target.value as SortOption)}
@@ -18,7 +21,7 @@ export default function SortControl({ value, onChange }: SortControlProps) {
       >
         {sortOptions.map((opt) => (
           <option key={opt.id} value={opt.id}>
-            {opt.label}
+            {t(`sort.${opt.id}`)}
           </option>
         ))}
       </select>

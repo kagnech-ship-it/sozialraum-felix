@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { parentNeeds } from '../data/parentNeeds';
 import type { ParentNeed } from '../types/institution';
 
@@ -7,16 +8,16 @@ interface ParentNeedsProps {
 }
 
 export default function ParentNeeds({ onSelect, activeNeedId }: ParentNeedsProps) {
+  const { t } = useTranslation();
+
   return (
     <section aria-labelledby="parent-needs-heading" className="bg-[var(--color-mist)] py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 id="parent-needs-heading" className="font-display text-3xl font-bold text-[var(--color-ink)] sm:text-4xl">
-            Was suchst du?
+            {t('parentNeeds.title')}
           </h2>
-          <p className="mt-3 text-base text-[var(--color-ink-soft)]">
-            Wähle einen Bereich – wir zeigen dir passende Einrichtungen im Sozialraum.
-          </p>
+          <p className="mt-3 text-base text-[var(--color-ink-soft)]">{t('parentNeeds.subtitle')}</p>
         </div>
 
         <div className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-3">
@@ -37,7 +38,9 @@ export default function ParentNeeds({ onSelect, activeNeedId }: ParentNeedsProps
                 <span className="text-3xl" aria-hidden="true">
                   {need.icon}
                 </span>
-                <span className="text-sm font-semibold leading-snug text-[var(--color-ink)]">{need.label}</span>
+                <span className="text-sm font-semibold leading-snug text-[var(--color-ink)]">
+                  {t(`need.${need.id}`)}
+                </span>
               </button>
             );
           })}

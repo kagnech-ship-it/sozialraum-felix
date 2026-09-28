@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { audienceList } from '../data/audiences';
 import type { Audience } from '../types/institution';
 
@@ -7,8 +8,10 @@ interface AudienceFilterProps {
 }
 
 export default function AudienceFilter({ active, onToggle }: AudienceFilterProps) {
+  const { t } = useTranslation();
+
   return (
-    <div className="scroll-x -mx-4 px-4 sm:mx-0 sm:px-0" role="group" aria-label="Nach Zielgruppe filtern">
+    <div className="scroll-x -mx-4 px-4 sm:mx-0 sm:px-0" role="group" aria-label={t('audienceFilter.ariaLabel')}>
       <div className="flex w-max gap-2 sm:w-auto sm:flex-wrap">
         {audienceList.map((aud) => {
           const isActive = active.includes(aud.id);
@@ -25,7 +28,7 @@ export default function AudienceFilter({ active, onToggle }: AudienceFilterProps
               }`}
             >
               <span aria-hidden="true">{aud.emoji}</span>
-              {aud.label}
+              {t(`audience.${aud.id}`)}
             </button>
           );
         })}

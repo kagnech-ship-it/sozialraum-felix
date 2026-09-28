@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "skipToContent": "Zum Inhalt springen",
+    "map": "Karte",
+    "institutions": "Einrichtungen",
+    "categories": "Kategorien",
+    "about": "Über das Projekt",
+    "sources": "Quellen",
+    "discover": "Sozialraum entdecken",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "badge": "{{name}} · Berlin-Marzahn",
+    "title": "Unterstützung im Sozialraum",
+    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützung rund um das Familienhaus Felix.",
+    "ctaPrimary": "Sozialraum entdecken",
+    "ctaSecondary": "Alle Einrichtungen anzeigen",
+    "statInstitutions": "Einrichtungen",
+    "statCategories": "Kategorien",
+    "statSocialSpace": "Sozialraum"
+  },
+  "parentNeeds": {
+    "title": "Was suchst du?",
+    "subtitle": "Wähle einen Bereich – wir zeigen dir passende Einrichtungen im Sozialraum."
+  },
+  "categoryLegend": {
+    "title": "Kategorien im Sozialraum",
+    "subtitle": "Jede Einrichtung ist einer Kategorie zugeordnet – auf der Karte farblich und mit Beschriftung erkennbar."
+  },
+  "category": {
+    "familie": { "label": "Familie", "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé" },
+    "bildung": { "label": "Bildung", "description": "Bücher, Medien, Leseförderung, Lernangebote" },
+    "jugend": { "label": "Jugend", "description": "Offene Kinder- und Jugendarbeit, Treffpunkte" },
+    "beratung": { "label": "Beratung", "description": "Erziehungs-, Familien- und Lebensberatung" },
+    "sport": { "label": "Sport & Bewegung", "description": "Bewegung, Mannschafts- und Kampfsport, Fitness" },
+    "freizeit": { "label": "Freizeit", "description": "Spiel-, Bewegungs- und Aufenthaltsorte" },
+    "kultur": { "label": "Kultur", "description": "Kultur, Zirkuspädagogik, Veranstaltungen" },
+    "beteiligung": { "label": "Beteiligung", "description": "Kinderrechte, Mitbestimmung, Projekte" },
+    "inklusion": { "label": "Inklusion", "description": "Offene Arbeit mit und ohne Behinderung" },
+    "verwaltung": { "label": "Verwaltung & Leistungen", "description": "Anträge, Leistungen, behördliche Erstberatung" }
+  },
+  "audience": {
+    "kleinkind": "Kleinkind",
+    "kind": "Kind",
+    "jugendlicher": "Jugendlicher",
+    "familie": "Familie",
+    "eltern": "Eltern",
+    "fachkraft": "Pädagogische Fachkraft"
+  },
+  "need": {
+    "familie": "Familienangebote",
+    "beratung": "Beratung",
+    "bildung": "Bildung & Lesen",
+    "sport": "Sport & Bewegung",
+    "kultur": "Kreativität & Kultur",
+    "kinder": "Angebote für Kinder",
+    "jugendliche": "Angebote für Jugendliche",
+    "antraege": "Anträge & Leistungen"
+  },
+  "directHelpOption": {
+    "dh-beratung": "Ich brauche Beratung",
+    "dh-familie": "Ich suche ein Familienangebot",
+    "dh-kind": "Ich suche etwas für mein Kind",
+    "dh-antrag": "Ich suche Unterstützung bei einem Antrag",
+    "dh-freizeit": "Ich suche Freizeitangebote"
+  },
+  "flow": {
+    "sectionLabel": "Aufbau des Sozialraums",
+    "caption": "{{name}} ist der Ausgangspunkt – die Auswahl der Einrichtungen folgt einem echten Sozialraum-Konzept, keiner zufälligen Berlin-weiten Liste.",
+    "center": "Zentrum · Praxisstelle"
+  },
+  "zone": {
+    "nahbereich": { "label": "Nahbereich", "description": "Fußläufig rund um die Kita – der engste Sozialraum." },
+    "sozialraum": { "label": "Weiterer Sozialraum", "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita." },
+    "ausserhalb": {
+      "label": "Außerhalb des engeren Sozialraums",
+      "description": "Nicht im unmittelbaren Umfeld, aber wichtige Anlaufstelle."
+    }
+  },
+  "filterBar": {
+    "audienceLabel": "Für wen suchst du?",
+    "resultCount_one": "{{count}} Einrichtung gefunden",
+    "resultCount_other": "{{count}} Einrichtungen gefunden"
+  },
+  "search": {
+    "placeholder": "Wonach suchst du? z. B. „Beratung“, „Sport“, „Bibliothek“ …",
+    "label": "Einrichtungen durchsuchen",
+    "reset": "Suche zurücksetzen"
+  },
+  "categoryFilter": { "all": "Alle" },
+  "audienceFilter": { "ariaLabel": "Nach Zielgruppe filtern" },
+  "sort": {
+    "label": "Sortieren:",
+    "naehe": "Nähe zur Kita",
+    "kategorie": "Kategorie",
+    "alphabet": "Alphabet",
+    "relevanz": "Relevanz für Familien"
+  },
+  "map": {
+    "details": "Details",
+    "route": "Route",
+    "website": "Website",
+    "praxisstelle": "Praxisstelle"
+  },
+  "card": {
+    "praxisstelle": "Praxisstelle",
+    "airline": "Luftlinie",
+    "byBike": "ca. {{minutes}} Min. Rad",
+    "details": "Details",
+    "focusOnMap": "{{name}} auf der Karte anzeigen",
+    "routeTo": "Route zu {{name}} öffnen",
+    "websiteOf": "Website von {{name}} öffnen"
+  },
+  "modal": {
+    "offers": "Angebote",
+    "forWhom": "Für wen?",
+    "source": "Quelle",
+    "officialWebsite": "Offizielle Website",
+    "toSource": "zur Quelle",
+    "planRoute": "Route planen",
+    "visitWebsite": "Website besuchen",
+    "outsideNote": "Außerhalb des engeren Sozialraums – trotzdem wichtige Anlaufstelle",
+    "close": "Schließen"
+  },
+  "outsideArea": {
+    "title": "Wichtige Anlaufstellen außerhalb des direkten Umfelds",
+    "subtitle": "Diese Stellen liegen nicht im unmittelbaren Umfeld der Kita, sind aber für Familien bei bestimmten Anliegen wichtige Anlaufstellen.",
+    "badge": "Außerhalb des engeren Sozialraums"
+  },
+  "about": {
+    "badge": "LEK · Lernfeld 5",
+    "title": "Über diese Sozialraumkarte",
+    "p1": "Diese digitale Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 entwickelt. Ziel ist es, Unterstützungssysteme im Sozialraum sichtbar und für Eltern und pädagogische Fachkräfte leicht zugänglich zu machen.",
+    "p2": "Die Praxisstelle befindet sich im Zentrum der Karte. Die dargestellten Einrichtungen wurden nach ihrer möglichen Bedeutung für Kinder, Eltern und Familien ausgewählt.",
+    "flowNote": "Kita → Eltern → Kinder → Sozialraum → Unterstützungssysteme: Die Bildungs- und Erziehungspartnerschaft lebt vom Zusammenspiel aller Beteiligten im Umfeld der Kita.",
+    "sourceTitle": "Fachliche Grundlage",
+    "sourceNote": "Diese Literatur ist die fachliche Grundlage der schulischen Aufgabenstellung."
+  },
+  "directHelp": {
+    "title": "Du weißt nicht, wo du anfangen sollst?",
+    "subtitle": "Kein Problem. Wähle aus, wobei du Unterstützung suchst."
+  },
+  "footer": {
+    "disclaimer1": "Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt. Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder, Eltern und Familien im Umfeld der Praxisstelle.",
+    "sourceLabel": "Fachliche Grundlage:",
+    "sourcesNote": "Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der",
+    "sourcesLinkLabel": "Quellen-Seite",
+    "nonCommercial": "Kein kommerzielles Angebot · nicht-offizielle Projektwebsite."
+  },
+  "home": {
+    "mapHeading": "Der Sozialraum rund um das Familienhaus Felix",
+    "mapSubtitle": "Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu erfahren.",
+    "listHeading": "Einrichtungen im Sozialraum",
+    "listSubtitle": "Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem Zugang zu Route und Website.",
+    "sortedBy": "Sortiert nach: {{option}}.",
+    "emptyTitle": "Keine Einrichtungen gefunden",
+    "emptySubtitle": "Versuche einen anderen Suchbegriff oder wähle „Alle“ bei den Kategorien."
+  },
+  "quellen": {
+    "back": "← Zurück zur Startseite",
+    "title": "Quellen",
+    "intro": "Übersicht aller Quellen, die für diese Sozialraumkarte verwendet wurden. Keine erfundenen Angaben – jede Adresse, jedes Angebot und jede Entfernung stammt aus einer hier verlinkten, öffentlich zugänglichen Quelle.",
+    "academicTitle": "Fachliche Grundlage",
+    "mapDataTitle": "Kartendaten",
+    "mapDataIntro": "Die interaktive Karte nutzt",
+    "mapDataMid": "mit Kartenkacheln von",
+    "mapDataOutro": "Koordinaten sind Geokodierungen der recherchierten Adressen (Straßen-Genauigkeit). Entfernungen sind echte Luftlinien-Berechnungen aus diesen Koordinaten – niemals erfundene Werte. „Route öffnen“-Links führen zu Google Maps (reine Weblinks, ohne API-Key).",
+    "institutionsTitle": "Einrichtungen & Trägerwebseiten",
+    "institutionsNote": "Priorität: berlin.de → offizielle Einrichtungswebsite → offizieller Träger → Familienportal Berlin. Keine Wikipedia als Hauptquelle.",
+    "websiteLabel": "Website"
+  }
+}

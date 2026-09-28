@@ -1,7 +1,8 @@
 import { Bike, ExternalLink, MapPin, Navigation2, Star, Target } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import type { DistanceInfo } from '../hooks/useDistances';
+import { useLocalizedInstitution } from '../hooks/useLocalizedInstitution';
 import { categories } from '../data/categories';
-import { zoneMeta } from '../data/zones';
 import type { Institution } from '../types/institution';
 import { buildDirectionsUrl, fullAddress } from '../utils/links';
 import { estimateCyclingMinutes, formatDistanceMeters } from '../utils/distance';
@@ -23,7 +24,9 @@ export default function InstitutionCard({
   onFocusOnMap,
   onHover,
 }: InstitutionCardProps) {
+  const { t } = useTranslation();
   const meta = categories[institution.category];
+  const content = useLocalizedInstitution(institution);
   const cyclingMinutes = distance ? estimateCyclingMinutes(distance.meters) : undefined;
 
   return (
@@ -38,7 +41,7 @@ export default function InstitutionCard({
         {institution.isPraxisstelle ? (
           <span className="inline-flex items-center gap-1 rounded-full bg-[var(--color-brand)] px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-white">
             <Star size={11} aria-hidden="true" />
-            Praxisstelle
+            {t('card.praxisstelle')}
           </span>
         ) : (
           <span
@@ -46,17 +49,17 @@ export default function InstitutionCard({
             style={{ background: meta.colorSoft, color: meta.textOn }}
           >
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: meta.color }} aria-hidden="true" />
-            {meta.label}
+            {t(`category.${institution.category}.label`)}
           </span>
         )}
         {institution.zone === 'ausserhalb' ? (
           <span className="rounded-full bg-[var(--color-alert-soft)] px-2 py-1 text-[10px] font-semibold text-[var(--color-alert)]">
-            außerhalb
+            {t('zone.ausserhalb.label')}
           </span>
         ) : (
           !institution.isPraxisstelle && (
             <span className="rounded-full bg-[var(--color-mist)] px-2 py-1 text-[10px] font-medium text-[var(--color-ink-soft)]">
-              {zoneMeta[institution.zone].label}
+              {t(`zone.${institution.zone}.label`)}
             </span>
           )
         )}
@@ -72,14 +75,14 @@ export default function InstitutionCard({
       </p>
 
       <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-[var(--color-ink-soft)]">
-        {institution.description}
+        {content.description}
       </p>
 
       {distance && !institution.isPraxisstelle && (
         <p className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full bg-[var(--color-mist)] px-2.5 py-1 text-xs font-medium text-[var(--color-ink-soft)]">
           <Bike size={13} aria-hidden="true" />
-          Luftlinie {formatDistanceMeters(distance.meters)}
-          {cyclingMinutes ? ` · ca. ${cyclingMinutes} Min. Rad` : ''}
+          {t('card.airline')} {formatDistanceMeters(distance.meters)}
+          {cyclingMinutes ? ` · ${t('card.byBike', { minutes: cyclingMinutes })}` : ''}
         </p>
       )}
 
@@ -89,13 +92,13 @@ export default function InstitutionCard({
           onClick={() => onOpenDetails(institution)}
           className="flex-1 rounded-full bg-[var(--color-ink)] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--color-brand-dark)]"
         >
-          Details
+          {t('card.details')}
         </button>
         {onFocusOnMap && !institution.isPraxisstelle && (
           <button
             type="button"
             onClick={() => onFocusOnMap(institution)}
-            aria-label={`${institution.name} auf der Karte anzeigen`}
+            aria-label={t('card.focusOnMap', { name: institution.name })}
             className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-line)] text-[var(--color-ink)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
           >
             <Target size={16} aria-hidden="true" />
@@ -105,7 +108,7 @@ export default function InstitutionCard({
           href={buildDirectionsUrl(institution)}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Route zu ${institution.name} öffnen`}
+          aria-label={t('card.routeTo', { name: institution.name })}
           className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-line)] text-[var(--color-ink)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
         >
           <Navigation2 size={16} aria-hidden="true" />
@@ -115,7 +118,7 @@ export default function InstitutionCard({
             href={institution.website}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Website von ${institution.name} öffnen`}
+            aria-label={t('card.websiteOf', { name: institution.name })}
             className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-line)] text-[var(--color-ink)] transition-colors hover:border-[var(--color-brand)] hover:text-[var(--color-brand)]"
           >
             <ExternalLink size={16} aria-hidden="true" />

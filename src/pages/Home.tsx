@@ -1,4 +1,5 @@
-import { useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useMemo, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import AboutSection from '../components/AboutSection';
 import CategoryLegend from '../components/CategoryLegend';
 import DirectHelp from '../components/DirectHelp';
@@ -7,7 +8,6 @@ import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import InstitutionCard from '../components/InstitutionCard';
 import InstitutionModal from '../components/InstitutionModal';
-import SocialMap from '../components/Map';
 import Navbar from '../components/Navbar';
 import OutsideAreaSection from '../components/OutsideAreaSection';
 import ParentNeeds from '../components/ParentNeeds';
@@ -17,9 +17,12 @@ import { localInstitutions } from '../data/institutions';
 import { useDistances } from '../hooks/useDistances';
 import type { Audience, Category, Institution, ParentNeed } from '../types/institution';
 import { matchesSearch } from '../utils/filter';
-import { sortInstitutions, sortOptions, type SortOption } from '../utils/sort';
+import { sortInstitutions, type SortOption } from '../utils/sort';
+
+const SocialMap = lazy(() => import('../components/Map'));
 
 export default function Home() {
+  const { t } = useTranslation();
   const [search, setSearch] = useState('');
   const [activeCategories, setActiveCategories] = useState<Category[]>([]);
   const [activeAudiences, setActiveAudiences] = useState<Audience[]>([]);
@@ -94,12 +97,9 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" ref={mapSectionRef}>
             <div className="mx-auto max-w-2xl text-center">
               <h2 id="map-heading" className="font-display text-3xl font-bold text-[var(--color-ink)] sm:text-4xl">
-                Der Sozialraum rund um das Familienhaus Felix
+                {t('home.mapHeading')}
               </h2>
-              <p className="mt-3 text-base text-[var(--color-ink-soft)]">
-                Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu
-                erfahren.
-              </p>
+              <p className="mt-3 text-base text-[var(--color-ink-soft)]">{t('home.mapSubtitle')}</p>
             </div>
 
             <div className="mt-8">
@@ -117,12 +117,20 @@ export default function Home() {
             </div>
 
             <div className="mt-6 h-[420px] overflow-hidden rounded-3xl shadow-[var(--shadow-card)] sm:h-[520px] lg:h-[600px]">
-              <SocialMap
-                institutions={filteredInstitutions}
-                selectedInstitution={focusedInstitution}
-                onSelectInstitution={setFocusedInstitution}
-                onOpenDetails={setModalInstitution}
-              />
+              <Suspense
+                fallback={
+                  <div className="flex h-full items-center justify-center bg-[var(--color-mist)]">
+                    <span className="h-8 w-8 animate-spin rounded-full border-2 border-[var(--color-brand)] border-t-transparent" />
+                  </div>
+                }
+              >
+                <SocialMap
+                  institutions={filteredInstitutions}
+                  selectedInstitution={focusedInstitution}
+                  onSelectInstitution={setFocusedInstitution}
+                  onOpenDetails={setModalInstitution}
+                />
+              </Suspense>
             </div>
           </div>
         </section>
@@ -130,20 +138,16 @@ export default function Home() {
         <section id="einrichtungen" aria-labelledby="list-heading" className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 id="list-heading" className="font-display text-3xl font-bold text-[var(--color-ink)] sm:text-4xl">
-              Einrichtungen im Sozialraum
+              {t('home.listHeading')}
             </h2>
             <p className="mt-3 max-w-2xl text-base text-[var(--color-ink-soft)]">
-              Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem
-              Zugang zu Route und Website. Sortiert nach:{' '}
-              {sortOptions.find((o) => o.id === sortBy)?.label}.
+              {t('home.listSubtitle')} {t('home.sortedBy', { option: t(`sort.${sortBy}`) })}
             </p>
 
             {filteredInstitutions.length === 0 ? (
               <div className="mt-10 rounded-2xl border border-dashed border-[var(--color-line)] bg-[var(--color-mist)] p-10 text-center">
-                <p className="text-base font-semibold text-[var(--color-ink)]">Keine Einrichtungen gefunden</p>
-                <p className="mt-1 text-sm text-[var(--color-ink-soft)]">
-                  Versuche einen anderen Suchbegriff oder wähle „Alle“ bei den Kategorien.
-                </p>
+                <p className="text-base font-semibold text-[var(--color-ink)]">{t('home.emptyTitle')}</p>
+                <p className="mt-1 text-sm text-[var(--color-ink-soft)]">{t('home.emptySubtitle')}</p>
               </div>
             ) : (
               <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

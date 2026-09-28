@@ -60,6 +60,18 @@ h4 {
   font-family: var(--font-display);
 }
 
+/* Arabisch (RTL): passende Schrift mit vollständiger arabischer Glyphenabdeckung. */
+:root[dir='rtl'] body {
+  font-family: 'Cairo', var(--font-sans);
+}
+
+:root[dir='rtl'] h1,
+:root[dir='rtl'] h2,
+:root[dir='rtl'] h3,
+:root[dir='rtl'] h4 {
+  font-family: 'Cairo', var(--font-display);
+}
+
 /* Visible, high-contrast focus ring for keyboard navigation. */
 :focus-visible {
   outline: 3px solid var(--color-brand);

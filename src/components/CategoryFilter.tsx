@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { categoryList } from '../data/categories';
 import type { Category } from '../types/institution';
 
@@ -8,6 +9,7 @@ interface CategoryFilterProps {
 }
 
 export default function CategoryFilter({ active, onChange }: CategoryFilterProps) {
+  const { t } = useTranslation();
   const allActive = active.length === 0;
 
   return (
@@ -23,7 +25,7 @@ export default function CategoryFilter({ active, onChange }: CategoryFilterProps
               : 'border-[var(--color-line)] bg-white text-[var(--color-ink-soft)] hover:border-[var(--color-ink)]'
           }`}
         >
-          Alle
+          {t('categoryFilter.all')}
         </button>
         {categoryList.map((cat) => {
           const isActive = active.includes(cat.id);
@@ -41,11 +43,11 @@ export default function CategoryFilter({ active, onChange }: CategoryFilterProps
               }
             >
               <span
-                className="mr-1.5 inline-block h-2 w-2 rounded-full align-middle"
+                className="me-1.5 inline-block h-2 w-2 rounded-full align-middle"
                 style={{ background: isActive ? 'white' : cat.color }}
                 aria-hidden="true"
               />
-              {cat.label}
+              {t(`category.${cat.id}.label`)}
             </button>
           );
         })}

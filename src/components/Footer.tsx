@@ -1,9 +1,14 @@
 import { Home as HomeIcon, MapPin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { KITA } from '../data/kita';
 import { fullAddress } from '../utils/links';
 
+const base = import.meta.env.BASE_URL;
+
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-[var(--color-line)] bg-[var(--color-ink)] py-12 text-white/70">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -22,44 +27,38 @@ export default function Footer() {
           </div>
 
           <nav aria-label="Footer-Navigation" className="flex flex-wrap gap-x-8 gap-y-2 text-sm">
-            <a href="#karte" className="hover:text-white">
-              Karte
+            <a href={`${base}#karte`} className="hover:text-white">
+              {t('nav.map')}
             </a>
-            <a href="#einrichtungen" className="hover:text-white">
-              Einrichtungen
+            <a href={`${base}#einrichtungen`} className="hover:text-white">
+              {t('nav.institutions')}
             </a>
-            <a href="#kategorien" className="hover:text-white">
-              Kategorien
+            <a href={`${base}#kategorien`} className="hover:text-white">
+              {t('nav.categories')}
             </a>
-            <a href="#ueber" className="hover:text-white">
-              Über das Projekt
+            <a href={`${base}#ueber`} className="hover:text-white">
+              {t('nav.about')}
             </a>
             <Link to="/quellen" className="hover:text-white">
-              Quellen
+              {t('nav.sources')}
             </Link>
           </nav>
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/50">
-          <p>
-            Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt.
-            Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder,
-            Eltern und Familien im Umfeld der Praxisstelle.
+          <p>{t('footer.disclaimer1')}</p>
+          <p className="mt-2">
+            {t('footer.sourceLabel')} Gartinger, Silvia et al.: <em>Erzieherinnen + Erzieher</em>. Band
+            1. 2. Auflage. Cornelsen, 2020, S. 662–677.
           </p>
           <p className="mt-2">
-            Fachliche Grundlage: Gartinger, Silvia et al.: <em>Erzieherinnen + Erzieher</em>. Band 1.
-            2. Auflage. Cornelsen, 2020, S. 662–677.
-          </p>
-          <p className="mt-2">
-            Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle
-            Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je
-            Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der{' '}
+            {t('footer.sourcesNote')}{' '}
             <Link to="/quellen" className="underline hover:text-white">
-              Quellen-Seite
+              {t('footer.sourcesLinkLabel')}
             </Link>
             .
           </p>
-          <p className="mt-2">Kein kommerzielles Angebot · nicht-offizielle Projektwebsite.</p>
+          <p className="mt-2">{t('footer.nonCommercial')}</p>
         </div>
       </div>
     </footer>

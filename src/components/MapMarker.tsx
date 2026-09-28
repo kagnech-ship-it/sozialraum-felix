@@ -1,8 +1,10 @@
 import type L from 'leaflet';
 import { ExternalLink, Navigation2 } from 'lucide-react';
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Marker, Popup, Tooltip } from 'react-leaflet';
 import { categories } from '../data/categories';
+import { useLocalizedInstitution } from '../hooks/useLocalizedInstitution';
 import type { Institution } from '../types/institution';
 import { buildDirectionsUrl } from '../utils/links';
 import { createMarkerIcon } from '../utils/mapIcons';
@@ -15,7 +17,9 @@ interface MapMarkerProps {
 }
 
 export default function MapMarker({ institution, selected, onSelect, onOpenDetails }: MapMarkerProps) {
+  const { t } = useTranslation();
   const meta = categories[institution.category];
+  const content = useLocalizedInstitution(institution);
   const markerRef = useRef<L.Marker>(null);
 
   useEffect(() => {
@@ -44,7 +48,7 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
     >
       {institution.isPraxisstelle ? (
         <Tooltip direction="top" offset={[0, -10]} permanent className="!rounded-full !border-0 !bg-[var(--color-brand)] !px-3 !py-1 !font-sans !text-xs !font-bold !text-white !shadow-md">
-          Familienhaus Felix · Praxisstelle
+          {institution.name} · {t('map.praxisstelle')}
         </Tooltip>
       ) : (
         <Tooltip direction="top" offset={[0, -8]} className="!rounded-lg !border-0 !bg-[var(--color-ink)] !px-2.5 !py-1 !font-sans !text-xs !font-semibold !text-white">
@@ -58,10 +62,10 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
             className="mb-1.5 inline-block rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wide"
             style={{ background: meta.colorSoft, color: meta.textOn }}
           >
-            {institution.isPraxisstelle ? 'Praxisstelle' : meta.label}
+            {institution.isPraxisstelle ? t('map.praxisstelle') : t(`category.${institution.category}.label`)}
           </span>
           <h3 className="text-[15px] font-bold leading-snug text-[var(--color-ink)]">{institution.name}</h3>
-          <p className="mt-1 text-[13px] leading-snug text-[var(--color-ink-soft)]">{institution.description}</p>
+          <p className="mt-1 text-[13px] leading-snug text-[var(--color-ink-soft)]">{content.description}</p>
           <p className="mt-1.5 text-[12px] text-[var(--color-ink-soft)]">
             {institution.address}, {institution.postalCode} {institution.city}
           </p>
@@ -71,7 +75,7 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
               onClick={() => onOpenDetails(institution)}
               className="rounded-full bg-[var(--color-ink)] px-3 py-1.5 text-[12px] font-semibold text-white"
             >
-              Details
+              {t('map.details')}
             </button>
             <a
               href={buildDirectionsUrl(institution)}
@@ -80,7 +84,7 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
               className="inline-flex items-center gap-1 rounded-full border border-[var(--color-line)] px-3 py-1.5 text-[12px] font-semibold text-[var(--color-ink)]"
             >
               <Navigation2 size={12} aria-hidden="true" />
-              Route
+              {t('map.route')}
             </a>
             {institution.website && (
               <a
@@ -90,7 +94,7 @@ export default function MapMarker({ institution, selected, onSelect, onOpenDetai
                 className="inline-flex items-center gap-1 rounded-full border border-[var(--color-line)] px-3 py-1.5 text-[12px] font-semibold text-[var(--color-ink)]"
               >
                 <ExternalLink size={12} aria-hidden="true" />
-                Website
+                {t('map.website')}
               </a>
             )}
           </div>
