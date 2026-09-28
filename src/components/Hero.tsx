@@ -29,7 +29,7 @@ export default function Hero() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/75 sm:text-xl">
-            {t('hero.subtitle')}
+            {t('hero.subtitle', { name: KITA.name })}
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">

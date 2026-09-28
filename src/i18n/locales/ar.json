@@ -30,16 +30,42 @@
     "subtitle": "Jede Einrichtung ist einer Kategorie zugeordnet – auf der Karte farblich und mit Beschriftung erkennbar."
   },
   "category": {
-    "familie": { "label": "Familie", "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé" },
-    "bildung": { "label": "Bildung", "description": "Bücher, Medien, Leseförderung, Lernangebote" },
-    "jugend": { "label": "Jugend", "description": "Offene Kinder- und Jugendarbeit, Treffpunkte" },
-    "beratung": { "label": "Beratung", "description": "Erziehungs-, Familien- und Lebensberatung" },
-    "sport": { "label": "Sport & Bewegung", "description": "Bewegung, Mannschafts- und Kampfsport, Fitness" },
-    "freizeit": { "label": "Freizeit", "description": "Spiel-, Bewegungs- und Aufenthaltsorte" },
-    "kultur": { "label": "Kultur", "description": "Kultur, Zirkuspädagogik, Veranstaltungen" },
-    "beteiligung": { "label": "Beteiligung", "description": "Kinderrechte, Mitbestimmung, Projekte" },
-    "inklusion": { "label": "Inklusion", "description": "Offene Arbeit mit und ohne Behinderung" },
-    "verwaltung": { "label": "Verwaltung & Leistungen", "description": "Anträge, Leistungen, behördliche Erstberatung" }
+    "familie": {
+      "label": "Familie",
+      "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé"
+    },
+    "bildung": {
+      "label": "Bildung",
+      "description": "Bücher, Medien, Leseförderung, Lernangebote"
+    },
+    "jugend": {
+      "label": "Jugend",
+      "description": "Offene Kinder- und Jugendarbeit, Treffpunkte"
+    },
+    "beratung": {
+      "label": "Beratung",
+      "description": "Erziehungs-, Familien- und Lebensberatung"
+    },
+    "sport": {
+      "label": "Sport & Bewegung",
+      "description": "Bewegung, Mannschafts- und Kampfsport, Fitness"
+    },
+    "freizeit": {
+      "label": "Freizeit",
+      "description": "Spiel-, Bewegungs- und Aufenthaltsorte"
+    },
+    "kultur": {
+      "label": "Kultur",
+      "description": "Kultur, Zirkuspädagogik, Veranstaltungen"
+    },
+    "beteiligung": {
+      "label": "Beteiligung",
+      "description": "Kinderrechte, Mitbestimmung, Projekte"
+    },
+    "inklusion": {
+      "label": "Inklusion",
+      "description": "Offene Arbeit mit und ohne Behinderung"
+    }
   },
   "audience": {
     "kleinkind": "Kleinkind",
@@ -72,8 +98,14 @@
     "center": "Zentrum · Praxisstelle"
   },
   "zone": {
-    "nahbereich": { "label": "Nahbereich", "description": "Fußläufig rund um die Kita – der engste Sozialraum." },
-    "sozialraum": { "label": "Weiterer Sozialraum", "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita." },
+    "nahbereich": {
+      "label": "Nahbereich",
+      "description": "Fußläufig rund um die Kita – der engste Sozialraum."
+    },
+    "sozialraum": {
+      "label": "Weiterer Sozialraum",
+      "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita."
+    },
     "ausserhalb": {
       "label": "Außerhalb des engeren Sozialraums",
       "description": "Nicht im unmittelbaren Umfeld, aber wichtige Anlaufstelle."
@@ -89,8 +121,12 @@
     "label": "Einrichtungen durchsuchen",
     "reset": "Suche zurücksetzen"
   },
-  "categoryFilter": { "all": "Alle" },
-  "audienceFilter": { "ariaLabel": "Nach Zielgruppe filtern" },
+  "categoryFilter": {
+    "all": "Alle"
+  },
+  "audienceFilter": {
+    "ariaLabel": "Nach Zielgruppe filtern"
+  },
   "sort": {
     "label": "Sortieren:",
     "naehe": "Nähe zur Kita",

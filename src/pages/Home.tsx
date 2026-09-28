@@ -97,7 +97,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" ref={mapSectionRef}>
             <div className="mx-auto max-w-2xl text-center">
               <h2 id="map-heading" className="font-display text-3xl font-bold text-[var(--color-ink)] sm:text-4xl">
-                {t('home.mapHeading')}
+                {t('home.mapHeading', { name: KITA.name })}
               </h2>
               <p className="mt-3 text-base text-[var(--color-ink-soft)]">{t('home.mapSubtitle')}</p>
             </div>

@@ -10,7 +10,7 @@ export const directHelpOptions: ParentNeed[] = [
     categories: [],
     audiences: ['kind', 'kleinkind'],
   },
-  { id: 'dh-antrag', label: 'Ich suche Unterstützung bei einem Antrag', icon: '🏛️', categories: ['verwaltung'] },
+  { id: 'dh-antrag', label: 'Ich suche Unterstützung bei einem Antrag', icon: '🏛️', categories: ['beratung'] },
   {
     id: 'dh-freizeit',
     label: 'Ich suche Freizeitangebote',

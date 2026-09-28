@@ -1,174 +1,173 @@
 {
   "nav": {
-    "skipToContent": "Zum Inhalt springen",
-    "map": "Karte",
-    "institutions": "Einrichtungen",
-    "categories": "Kategorien",
-    "about": "Über das Projekt",
-    "sources": "Quellen",
-    "discover": "Sozialraum entdecken",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
-    "language": "Sprache"
+    "skipToContent": "Kalo te përmbajtja",
+    "map": "Harta",
+    "institutions": "Institucionet",
+    "categories": "Kategoritë",
+    "about": "Rreth projektit",
+    "sources": "Burimet",
+    "discover": "Zbulo hapësirën sociale",
+    "openMenu": "Hap menynë",
+    "closeMenu": "Mbyll menynë",
+    "language": "Gjuha"
   },
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
-    "title": "Unterstützung im Sozialraum",
-    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützung rund um das Familienhaus Felix.",
-    "ctaPrimary": "Sozialraum entdecken",
-    "ctaSecondary": "Alle Einrichtungen anzeigen",
-    "statInstitutions": "Einrichtungen",
-    "statCategories": "Kategorien",
-    "statSocialSpace": "Sozialraum"
+    "title": "Mbështetje në hapësirën sociale",
+    "subtitle": "Zbulo qendra këshillimi, oferta edukative, mundësi për kohën e lirë dhe mbështetje të tjera rreth {{name}}.",
+    "ctaPrimary": "Zbulo hapësirën sociale",
+    "ctaSecondary": "Shiko të gjitha institucionet",
+    "statInstitutions": "Institucione",
+    "statCategories": "Kategori",
+    "statSocialSpace": "Hapësira sociale"
   },
   "parentNeeds": {
-    "title": "Was suchst du?",
-    "subtitle": "Wähle einen Bereich – wir zeigen dir passende Einrichtungen im Sozialraum."
+    "title": "Çfarë kërkon?",
+    "subtitle": "Zgjidh një fushë – ne të tregojmë institucionet e përshtatshme në hapësirën sociale."
   },
   "categoryLegend": {
-    "title": "Kategorien im Sozialraum",
-    "subtitle": "Jede Einrichtung ist einer Kategorie zugeordnet – auf der Karte farblich und mit Beschriftung erkennbar."
+    "title": "Kategoritë në hapësirën sociale",
+    "subtitle": "Çdo institucion i përket një kategorie – e dallueshme në hartë me ngjyra dhe etiketa."
   },
   "category": {
-    "familie": { "label": "Familie", "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé" },
-    "bildung": { "label": "Bildung", "description": "Bücher, Medien, Leseförderung, Lernangebote" },
-    "jugend": { "label": "Jugend", "description": "Offene Kinder- und Jugendarbeit, Treffpunkte" },
-    "beratung": { "label": "Beratung", "description": "Erziehungs-, Familien- und Lebensberatung" },
-    "sport": { "label": "Sport & Bewegung", "description": "Bewegung, Mannschafts- und Kampfsport, Fitness" },
-    "freizeit": { "label": "Freizeit", "description": "Spiel-, Bewegungs- und Aufenthaltsorte" },
-    "kultur": { "label": "Kultur", "description": "Kultur, Zirkuspädagogik, Veranstaltungen" },
-    "beteiligung": { "label": "Beteiligung", "description": "Kinderrechte, Mitbestimmung, Projekte" },
-    "inklusion": { "label": "Inklusion", "description": "Offene Arbeit mit und ohne Behinderung" },
-    "verwaltung": { "label": "Verwaltung & Leistungen", "description": "Anträge, Leistungen, behördliche Erstberatung" }
+    "familie": { "label": "Familja", "description": "Oferta për familje, grupe prind-fëmijë, kafene familjare" },
+    "bildung": { "label": "Arsimi", "description": "Libra, media, nxitje e leximit, oferta mësimore" },
+    "jugend": { "label": "Të rinjtë", "description": "Punë e hapur me fëmijë dhe të rinj, vende takimi" },
+    "beratung": { "label": "Këshillim", "description": "Këshillim për edukimin, familjen dhe jetën" },
+    "sport": { "label": "Sporti & Lëvizja", "description": "Lëvizje, sporte ekipore dhe marciale, fitnes" },
+    "freizeit": { "label": "Koha e lirë", "description": "Vende për lojë, lëvizje dhe qëndrim" },
+    "kultur": { "label": "Kultura", "description": "Kulturë, pedagogji cirku, evente" },
+    "beteiligung": { "label": "Pjesëmarrja", "description": "Të drejtat e fëmijëve, bashkëvendimmarrje, projekte" },
+    "inklusion": { "label": "Përfshirja", "description": "Punë e hapur me dhe pa aftësi të kufizuara" }
   },
   "audience": {
-    "kleinkind": "Kleinkind",
-    "kind": "Kind",
-    "jugendlicher": "Jugendlicher",
-    "familie": "Familie",
-    "eltern": "Eltern",
-    "fachkraft": "Pädagogische Fachkraft"
+    "kleinkind": "Fëmijë i vogël",
+    "kind": "Fëmijë",
+    "jugendlicher": "I ri / e re",
+    "familie": "Familje",
+    "eltern": "Prindër",
+    "fachkraft": "Specialist pedagogjik"
   },
   "need": {
-    "familie": "Familienangebote",
-    "beratung": "Beratung",
-    "bildung": "Bildung & Lesen",
-    "sport": "Sport & Bewegung",
-    "kultur": "Kreativität & Kultur",
-    "kinder": "Angebote für Kinder",
-    "jugendliche": "Angebote für Jugendliche",
-    "antraege": "Anträge & Leistungen"
+    "familie": "Oferta për familje",
+    "beratung": "Këshillim",
+    "bildung": "Arsim & Lexim",
+    "sport": "Sport & Lëvizje",
+    "kultur": "Kreativitet & Kulturë",
+    "kinder": "Oferta për fëmijë",
+    "jugendliche": "Oferta për të rinj",
+    "antraege": "Kërkesa & Shërbime"
   },
   "directHelpOption": {
-    "dh-beratung": "Ich brauche Beratung",
-    "dh-familie": "Ich suche ein Familienangebot",
-    "dh-kind": "Ich suche etwas für mein Kind",
-    "dh-antrag": "Ich suche Unterstützung bei einem Antrag",
-    "dh-freizeit": "Ich suche Freizeitangebote"
+    "dh-beratung": "Kam nevojë për këshillim",
+    "dh-familie": "Kërkoj një ofertë për familjen",
+    "dh-kind": "Kërkoj diçka për fëmijën tim",
+    "dh-antrag": "Kërkoj mbështetje me një kërkesë zyrtare",
+    "dh-freizeit": "Kërkoj oferta për kohën e lirë"
   },
   "flow": {
-    "sectionLabel": "Aufbau des Sozialraums",
-    "caption": "{{name}} ist der Ausgangspunkt – die Auswahl der Einrichtungen folgt einem echten Sozialraum-Konzept, keiner zufälligen Berlin-weiten Liste.",
-    "center": "Zentrum · Praxisstelle"
+    "sectionLabel": "Struktura e hapësirës sociale",
+    "caption": "{{name}} është pika e nisjes – përzgjedhja e institucioneve ndjek një koncept të vërtetë të hapësirës sociale, jo një listë të rastësishme nga i gjithë Berlini.",
+    "center": "Qendra · Vendi i praktikës"
   },
   "zone": {
-    "nahbereich": { "label": "Nahbereich", "description": "Fußläufig rund um die Kita – der engste Sozialraum." },
-    "sozialraum": { "label": "Weiterer Sozialraum", "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita." },
+    "nahbereich": { "label": "Zona e afërt", "description": "Në distancë këmbësore rreth kopshtit – hapësira sociale më e ngushtë." },
+    "sozialraum": { "label": "Hapësira sociale e zgjeruar", "description": "Pak më larg, por ende brenda hapësirës sociale të kopshtit." },
     "ausserhalb": {
-      "label": "Außerhalb des engeren Sozialraums",
-      "description": "Nicht im unmittelbaren Umfeld, aber wichtige Anlaufstelle."
+      "label": "Jashtë hapësirës sociale të ngushtë",
+      "description": "Jo në afërsi të menjëhershme, por pikë e rëndësishme kontakti."
     }
   },
   "filterBar": {
-    "audienceLabel": "Für wen suchst du?",
-    "resultCount_one": "{{count}} Einrichtung gefunden",
-    "resultCount_other": "{{count}} Einrichtungen gefunden"
+    "audienceLabel": "Për kë po kërkon?",
+    "resultCount_one": "{{count}} institucion i gjetur",
+    "resultCount_other": "{{count}} institucione të gjetura"
   },
   "search": {
-    "placeholder": "Wonach suchst du? z. B. „Beratung“, „Sport“, „Bibliothek“ …",
-    "label": "Einrichtungen durchsuchen",
-    "reset": "Suche zurücksetzen"
+    "placeholder": "Çfarë po kërkon? p.sh. „Këshillim“, „Sport“, „Bibliotekë“ …",
+    "label": "Kërko institucione",
+    "reset": "Rivendos kërkimin"
   },
-  "categoryFilter": { "all": "Alle" },
-  "audienceFilter": { "ariaLabel": "Nach Zielgruppe filtern" },
+  "categoryFilter": { "all": "Të gjitha" },
+  "audienceFilter": { "ariaLabel": "Filtro sipas grupit të synuar" },
   "sort": {
-    "label": "Sortieren:",
-    "naehe": "Nähe zur Kita",
-    "kategorie": "Kategorie",
-    "alphabet": "Alphabet",
-    "relevanz": "Relevanz für Familien"
+    "label": "Rendit sipas:",
+    "naehe": "Afërsia me kopshtin",
+    "kategorie": "Kategoria",
+    "alphabet": "Alfabeti",
+    "relevanz": "Rëndësia për familjet"
   },
   "map": {
-    "details": "Details",
-    "route": "Route",
-    "website": "Website",
-    "praxisstelle": "Praxisstelle"
+    "details": "Detaje",
+    "route": "Itinerari",
+    "website": "Faqja e internetit",
+    "praxisstelle": "Vendi i praktikës"
   },
   "card": {
-    "praxisstelle": "Praxisstelle",
-    "airline": "Luftlinie",
-    "byBike": "ca. {{minutes}} Min. Rad",
-    "details": "Details",
-    "focusOnMap": "{{name}} auf der Karte anzeigen",
-    "routeTo": "Route zu {{name}} öffnen",
-    "websiteOf": "Website von {{name}} öffnen"
+    "praxisstelle": "Vendi i praktikës",
+    "airline": "Vijë ajrore",
+    "byBike": "rreth {{minutes}} min. me biçikletë",
+    "details": "Detaje",
+    "focusOnMap": "Shfaq {{name}} në hartë",
+    "routeTo": "Hap itinerarin për te {{name}}",
+    "websiteOf": "Hap faqen e internetit të {{name}}"
   },
   "modal": {
-    "offers": "Angebote",
-    "forWhom": "Für wen?",
-    "source": "Quelle",
-    "officialWebsite": "Offizielle Website",
-    "toSource": "zur Quelle",
-    "planRoute": "Route planen",
-    "visitWebsite": "Website besuchen",
-    "outsideNote": "Außerhalb des engeren Sozialraums – trotzdem wichtige Anlaufstelle",
-    "close": "Schließen"
+    "offers": "Ofertat",
+    "forWhom": "Për kë?",
+    "source": "Burimi",
+    "officialWebsite": "Faqja zyrtare e internetit",
+    "toSource": "te burimi",
+    "planRoute": "Planifiko itinerarin",
+    "visitWebsite": "Vizito faqen e internetit",
+    "outsideNote": "Jashtë hapësirës sociale të ngushtë – megjithatë një pikë e rëndësishme kontakti",
+    "close": "Mbyll"
   },
   "outsideArea": {
-    "title": "Wichtige Anlaufstellen außerhalb des direkten Umfelds",
-    "subtitle": "Diese Stellen liegen nicht im unmittelbaren Umfeld der Kita, sind aber für Familien bei bestimmten Anliegen wichtige Anlaufstellen.",
-    "badge": "Außerhalb des engeren Sozialraums"
+    "title": "Pika të rëndësishme kontakti jashtë mjedisit të drejtpërdrejtë",
+    "subtitle": "Këto institucione nuk ndodhen në afërsinë e menjëhershme të kopshtit, por janë pika të rëndësishme kontakti për familjet në raste të caktuara.",
+    "badge": "Jashtë hapësirës sociale të ngushtë"
   },
   "about": {
-    "badge": "LEK · Lernfeld 5",
-    "title": "Über diese Sozialraumkarte",
-    "p1": "Diese digitale Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 entwickelt. Ziel ist es, Unterstützungssysteme im Sozialraum sichtbar und für Eltern und pädagogische Fachkräfte leicht zugänglich zu machen.",
-    "p2": "Die Praxisstelle befindet sich im Zentrum der Karte. Die dargestellten Einrichtungen wurden nach ihrer möglichen Bedeutung für Kinder, Eltern und Familien ausgewählt.",
-    "flowNote": "Kita → Eltern → Kinder → Sozialraum → Unterstützungssysteme: Die Bildungs- und Erziehungspartnerschaft lebt vom Zusammenspiel aller Beteiligten im Umfeld der Kita.",
-    "sourceTitle": "Fachliche Grundlage",
-    "sourceNote": "Diese Literatur ist die fachliche Grundlage der schulischen Aufgabenstellung."
+    "badge": "LEK · Fusha mësimore 5",
+    "title": "Rreth kësaj harte të hapësirës sociale",
+    "p1": "Kjo hartë digjitale e hapësirës sociale u zhvillua në kuadër të formimit profesional si edukator/edukatore, në fushën mësimore 5. Qëllimi është t'i bëjë sistemet e mbështetjes në hapësirën sociale të dukshme dhe lehtësisht të arritshme për prindërit dhe specialistët pedagogjikë.",
+    "p2": "Vendi i praktikës ndodhet në qendër të hartës. Institucionet e paraqitura janë zgjedhur sipas rëndësisë së tyre të mundshme për fëmijët, prindërit dhe familjet.",
+    "flowNote": "Kopshti → Prindërit → Fëmijët → Hapësira sociale → Sistemet e mbështetjes: partneriteti arsimor dhe edukativ mbështetet te bashkëveprimi i të gjithë aktorëve rreth kopshtit.",
+    "sourceTitle": "Baza profesionale",
+    "sourceNote": "Kjo literaturë përbën bazën profesionale të detyrës shkollore."
   },
   "directHelp": {
-    "title": "Du weißt nicht, wo du anfangen sollst?",
-    "subtitle": "Kein Problem. Wähle aus, wobei du Unterstützung suchst."
+    "title": "Nuk e di nga ku të fillosh?",
+    "subtitle": "Nuk ka problem. Zgjidh se për çfarë kërkon mbështetje."
   },
   "footer": {
-    "disclaimer1": "Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt. Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder, Eltern und Familien im Umfeld der Praxisstelle.",
-    "sourceLabel": "Fachliche Grundlage:",
-    "sourcesNote": "Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der",
-    "sourcesLinkLabel": "Quellen-Seite",
-    "nonCommercial": "Kein kommerzielles Angebot · nicht-offizielle Projektwebsite."
+    "disclaimer1": "Harta e hapësirës sociale u krijua në kuadër të formimit profesional si edukator/edukatore, në fushën mësimore 5. Ajo shërben si orientim i thjeshtë mbi ofertat e mbështetjes për fëmijët, prindërit dhe familjet rreth vendit të praktikës.",
+    "sourceLabel": "Baza profesionale:",
+    "sourcesNote": "Të gjitha të dhënat për institucionet janë verifikuar përmes burimeve zyrtare (berlin.de, faqet zyrtare të internetit të institucioneve dhe organizatave mbajtëse, Familienportal Berlin) – burimet për secilin institucion gjenden në pamjen përkatëse me detaje dhe të mbledhura te",
+    "sourcesLinkLabel": "faqja e burimeve",
+    "nonCommercial": "Jo një ofertë komerciale · faqe interneti jozyrtare e projektit."
   },
   "home": {
-    "mapHeading": "Der Sozialraum rund um das Familienhaus Felix",
-    "mapSubtitle": "Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu erfahren.",
-    "listHeading": "Einrichtungen im Sozialraum",
-    "listSubtitle": "Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem Zugang zu Route und Website.",
-    "sortedBy": "Sortiert nach: {{option}}.",
-    "emptyTitle": "Keine Einrichtungen gefunden",
-    "emptySubtitle": "Versuche einen anderen Suchbegriff oder wähle „Alle“ bei den Kategorien."
+    "mapHeading": "Hapësira sociale rreth {{name}}",
+    "mapSubtitle": "Kliko mbi një shënues ose një kartë më poshtë për të mësuar më shumë rreth një institucioni.",
+    "listHeading": "Institucionet në hapësirën sociale",
+    "listSubtitle": "Të gjitha institucionet në mjedisin e ngushtë të kopshtit – me oferta, grupe të synuara dhe qasje të drejtpërdrejtë te itinerari dhe faqja e internetit.",
+    "sortedBy": "Renditur sipas: {{option}}.",
+    "emptyTitle": "Nuk u gjet asnjë institucion",
+    "emptySubtitle": "Provo një term tjetër kërkimi ose zgjidh „Të gjitha“ te kategoritë."
   },
   "quellen": {
-    "back": "← Zurück zur Startseite",
-    "title": "Quellen",
-    "intro": "Übersicht aller Quellen, die für diese Sozialraumkarte verwendet wurden. Keine erfundenen Angaben – jede Adresse, jedes Angebot und jede Entfernung stammt aus einer hier verlinkten, öffentlich zugänglichen Quelle.",
-    "academicTitle": "Fachliche Grundlage",
-    "mapDataTitle": "Kartendaten",
-    "mapDataIntro": "Die interaktive Karte nutzt",
-    "mapDataMid": "mit Kartenkacheln von",
-    "mapDataOutro": "Koordinaten sind Geokodierungen der recherchierten Adressen (Straßen-Genauigkeit). Entfernungen sind echte Luftlinien-Berechnungen aus diesen Koordinaten – niemals erfundene Werte. „Route öffnen“-Links führen zu Google Maps (reine Weblinks, ohne API-Key).",
-    "institutionsTitle": "Einrichtungen & Trägerwebseiten",
-    "institutionsNote": "Priorität: berlin.de → offizielle Einrichtungswebsite → offizieller Träger → Familienportal Berlin. Keine Wikipedia als Hauptquelle.",
-    "websiteLabel": "Website"
+    "back": "← Kthehu te faqja kryesore",
+    "title": "Burimet",
+    "intro": "Përmbledhje e të gjitha burimeve të përdorura për këtë hartë të hapësirës sociale. Asnjë të dhënë e trilluar – çdo adresë, çdo ofertë dhe çdo distancë vjen nga një burim publik i lidhur këtu.",
+    "academicTitle": "Baza profesionale",
+    "mapDataTitle": "Të dhënat e hartës",
+    "mapDataIntro": "Harta interaktive përdor",
+    "mapDataMid": "me pllaka harte nga",
+    "mapDataOutro": "Koordinatat janë gjeokodime të adresave të kërkuara (saktësi rruge). Distancat janë llogaritje reale në vijë ajrore nga këto koordinata – asnjëherë vlera të trilluara. Lidhjet „Hap itinerarin“ çojnë te Google Maps (thjesht lidhje uebi, pa çelës API).",
+    "institutionsTitle": "Institucionet & faqet e internetit të organizatave mbajtëse",
+    "institutionsNote": "Përparësi: berlin.de → faqja zyrtare e institucionit → organizata zyrtare mbajtëse → Familienportal Berlin. Wikipedia nuk përdoret si burim kryesor.",
+    "websiteLabel": "Faqja e internetit"
   }
 }

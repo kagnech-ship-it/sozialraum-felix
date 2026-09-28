@@ -20,16 +20,49 @@ import type { Institution } from '../types/institution';
  */
 export const institutions: Institution[] = [
   {
+    id: 'humanistische-kita-zuehlsdorfer-strasse',
+    name: 'Humanistische Kita Zühlsdorfer Straße',
+    category: 'familie',
+    isPraxisstelle: true,
+    zone: 'nahbereich',
+    address: 'Zühlsdorfer Straße 18',
+    postalCode: '12679',
+    city: 'Berlin',
+    description:
+      'Die Humanistische Kita Zühlsdorfer Straße ist die Praxisstelle, auf die sich diese Sozialraumkarte bezieht. Bis zu 130 Kinder im Alter von 0 bis 6 Jahren spielen, entdecken und forschen hier – mit selbstbestimmtem Spielen und kindorientierten, offenen Strukturen.',
+    targetGroups: ['Kinder (0–6 Jahre)'],
+    audiences: ['kind', 'kleinkind'],
+    offers: [],
+    website: 'https://humanistisch.de/kitas/kitas-berlin-brandenburg/humanistische-kita-zuehlsdorfer-strasse/',
+    sourceUrl: 'https://humanistisch.de/kitas/kitas-berlin-brandenburg/humanistische-kita-zuehlsdorfer-strasse/',
+    sourceLabel: 'Humanistischer Verband Berlin-Brandenburg (Träger)',
+    latitude: 52.5472,
+    longitude: 13.5482,
+    translations: {
+      en: {
+        description:
+          'The Humanistische Kita Zühlsdorfer Straße is the placement site this neighbourhood map is built around. Up to 130 children aged 0–6 play, explore and investigate here, through self-directed play and child-oriented, open structures.',
+        offers: [],
+        targetGroups: ['Children (0–6 years)'],
+      },
+      fr: {
+        description:
+          "La Humanistische Kita Zühlsdorfer Straße est le lieu de stage sur lequel repose cette carte de quartier. Jusqu'à 130 enfants de 0 à 6 ans y jouent, découvrent et explorent, à travers un jeu autonome et des structures ouvertes centrées sur l'enfant.",
+        offers: [],
+        targetGroups: ['Enfants (0–6 ans)'],
+      },
+    },
+  },
+  {
     id: 'familienzentrum-felix',
     name: 'Familienzentrum Felix',
     category: 'familie',
-    isPraxisstelle: true,
     zone: 'nahbereich',
     address: 'Zühlsdorfer Straße 16–18',
     postalCode: '12679',
     city: 'Berlin',
     description:
-      'Ein niedrigschwelliger Anlaufpunkt für Familien mit verschiedenen Angeboten und Unterstützungsmöglichkeiten. Kita und offenes Familienzentrum unter einem Dach, mit Fokus auf Bewegung, Inklusion und Vielfalt.',
+      'Ein eigenständiges Familienzentrum im „Familienhaus Felix“ – niedrigschwelliger Anlaufpunkt für alle Familien im Stadtteil, mit eigenem Team, unabhängig von der Kita im selben Haus.',
     targetGroups: ['Familien', 'Kinder (0–6 Jahre)', 'Eltern'],
     audiences: ['familie', 'eltern', 'kind', 'kleinkind'],
     offers: [
@@ -43,12 +76,12 @@ export const institutions: Institution[] = [
     website: 'https://humanistisch.de/felix-zentrum',
     sourceUrl: 'https://humanistisch.de/felix-zentrum',
     sourceLabel: 'Humanistischer Verband Berlin-Brandenburg (Träger)',
-    latitude: 52.5472,
-    longitude: 13.5482,
+    latitude: 52.5471,
+    longitude: 13.5483,
     translations: {
       en: {
         description:
-          "A low-threshold point of contact for families with a range of services and support options. Kita and open family centre under one roof, with a focus on movement, inclusion and diversity.",
+          "An independent family centre inside the \"Familienhaus Felix\" building – a low-threshold point of contact for all families in the neighbourhood, with its own team, independent of the Kita in the same building.",
         offers: [
           'Family counselling',
           'Parent-child activities',
@@ -61,7 +94,7 @@ export const institutions: Institution[] = [
       },
       fr: {
         description:
-          "Un point de contact facile d'accès pour les familles, avec diverses offres et possibilités de soutien. Crèche et centre familial ouvert sous un même toit, avec un accent sur le mouvement, l'inclusion et la diversité.",
+          "Un centre familial indépendant au sein du bâtiment « Familienhaus Felix » – un point de contact facile d'accès pour toutes les familles du quartier, avec sa propre équipe, indépendant de la crèche située dans le même bâtiment.",
         offers: [
           'Conseil familial',
           'Activités parents-enfants',
@@ -641,7 +674,7 @@ export const institutions: Institution[] = [
   {
     id: 'familienservicebuero-mh',
     name: 'Familienservicebüro Marzahn-Hellersdorf',
-    category: 'verwaltung',
+    category: 'beratung',
     zone: 'ausserhalb',
     address: 'Alice-Salomon-Platz 3',
     postalCode: '12627',
@@ -900,7 +933,7 @@ export const institutions: Institution[] = [
   {
     id: 'jugendamt-marzahn-hellersdorf',
     name: 'Jugendamt Marzahn-Hellersdorf',
-    category: 'verwaltung',
+    category: 'beratung',
     zone: 'ausserhalb',
     address: 'Riesaer Straße 94',
     postalCode: '12627',

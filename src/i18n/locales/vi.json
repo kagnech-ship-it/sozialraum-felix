@@ -1,174 +1,173 @@
 {
   "nav": {
-    "skipToContent": "Zum Inhalt springen",
-    "map": "Karte",
-    "institutions": "Einrichtungen",
-    "categories": "Kategorien",
-    "about": "Über das Projekt",
-    "sources": "Quellen",
-    "discover": "Sozialraum entdecken",
-    "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen",
-    "language": "Sprache"
+    "skipToContent": "Chuyển đến nội dung chính",
+    "map": "Bản đồ",
+    "institutions": "Cơ sở",
+    "categories": "Danh mục",
+    "about": "Về dự án",
+    "sources": "Nguồn",
+    "discover": "Khám phá khu vực xã hội",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "language": "Ngôn ngữ"
   },
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
-    "title": "Unterstützung im Sozialraum",
-    "subtitle": "Entdecke Beratungsstellen, Bildungsangebote, Freizeitmöglichkeiten und weitere Unterstützung rund um das Familienhaus Felix.",
-    "ctaPrimary": "Sozialraum entdecken",
-    "ctaSecondary": "Alle Einrichtungen anzeigen",
-    "statInstitutions": "Einrichtungen",
-    "statCategories": "Kategorien",
-    "statSocialSpace": "Sozialraum"
+    "title": "Hỗ trợ trong khu vực xã hội",
+    "subtitle": "Khám phá các trung tâm tư vấn, chương trình giáo dục, hoạt động giải trí và những hỗ trợ khác xung quanh {{name}}.",
+    "ctaPrimary": "Khám phá khu vực xã hội",
+    "ctaSecondary": "Xem tất cả các cơ sở",
+    "statInstitutions": "Cơ sở",
+    "statCategories": "Danh mục",
+    "statSocialSpace": "Khu vực xã hội"
   },
   "parentNeeds": {
-    "title": "Was suchst du?",
-    "subtitle": "Wähle einen Bereich – wir zeigen dir passende Einrichtungen im Sozialraum."
+    "title": "Bạn đang tìm gì?",
+    "subtitle": "Chọn một lĩnh vực – chúng tôi sẽ hiện các cơ sở phù hợp trong khu vực xã hội."
   },
   "categoryLegend": {
-    "title": "Kategorien im Sozialraum",
-    "subtitle": "Jede Einrichtung ist einer Kategorie zugeordnet – auf der Karte farblich und mit Beschriftung erkennbar."
+    "title": "Các danh mục trong khu vực xã hội",
+    "subtitle": "Mỗi cơ sở được xếp vào một danh mục – có thể nhận biết trên bản đồ qua màu sắc và nhãn."
   },
   "category": {
-    "familie": { "label": "Familie", "description": "Familienangebote, Eltern-Kind-Gruppen, Familiencafé" },
-    "bildung": { "label": "Bildung", "description": "Bücher, Medien, Leseförderung, Lernangebote" },
-    "jugend": { "label": "Jugend", "description": "Offene Kinder- und Jugendarbeit, Treffpunkte" },
-    "beratung": { "label": "Beratung", "description": "Erziehungs-, Familien- und Lebensberatung" },
-    "sport": { "label": "Sport & Bewegung", "description": "Bewegung, Mannschafts- und Kampfsport, Fitness" },
-    "freizeit": { "label": "Freizeit", "description": "Spiel-, Bewegungs- und Aufenthaltsorte" },
-    "kultur": { "label": "Kultur", "description": "Kultur, Zirkuspädagogik, Veranstaltungen" },
-    "beteiligung": { "label": "Beteiligung", "description": "Kinderrechte, Mitbestimmung, Projekte" },
-    "inklusion": { "label": "Inklusion", "description": "Offene Arbeit mit und ohne Behinderung" },
-    "verwaltung": { "label": "Verwaltung & Leistungen", "description": "Anträge, Leistungen, behördliche Erstberatung" }
+    "familie": { "label": "Gia đình", "description": "Chương trình cho gia đình, nhóm cha mẹ – con, quán cà phê gia đình" },
+    "bildung": { "label": "Giáo dục", "description": "Sách, phương tiện truyền thông, hỗ trợ đọc, chương trình học tập" },
+    "jugend": { "label": "Thanh thiếu niên", "description": "Hoạt động mở cho trẻ em và thanh thiếu niên, điểm gặp gỡ" },
+    "beratung": { "label": "Tư vấn", "description": "Tư vấn giáo dục, gia đình và cuộc sống" },
+    "sport": { "label": "Thể thao & Vận động", "description": "Vận động, thể thao đồng đội và võ thuật, thể hình" },
+    "freizeit": { "label": "Giải trí", "description": "Nơi vui chơi, vận động và sinh hoạt" },
+    "kultur": { "label": "Văn hóa", "description": "Văn hóa, giáo dục xiếc, sự kiện" },
+    "beteiligung": { "label": "Tham gia", "description": "Quyền trẻ em, đồng quyết định, dự án" },
+    "inklusion": { "label": "Hòa nhập", "description": "Hoạt động mở cho người có và không có khuyết tật" }
   },
   "audience": {
-    "kleinkind": "Kleinkind",
-    "kind": "Kind",
-    "jugendlicher": "Jugendlicher",
-    "familie": "Familie",
-    "eltern": "Eltern",
-    "fachkraft": "Pädagogische Fachkraft"
+    "kleinkind": "Trẻ nhỏ",
+    "kind": "Trẻ em",
+    "jugendlicher": "Thanh thiếu niên",
+    "familie": "Gia đình",
+    "eltern": "Cha mẹ",
+    "fachkraft": "Chuyên viên giáo dục"
   },
   "need": {
-    "familie": "Familienangebote",
-    "beratung": "Beratung",
-    "bildung": "Bildung & Lesen",
-    "sport": "Sport & Bewegung",
-    "kultur": "Kreativität & Kultur",
-    "kinder": "Angebote für Kinder",
-    "jugendliche": "Angebote für Jugendliche",
-    "antraege": "Anträge & Leistungen"
+    "familie": "Chương trình cho gia đình",
+    "beratung": "Tư vấn",
+    "bildung": "Giáo dục & Đọc sách",
+    "sport": "Thể thao & Vận động",
+    "kultur": "Sáng tạo & Văn hóa",
+    "kinder": "Hoạt động cho trẻ em",
+    "jugendliche": "Hoạt động cho thanh thiếu niên",
+    "antraege": "Đơn xin & Trợ cấp"
   },
   "directHelpOption": {
-    "dh-beratung": "Ich brauche Beratung",
-    "dh-familie": "Ich suche ein Familienangebot",
-    "dh-kind": "Ich suche etwas für mein Kind",
-    "dh-antrag": "Ich suche Unterstützung bei einem Antrag",
-    "dh-freizeit": "Ich suche Freizeitangebote"
+    "dh-beratung": "Tôi cần tư vấn",
+    "dh-familie": "Tôi đang tìm chương trình cho gia đình",
+    "dh-kind": "Tôi đang tìm thứ gì đó cho con tôi",
+    "dh-antrag": "Tôi cần hỗ trợ làm đơn xin",
+    "dh-freizeit": "Tôi đang tìm hoạt động giải trí"
   },
   "flow": {
-    "sectionLabel": "Aufbau des Sozialraums",
-    "caption": "{{name}} ist der Ausgangspunkt – die Auswahl der Einrichtungen folgt einem echten Sozialraum-Konzept, keiner zufälligen Berlin-weiten Liste.",
-    "center": "Zentrum · Praxisstelle"
+    "sectionLabel": "Cấu trúc của khu vực xã hội",
+    "caption": "{{name}} là điểm khởi đầu – việc lựa chọn các cơ sở tuân theo một khái niệm khu vực xã hội thực sự, không phải một danh sách ngẫu nhiên trên toàn Berlin.",
+    "center": "Trung tâm · Cơ sở thực hành"
   },
   "zone": {
-    "nahbereich": { "label": "Nahbereich", "description": "Fußläufig rund um die Kita – der engste Sozialraum." },
-    "sozialraum": { "label": "Weiterer Sozialraum", "description": "Etwas weiter entfernt, aber noch im Sozialraum der Kita." },
+    "nahbereich": { "label": "Khu vực lân cận", "description": "Trong phạm vi đi bộ quanh nhà trẻ – khu vực xã hội gần nhất." },
+    "sozialraum": { "label": "Khu vực xã hội mở rộng", "description": "Xa hơn một chút, nhưng vẫn trong khu vực xã hội của nhà trẻ." },
     "ausserhalb": {
-      "label": "Außerhalb des engeren Sozialraums",
-      "description": "Nicht im unmittelbaren Umfeld, aber wichtige Anlaufstelle."
+      "label": "Ngoài khu vực xã hội gần",
+      "description": "Không ở ngay xung quanh, nhưng là điểm liên hệ quan trọng."
     }
   },
   "filterBar": {
-    "audienceLabel": "Für wen suchst du?",
-    "resultCount_one": "{{count}} Einrichtung gefunden",
-    "resultCount_other": "{{count}} Einrichtungen gefunden"
+    "audienceLabel": "Bạn đang tìm cho ai?",
+    "resultCount_one": "Tìm thấy {{count}} cơ sở",
+    "resultCount_other": "Tìm thấy {{count}} cơ sở"
   },
   "search": {
-    "placeholder": "Wonach suchst du? z. B. „Beratung“, „Sport“, „Bibliothek“ …",
-    "label": "Einrichtungen durchsuchen",
-    "reset": "Suche zurücksetzen"
+    "placeholder": "Bạn đang tìm gì? vd. „Tư vấn“, „Thể thao“, „Thư viện“ …",
+    "label": "Tìm kiếm cơ sở",
+    "reset": "Đặt lại tìm kiếm"
   },
-  "categoryFilter": { "all": "Alle" },
-  "audienceFilter": { "ariaLabel": "Nach Zielgruppe filtern" },
+  "categoryFilter": { "all": "Tất cả" },
+  "audienceFilter": { "ariaLabel": "Lọc theo nhóm đối tượng" },
   "sort": {
-    "label": "Sortieren:",
-    "naehe": "Nähe zur Kita",
-    "kategorie": "Kategorie",
-    "alphabet": "Alphabet",
-    "relevanz": "Relevanz für Familien"
+    "label": "Sắp xếp theo:",
+    "naehe": "Khoảng cách đến nhà trẻ",
+    "kategorie": "Danh mục",
+    "alphabet": "Bảng chữ cái",
+    "relevanz": "Mức độ liên quan cho gia đình"
   },
   "map": {
-    "details": "Details",
-    "route": "Route",
-    "website": "Website",
-    "praxisstelle": "Praxisstelle"
+    "details": "Chi tiết",
+    "route": "Chỉ đường",
+    "website": "Trang web",
+    "praxisstelle": "Cơ sở thực hành"
   },
   "card": {
-    "praxisstelle": "Praxisstelle",
-    "airline": "Luftlinie",
-    "byBike": "ca. {{minutes}} Min. Rad",
-    "details": "Details",
-    "focusOnMap": "{{name}} auf der Karte anzeigen",
-    "routeTo": "Route zu {{name}} öffnen",
-    "websiteOf": "Website von {{name}} öffnen"
+    "praxisstelle": "Cơ sở thực hành",
+    "airline": "Đường chim bay",
+    "byBike": "khoảng {{minutes}} phút đạp xe",
+    "details": "Chi tiết",
+    "focusOnMap": "Hiển thị {{name}} trên bản đồ",
+    "routeTo": "Mở chỉ đường đến {{name}}",
+    "websiteOf": "Mở trang web của {{name}}"
   },
   "modal": {
-    "offers": "Angebote",
-    "forWhom": "Für wen?",
-    "source": "Quelle",
-    "officialWebsite": "Offizielle Website",
-    "toSource": "zur Quelle",
-    "planRoute": "Route planen",
-    "visitWebsite": "Website besuchen",
-    "outsideNote": "Außerhalb des engeren Sozialraums – trotzdem wichtige Anlaufstelle",
-    "close": "Schließen"
+    "offers": "Dịch vụ",
+    "forWhom": "Dành cho ai?",
+    "source": "Nguồn",
+    "officialWebsite": "Trang web chính thức",
+    "toSource": "đến nguồn",
+    "planRoute": "Lên kế hoạch chỉ đường",
+    "visitWebsite": "Truy cập trang web",
+    "outsideNote": "Ngoài khu vực xã hội gần – nhưng vẫn là điểm liên hệ quan trọng",
+    "close": "Đóng"
   },
   "outsideArea": {
-    "title": "Wichtige Anlaufstellen außerhalb des direkten Umfelds",
-    "subtitle": "Diese Stellen liegen nicht im unmittelbaren Umfeld der Kita, sind aber für Familien bei bestimmten Anliegen wichtige Anlaufstellen.",
-    "badge": "Außerhalb des engeren Sozialraums"
+    "title": "Các điểm liên hệ quan trọng ngoài khu vực lân cận trực tiếp",
+    "subtitle": "Những cơ sở này không nằm ngay xung quanh nhà trẻ, nhưng là điểm liên hệ quan trọng cho các gia đình trong những trường hợp nhất định.",
+    "badge": "Ngoài khu vực xã hội gần"
   },
   "about": {
-    "badge": "LEK · Lernfeld 5",
-    "title": "Über diese Sozialraumkarte",
-    "p1": "Diese digitale Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 entwickelt. Ziel ist es, Unterstützungssysteme im Sozialraum sichtbar und für Eltern und pädagogische Fachkräfte leicht zugänglich zu machen.",
-    "p2": "Die Praxisstelle befindet sich im Zentrum der Karte. Die dargestellten Einrichtungen wurden nach ihrer möglichen Bedeutung für Kinder, Eltern und Familien ausgewählt.",
-    "flowNote": "Kita → Eltern → Kinder → Sozialraum → Unterstützungssysteme: Die Bildungs- und Erziehungspartnerschaft lebt vom Zusammenspiel aller Beteiligten im Umfeld der Kita.",
-    "sourceTitle": "Fachliche Grundlage",
-    "sourceNote": "Diese Literatur ist die fachliche Grundlage der schulischen Aufgabenstellung."
+    "badge": "LEK · Lĩnh vực học tập 5",
+    "title": "Về bản đồ khu vực xã hội này",
+    "p1": "Bản đồ khu vực xã hội kỹ thuật số này được xây dựng trong khuôn khổ chương trình đào tạo nghề giáo viên mầm non (Erzieher), thuộc lĩnh vực học tập 5. Mục tiêu là giúp các hệ thống hỗ trợ trong khu vực xã hội trở nên rõ ràng và dễ tiếp cận đối với cha mẹ và các chuyên viên giáo dục.",
+    "p2": "Cơ sở thực hành nằm ở trung tâm bản đồ. Các cơ sở được trình bày đã được lựa chọn dựa trên ý nghĩa có thể có của chúng đối với trẻ em, cha mẹ và gia đình.",
+    "flowNote": "Nhà trẻ → Cha mẹ → Trẻ em → Khu vực xã hội → Hệ thống hỗ trợ: quan hệ đối tác giáo dục và nuôi dạy sống nhờ vào sự phối hợp của tất cả các bên liên quan xung quanh nhà trẻ.",
+    "sourceTitle": "Cơ sở chuyên môn",
+    "sourceNote": "Tài liệu này là cơ sở chuyên môn cho bài tập của nhà trường."
   },
   "directHelp": {
-    "title": "Du weißt nicht, wo du anfangen sollst?",
-    "subtitle": "Kein Problem. Wähle aus, wobei du Unterstützung suchst."
+    "title": "Bạn không biết nên bắt đầu từ đâu?",
+    "subtitle": "Không sao cả. Hãy chọn bạn đang cần hỗ trợ về vấn đề gì."
   },
   "footer": {
-    "disclaimer1": "Die Sozialraumkarte wurde im Rahmen der Ausbildung zum Erzieher im Lernfeld 5 erstellt. Sie dient der niedrigschwelligen Orientierung über Unterstützungsangebote für Kinder, Eltern und Familien im Umfeld der Praxisstelle.",
-    "sourceLabel": "Fachliche Grundlage:",
-    "sourcesNote": "Alle Angaben zu Einrichtungen wurden anhand offizieller Quellen (berlin.de, offizielle Träger- und Einrichtungswebsites, Familienportal Berlin) geprüft – Quellenangaben je Einrichtung finden sich in der jeweiligen Detailansicht und gesammelt auf der",
-    "sourcesLinkLabel": "Quellen-Seite",
-    "nonCommercial": "Kein kommerzielles Angebot · nicht-offizielle Projektwebsite."
+    "disclaimer1": "Bản đồ khu vực xã hội được xây dựng trong khuôn khổ chương trình đào tạo nghề giáo viên mầm non, thuộc lĩnh vực học tập 5. Bản đồ nhằm giúp định hướng đơn giản, dễ hiểu về các dịch vụ hỗ trợ cho trẻ em, cha mẹ và gia đình xung quanh cơ sở thực hành.",
+    "sourceLabel": "Cơ sở chuyên môn:",
+    "sourcesNote": "Tất cả thông tin về các cơ sở đã được kiểm tra dựa trên các nguồn chính thức (berlin.de, trang web chính thức của tổ chức/cơ sở, Familienportal Berlin) – nguồn thông tin cho từng cơ sở có trong phần chi tiết tương ứng và được tổng hợp tại",
+    "sourcesLinkLabel": "trang Nguồn",
+    "nonCommercial": "Không phải dịch vụ thương mại · trang web không chính thức của dự án."
   },
   "home": {
-    "mapHeading": "Der Sozialraum rund um das Familienhaus Felix",
-    "mapSubtitle": "Klicke auf einen Marker oder eine Karte unten, um mehr über eine Einrichtung zu erfahren.",
-    "listHeading": "Einrichtungen im Sozialraum",
-    "listSubtitle": "Alle Einrichtungen im engeren Umfeld der Kita – mit Angeboten, Zielgruppen und direktem Zugang zu Route und Website.",
-    "sortedBy": "Sortiert nach: {{option}}.",
-    "emptyTitle": "Keine Einrichtungen gefunden",
-    "emptySubtitle": "Versuche einen anderen Suchbegriff oder wähle „Alle“ bei den Kategorien."
+    "mapHeading": "Khu vực xã hội xung quanh {{name}}",
+    "mapSubtitle": "Nhấp vào một điểm đánh dấu hoặc một thẻ bên dưới để biết thêm về một cơ sở.",
+    "listHeading": "Các cơ sở trong khu vực xã hội",
+    "listSubtitle": "Tất cả các cơ sở trong khu vực lân cận nhà trẻ – kèm chương trình, nhóm đối tượng và truy cập trực tiếp đến chỉ đường và trang web.",
+    "sortedBy": "Sắp xếp theo: {{option}}.",
+    "emptyTitle": "Không tìm thấy cơ sở nào",
+    "emptySubtitle": "Hãy thử một từ khóa khác hoặc chọn „Tất cả“ trong phần danh mục."
   },
   "quellen": {
-    "back": "← Zurück zur Startseite",
-    "title": "Quellen",
-    "intro": "Übersicht aller Quellen, die für diese Sozialraumkarte verwendet wurden. Keine erfundenen Angaben – jede Adresse, jedes Angebot und jede Entfernung stammt aus einer hier verlinkten, öffentlich zugänglichen Quelle.",
-    "academicTitle": "Fachliche Grundlage",
-    "mapDataTitle": "Kartendaten",
-    "mapDataIntro": "Die interaktive Karte nutzt",
-    "mapDataMid": "mit Kartenkacheln von",
-    "mapDataOutro": "Koordinaten sind Geokodierungen der recherchierten Adressen (Straßen-Genauigkeit). Entfernungen sind echte Luftlinien-Berechnungen aus diesen Koordinaten – niemals erfundene Werte. „Route öffnen“-Links führen zu Google Maps (reine Weblinks, ohne API-Key).",
-    "institutionsTitle": "Einrichtungen & Trägerwebseiten",
-    "institutionsNote": "Priorität: berlin.de → offizielle Einrichtungswebsite → offizieller Träger → Familienportal Berlin. Keine Wikipedia als Hauptquelle.",
-    "websiteLabel": "Website"
+    "back": "← Về trang chủ",
+    "title": "Nguồn",
+    "intro": "Tổng quan tất cả các nguồn được sử dụng cho bản đồ khu vực xã hội này. Không có thông tin bịa đặt – mỗi địa chỉ, mỗi dịch vụ và mỗi khoảng cách đều xuất phát từ một nguồn công khai được liên kết tại đây.",
+    "academicTitle": "Cơ sở chuyên môn",
+    "mapDataTitle": "Dữ liệu bản đồ",
+    "mapDataIntro": "Bản đồ tương tác sử dụng",
+    "mapDataMid": "với các ô bản đồ từ",
+    "mapDataOutro": "Tọa độ là kết quả mã hóa địa lý (geocoding) của các địa chỉ đã được nghiên cứu (độ chính xác cấp đường phố). Khoảng cách là các phép tính đường chim bay thực tế từ những tọa độ này – không bao giờ là số liệu bịa đặt. Các liên kết „Mở chỉ đường“ dẫn đến Google Maps (chỉ là liên kết web thông thường, không dùng API-Key).",
+    "institutionsTitle": "Cơ sở & trang web của các tổ chức chủ quản",
+    "institutionsNote": "Thứ tự ưu tiên: berlin.de → trang web chính thức của cơ sở → tổ chức chủ quản chính thức → Familienportal Berlin. Không dùng Wikipedia làm nguồn chính.",
+    "websiteLabel": "Trang web"
   }
 }

@@ -49,6 +49,6 @@ export const parentNeeds: ParentNeed[] = [
     id: 'antraege',
     label: 'Anträge & Leistungen',
     icon: '🏛️',
-    categories: ['verwaltung'],
+    categories: ['beratung'],
   },
 ];

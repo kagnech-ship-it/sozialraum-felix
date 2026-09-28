@@ -1,13 +1,15 @@
 # Sozialraum Felix
 
-Eine interaktive Sozialraumkarte rund um das **Familienhaus Felix** (Humanistische Kita, Zühlsdorfer Straße 18, 12679 Berlin-Marzahn). Die Website zeigt Eltern und pädagogischen Fachkräften, welche Unterstützungssysteme – Beratung, Bildung, Freizeit, Beteiligung u. a. – im Sozialraum rund um die Kita zu finden sind.
+Eine interaktive Sozialraumkarte rund um die **Humanistische Kita Zühlsdorfer Straße** (Zühlsdorfer Straße 18, 12679 Berlin-Marzahn) – die Praxisstelle. Die Website zeigt Eltern und pädagogischen Fachkräften, welche Unterstützungssysteme – Beratung, Bildung, Freizeit, Beteiligung u. a. – im Sozialraum rund um die Kita zu finden sind.
+
+**Wichtig:** Die Humanistische Kita Zühlsdorfer Straße (Praxisstelle) und das **Familienzentrum Felix** sind zwei eigenständige, im selben Gebäudekomplex ("Familienhaus Felix") ansässige Einrichtungen desselben Trägers (Humanistischer Verband Berlin-Brandenburg) – auf der Karte bewusst als zwei getrennte Marker mit eigenen Detailseiten dargestellt, nicht als eine Einrichtung.
 
 Entstanden als schulisches Projekt (LEK, Lernfeld 5, Ausbildung zum Erzieher) zum Thema **„Unterstützungssysteme in der Bildungs- und Erziehungspartnerschaft im Sozialraum“**.
 
 ## 1. Projektbeschreibung
 
-- **Praxisstelle / Zentrum der Karte:** Familienzentrum Felix, Zühlsdorfer Straße 16–18, 12679 Berlin
-- **19 Einrichtungen** im und um den Sozialraum, in 10 Kategorien (Familie, Bildung, Jugend, Beratung, Sport & Bewegung, Freizeit, Kultur, Beteiligung, Inklusion, Verwaltung & Leistungen)
+- **Praxisstelle / Zentrum der Karte:** Humanistische Kita Zühlsdorfer Straße, Zühlsdorfer Straße 18, 12679 Berlin
+- **20 Einrichtungen** im und um den Sozialraum, in 9 Kategorien (Familie, Bildung, Jugend, Beratung, Sport & Bewegung, Freizeit, Kultur, Beteiligung, Inklusion)
 - **Zonen-Konzept:** Nahbereich / weiterer Sozialraum / außerhalb des engeren Sozialraums – macht sichtbar, dass die Auswahl einem echten Sozialraum-Konzept folgt, keiner zufälligen Berlin-weiten Liste
 - Interaktive **Karte (Leaflet + OpenStreetMap)** mit kategorie-spezifischen Markern, Popups und Karten-/Listen-Synchronisation – **läuft ohne jeden API-Key**
 - **Filter** nach Kategorie und Zielgruppe, **Volltextsuche**, **Sortierung** (Nähe/Kategorie/Alphabet/Relevanz), thematische Schnellzugriffe („Was suchst du?“, „Direkt Hilfe finden“)
@@ -124,6 +126,7 @@ Alle Angaben zu den Einrichtungen (Adresse, Angebote, Website) wurden vor der Um
 
 | Einrichtung | Hauptquelle |
 |---|---|
+| Humanistische Kita Zühlsdorfer Straße (Praxisstelle) | humanistisch.de/kitas/kitas-berlin-brandenburg/humanistische-kita-zuehlsdorfer-strasse (Humanistischer Verband Berlin-Brandenburg) |
 | Familienzentrum Felix | humanistisch.de/felix-zentrum (Humanistischer Verband Berlin-Brandenburg) |
 | Freizeitforum Marzahn | berlin.de, freizeitforum-marzahn.com |
 | Mark-Twain-Bibliothek | berlin.de/bibliotheken-mh |

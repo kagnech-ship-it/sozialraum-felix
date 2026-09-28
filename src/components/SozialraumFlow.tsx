@@ -31,7 +31,7 @@ export default function SozialraumFlow() {
         <h2 id="flow-heading" className="sr-only">
           {t('flow.sectionLabel')}
         </h2>
-        <p className="mb-2 text-center text-xs font-semibold uppercase tracking-wide text-[var(--color-ink-soft)]">
+        <p className="mx-auto mb-4 max-w-2xl text-center text-sm text-[var(--color-ink-soft)]">
           {t('flow.caption', { name: praxisstelle.name })}
         </p>
         <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">

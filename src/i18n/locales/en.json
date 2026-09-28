@@ -14,7 +14,7 @@
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
     "title": "Support in your neighbourhood",
-    "subtitle": "Discover counselling services, education, leisure activities and other support around the Familienhaus Felix.",
+    "subtitle": "Discover counselling services, education, leisure activities and other support systems for children, parents and families around {{name}}.",
     "ctaPrimary": "Explore the area",
     "ctaSecondary": "Show all services",
     "statInstitutions": "Services",
@@ -30,16 +30,42 @@
     "subtitle": "Every service belongs to a category – recognisable on the map by colour and label."
   },
   "category": {
-    "familie": { "label": "Family", "description": "Family services, parent-child groups, family café" },
-    "bildung": { "label": "Education", "description": "Books, media, reading support, learning programmes" },
-    "jugend": { "label": "Youth", "description": "Open youth work, meeting places" },
-    "beratung": { "label": "Counselling", "description": "Parenting, family and life counselling" },
-    "sport": { "label": "Sport & Movement", "description": "Team sports, martial arts, fitness" },
-    "freizeit": { "label": "Leisure", "description": "Play, movement and recreation spaces" },
-    "kultur": { "label": "Culture", "description": "Culture, circus arts, events" },
-    "beteiligung": { "label": "Participation", "description": "Children's rights, participation, projects" },
-    "inklusion": { "label": "Inclusion", "description": "Open activities with and without disabilities" },
-    "verwaltung": { "label": "Administration & Benefits", "description": "Applications, benefits, first official advice" }
+    "familie": {
+      "label": "Family",
+      "description": "Family services, parent-child groups, family café"
+    },
+    "bildung": {
+      "label": "Education",
+      "description": "Books, media, reading support, learning programmes"
+    },
+    "jugend": {
+      "label": "Youth",
+      "description": "Open youth work, meeting places"
+    },
+    "beratung": {
+      "label": "Counselling",
+      "description": "Parenting, family and life counselling"
+    },
+    "sport": {
+      "label": "Sport & Movement",
+      "description": "Team sports, martial arts, fitness"
+    },
+    "freizeit": {
+      "label": "Leisure",
+      "description": "Play, movement and recreation spaces"
+    },
+    "kultur": {
+      "label": "Culture",
+      "description": "Culture, circus arts, events"
+    },
+    "beteiligung": {
+      "label": "Participation",
+      "description": "Children's rights, participation, projects"
+    },
+    "inklusion": {
+      "label": "Inclusion",
+      "description": "Open activities with and without disabilities"
+    }
   },
   "audience": {
     "kleinkind": "Toddler",
@@ -72,8 +98,14 @@
     "center": "Centre · Placement site"
   },
   "zone": {
-    "nahbereich": { "label": "Nearby", "description": "Walking distance from the Kita – the closest neighbourhood area." },
-    "sozialraum": { "label": "Wider neighbourhood", "description": "A bit further away, but still within the Kita's neighbourhood." },
+    "nahbereich": {
+      "label": "Nearby",
+      "description": "Walking distance from the Kita – the closest neighbourhood area."
+    },
+    "sozialraum": {
+      "label": "Wider neighbourhood",
+      "description": "A bit further away, but still within the Kita's neighbourhood."
+    },
     "ausserhalb": {
       "label": "Outside the immediate area",
       "description": "Not right nearby, but an important place to know about."
@@ -89,8 +121,12 @@
     "label": "Search services",
     "reset": "Clear search"
   },
-  "categoryFilter": { "all": "All" },
-  "audienceFilter": { "ariaLabel": "Filter by audience" },
+  "categoryFilter": {
+    "all": "All"
+  },
+  "audienceFilter": {
+    "ariaLabel": "Filter by audience"
+  },
   "sort": {
     "label": "Sort by:",
     "naehe": "Distance to the Kita",
@@ -150,7 +186,7 @@
     "nonCommercial": "Not a commercial offer · unofficial project website."
   },
   "home": {
-    "mapHeading": "The neighbourhood around Familienhaus Felix",
+    "mapHeading": "The neighbourhood around {{name}}",
     "mapSubtitle": "Click a marker or a card below to learn more about a service.",
     "listHeading": "Services in the neighbourhood",
     "listSubtitle": "All services in the Kita's immediate neighbourhood – with offers, target groups and direct links to routes and websites.",

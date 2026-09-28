@@ -14,7 +14,7 @@
   "hero": {
     "badge": "{{name}} · Berlin-Marzahn",
     "title": "Du soutien dans votre quartier",
-    "subtitle": "Découvrez des services de conseil, d'éducation, de loisirs et d'autres formes de soutien autour du Familienhaus Felix.",
+    "subtitle": "Découvrez des services de conseil, d'éducation, de loisirs et d'autres systèmes de soutien pour les enfants, les parents et les familles autour de {{name}}.",
     "ctaPrimary": "Découvrir le quartier",
     "ctaSecondary": "Voir toutes les structures",
     "statInstitutions": "Structures",
@@ -30,16 +30,42 @@
     "subtitle": "Chaque structure appartient à une catégorie – reconnaissable sur la carte par sa couleur et son libellé."
   },
   "category": {
-    "familie": { "label": "Famille", "description": "Offres familiales, groupes parents-enfants, café familial" },
-    "bildung": { "label": "Éducation", "description": "Livres, médias, aide à la lecture, offres d'apprentissage" },
-    "jugend": { "label": "Jeunesse", "description": "Travail de jeunesse ouvert, lieux de rencontre" },
-    "beratung": { "label": "Conseil", "description": "Conseil éducatif, familial et de vie" },
-    "sport": { "label": "Sport & mouvement", "description": "Sports collectifs, arts martiaux, fitness" },
-    "freizeit": { "label": "Loisirs", "description": "Lieux de jeu, de mouvement et de détente" },
-    "kultur": { "label": "Culture", "description": "Culture, pédagogie du cirque, événements" },
-    "beteiligung": { "label": "Participation", "description": "Droits de l'enfant, participation, projets" },
-    "inklusion": { "label": "Inclusion", "description": "Activités ouvertes avec et sans handicap" },
-    "verwaltung": { "label": "Administration & prestations", "description": "Demandes, prestations, premier conseil administratif" }
+    "familie": {
+      "label": "Famille",
+      "description": "Offres familiales, groupes parents-enfants, café familial"
+    },
+    "bildung": {
+      "label": "Éducation",
+      "description": "Livres, médias, aide à la lecture, offres d'apprentissage"
+    },
+    "jugend": {
+      "label": "Jeunesse",
+      "description": "Travail de jeunesse ouvert, lieux de rencontre"
+    },
+    "beratung": {
+      "label": "Conseil",
+      "description": "Conseil éducatif, familial et de vie"
+    },
+    "sport": {
+      "label": "Sport & mouvement",
+      "description": "Sports collectifs, arts martiaux, fitness"
+    },
+    "freizeit": {
+      "label": "Loisirs",
+      "description": "Lieux de jeu, de mouvement et de détente"
+    },
+    "kultur": {
+      "label": "Culture",
+      "description": "Culture, pédagogie du cirque, événements"
+    },
+    "beteiligung": {
+      "label": "Participation",
+      "description": "Droits de l'enfant, participation, projets"
+    },
+    "inklusion": {
+      "label": "Inclusion",
+      "description": "Activités ouvertes avec et sans handicap"
+    }
   },
   "audience": {
     "kleinkind": "Tout-petit",
@@ -72,8 +98,14 @@
     "center": "Centre · Lieu de stage"
   },
   "zone": {
-    "nahbereich": { "label": "Proximité immédiate", "description": "À distance de marche de la crèche – le quartier le plus proche." },
-    "sozialraum": { "label": "Quartier élargi", "description": "Un peu plus loin, mais encore dans le quartier de la crèche." },
+    "nahbereich": {
+      "label": "Proximité immédiate",
+      "description": "À distance de marche de la crèche – le quartier le plus proche."
+    },
+    "sozialraum": {
+      "label": "Quartier élargi",
+      "description": "Un peu plus loin, mais encore dans le quartier de la crèche."
+    },
     "ausserhalb": {
       "label": "En dehors du quartier proche",
       "description": "Pas à proximité immédiate, mais un lieu de contact important."
@@ -89,8 +121,12 @@
     "label": "Rechercher des structures",
     "reset": "Réinitialiser la recherche"
   },
-  "categoryFilter": { "all": "Toutes" },
-  "audienceFilter": { "ariaLabel": "Filtrer par public" },
+  "categoryFilter": {
+    "all": "Toutes"
+  },
+  "audienceFilter": {
+    "ariaLabel": "Filtrer par public"
+  },
   "sort": {
     "label": "Trier par :",
     "naehe": "Proximité de la crèche",
@@ -150,7 +186,7 @@
     "nonCommercial": "Offre non commerciale · site de projet non officiel."
   },
   "home": {
-    "mapHeading": "Le quartier autour du Familienhaus Felix",
+    "mapHeading": "Le quartier autour de {{name}}",
     "mapSubtitle": "Cliquez sur un marqueur ou une carte ci-dessous pour en savoir plus sur une structure.",
     "listHeading": "Structures du quartier",
     "listSubtitle": "Toutes les structures du quartier proche de la crèche – avec offres, publics visés et accès direct à l'itinéraire et au site web.",

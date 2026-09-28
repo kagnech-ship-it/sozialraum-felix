@@ -112,38 +112,42 @@ export default function InstitutionModal({ institution, onClose }: InstitutionMo
         <div className="px-6 pb-8 sm:px-8">
           <p className="mt-5 text-[15px] leading-relaxed text-[var(--color-ink-soft)]">{content.description}</p>
 
-          <section aria-labelledby="offers-heading" className="mt-6">
-            <h3 id="offers-heading" className="text-sm font-bold uppercase tracking-wide text-[var(--color-ink)]">
-              {t('modal.offers')}
-            </h3>
-            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-              {content.offers.map((offer, i) => (
-                <li key={institution.offers[i] ?? offer} className="flex items-start gap-2 text-sm text-[var(--color-ink-soft)]">
-                  <span className="mt-0.5 text-[var(--color-family)]" aria-hidden="true">
-                    ✓
-                  </span>
-                  {offer}
-                </li>
-              ))}
-            </ul>
-          </section>
+          {content.offers.length > 0 && (
+            <section aria-labelledby="offers-heading" className="mt-6">
+              <h3 id="offers-heading" className="text-sm font-bold uppercase tracking-wide text-[var(--color-ink)]">
+                {t('modal.offers')}
+              </h3>
+              <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                {content.offers.map((offer, i) => (
+                  <li key={institution.offers[i] ?? offer} className="flex items-start gap-2 text-sm text-[var(--color-ink-soft)]">
+                    <span className="mt-0.5 text-[var(--color-family)]" aria-hidden="true">
+                      ✓
+                    </span>
+                    {offer}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-          <section aria-labelledby="target-groups-heading" className="mt-6">
-            <h3 id="target-groups-heading" className="text-sm font-bold uppercase tracking-wide text-[var(--color-ink)]">
-              {t('modal.forWhom')}
-            </h3>
-            <ul className="mt-3 flex flex-wrap gap-2">
-              {content.targetGroups.map((group, i) => (
-                <li
-                  key={institution.targetGroups[i] ?? group}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-mist)] px-3 py-1.5 text-sm text-[var(--color-ink)]"
-                >
-                  <span aria-hidden="true">{iconForTargetGroup(institution.targetGroups[i] ?? group)}</span>
-                  {group}
-                </li>
-              ))}
-            </ul>
-          </section>
+          {content.targetGroups.length > 0 && (
+            <section aria-labelledby="target-groups-heading" className="mt-6">
+              <h3 id="target-groups-heading" className="text-sm font-bold uppercase tracking-wide text-[var(--color-ink)]">
+                {t('modal.forWhom')}
+              </h3>
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {content.targetGroups.map((group, i) => (
+                  <li
+                    key={institution.targetGroups[i] ?? group}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-[var(--color-mist)] px-3 py-1.5 text-sm text-[var(--color-ink)]"
+                  >
+                    <span aria-hidden="true">{iconForTargetGroup(institution.targetGroups[i] ?? group)}</span>
+                    {group}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {institution.sourceUrl && (
             <p className="mt-6 text-xs text-[var(--color-ink-soft)]">

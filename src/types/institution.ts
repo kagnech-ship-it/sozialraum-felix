@@ -9,8 +9,7 @@ export type Category =
   | 'freizeit'
   | 'kultur'
   | 'beteiligung'
-  | 'inklusion'
-  | 'verwaltung';
+  | 'inklusion';
 
 /** Kontrollierte Zielgruppen-Tags für den "Für wen?"-Filter. */
 export type Audience = 'kleinkind' | 'kind' | 'jugendlicher' | 'familie' | 'eltern' | 'fachkraft';

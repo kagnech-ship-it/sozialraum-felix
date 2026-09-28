@@ -26,7 +26,6 @@ const CATEGORY_ORDER: Category[] = [
   'kultur',
   'beteiligung',
   'inklusion',
-  'verwaltung',
 ];
 
 export function sortInstitutions(

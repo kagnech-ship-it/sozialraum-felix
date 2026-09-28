@@ -82,14 +82,6 @@ export const categories: Record<Category, CategoryMeta> = {
     colorSoft: '#e0e7ff',
     textOn: '#312e81',
   },
-  verwaltung: {
-    id: 'verwaltung',
-    label: 'Verwaltung & Leistungen',
-    emoji: '🏛️',
-    color: '#475569',
-    colorSoft: '#e2e8f0',
-    textOn: '#1e293b',
-  },
 };
 
 export const categoryList: CategoryMeta[] = Object.values(categories);
