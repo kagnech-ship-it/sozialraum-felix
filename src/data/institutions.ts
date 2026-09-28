@@ -51,6 +51,18 @@ export const institutions: Institution[] = [
         offers: [],
         targetGroups: ['Enfants (0–6 ans)'],
       },
+      sq: {
+        description:
+          "Kopshti Humanistik Zühlsdorfer Straße është vendi i praktikës mbi të cilin bazohet kjo hartë e hapësirës sociale. Deri në 130 fëmijë të moshës 0–6 vjeç luajnë, zbulojnë dhe eksplorojnë këtu – me lojë të vetëdrejtuar dhe struktura të hapura të orientuara nga fëmija.",
+        offers: [],
+        targetGroups: ["Fëmijë (0–6 vjeç)"],
+      },
+      vi: {
+        description:
+          "Nhà trẻ Nhân văn Zühlsdorfer Straße là cơ sở thực hành mà bản đồ khu vực xã hội này dựa vào. Tối đa 130 trẻ em từ 0–6 tuổi vui chơi, khám phá và tìm hiểu tại đây – thông qua hình thức chơi tự định hướng và cấu trúc mở lấy trẻ làm trung tâm.",
+        offers: [],
+        targetGroups: ["Trẻ em (0–6 tuổi)"],
+      },
     },
   },
   {
@@ -105,6 +117,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Familles', 'Enfants (0–6 ans)', 'Parents'],
       },
+      sq: {
+        description:
+          "Një qendër familjare e pavarur në „Familienhaus Felix\" – pikë kontakti me prag të ulët për të gjitha familjet në lagje, me ekipin e vet, e pavarur nga kopshti në të njëjtën ndërtesë.",
+        offers: ["Këshillim familjar", "Oferta prind-fëmijë", "Kafene familjare", "Mbështetje „wellcome“ në vitin e parë të jetës", "Takime dhe kurse të hapura", "Ekskursione familjare dhe nata familjare"],
+        targetGroups: ["Familje", "Fëmijë (0–6 vjeç)", "Prindër"],
+      },
+      vi: {
+        description:
+          "Một trung tâm gia đình độc lập trong tòa nhà „Familienhaus Felix\" – điểm liên hệ dễ tiếp cận cho tất cả các gia đình trong khu phố, có đội ngũ riêng, độc lập với nhà trẻ trong cùng tòa nhà.",
+        offers: ["Tư vấn gia đình", "Chương trình cha mẹ – con", "Quán cà phê gia đình", "Hỗ trợ „wellcome“ trong năm đầu đời", "Buổi gặp gỡ và khóa học mở", "Chuyến dã ngoại gia đình và đêm gia đình"],
+        targetGroups: ["Gia đình", "Trẻ em (0–6 tuổi)", "Cha mẹ"],
+      },
     },
   },
   {
@@ -143,6 +167,18 @@ export const institutions: Institution[] = [
           "La plus grande structure culturelle et de loisirs du nord-est de Berlin, avec piscine, salles, salle de sport et un large programme d'événements pour toute la famille.",
         offers: ['Piscine avec sauna', 'Salle de sport pour femmes', 'Bowling', 'Salles de spectacle et programme culturel', 'Café'],
         targetGroups: ['Familles', 'Enfants', 'Adultes', 'Associations'],
+      },
+      sq: {
+        description:
+          "Institucioni më i madh kulturor dhe i kohës së lirë në verilindje të Berlinit, me pishinë, salla, palestër sportive dhe një program të gjerë eventesh për të gjithë familjen.",
+        offers: ["Pishinë me saunë", "Palestër sportive për gra", "Fushë bowling-u", "Salla eventesh dhe program kulturor", "Kafene"],
+        targetGroups: ["Familje", "Fëmijë", "Të rritur", "Shoqata"],
+      },
+      vi: {
+        description:
+          "Cơ sở văn hóa và giải trí lớn nhất ở đông bắc Berlin với bể bơi, các phòng hội trường, nhà thi đấu thể thao và một chương trình sự kiện phong phú cho cả gia đình.",
+        offers: ["Bể bơi có sauna", "Nhà thi đấu thể thao dành cho phụ nữ", "Sân bowling", "Hội trường sự kiện và chương trình văn hóa", "Quán cà phê"],
+        targetGroups: ["Gia đình", "Trẻ em", "Người lớn", "Câu lạc bộ / hội đoàn"],
       },
     },
   },
@@ -198,6 +234,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Enfants', 'Adolescents', 'Familles', 'Écoles', 'Professionnel·le·s de la petite enfance'],
       },
+      sq: {
+        description:
+          "Biblioteka qendrore e rrethit Marzahn-Hellersdorf brenda Freizeitforum Marzahn – në tre kate, me një përzgjedhje të gjerë mediash dhe programesh për nxitjen e leximit, edhe në shumë gjuhë të origjinës së banorëve të rrethit.",
+        offers: ["Libra, audiolibra, DVD dhe lojëra", "Media në gjuhë të huaja (mes tjerash vietnamisht, arabisht, turqisht, rusisht, persisht, ukrainisht)", "Bibliotekë muzikore dhe artotekë", "Nxitje e leximit dhe orë leximi për kopshte/shkolla", "WiFi dhe vende pune", "Ekspozita dhe evente"],
+        targetGroups: ["Fëmijë", "Të rinj", "Familje", "Shkolla", "Specialistë pedagogjikë"],
+      },
+      vi: {
+        description:
+          "Thư viện trung tâm quận Marzahn-Hellersdorf nằm trong Freizeitforum Marzahn – trải rộng trên ba tầng với nhiều loại tài liệu và chương trình hỗ trợ đọc sách, kể cả bằng nhiều thứ tiếng mẹ đẻ của cư dân trong quận.",
+        offers: ["Sách, sách nói, DVD và trò chơi", "Tài liệu bằng tiếng nước ngoài (trong đó có tiếng Việt, tiếng Ả Rập, tiếng Thổ Nhĩ Kỳ, tiếng Nga, tiếng Ba Tư, tiếng Ukraina)", "Thư viện âm nhạc và cho mượn tác phẩm nghệ thuật", "Hỗ trợ đọc sách và giờ đọc truyện cho nhà trẻ/trường học", "Wifi và chỗ ngồi làm việc", "Triển lãm và sự kiện"],
+        targetGroups: ["Trẻ em", "Thanh thiếu niên", "Gia đình", "Trường học", "Chuyên viên giáo dục"],
+      },
     },
   },
   {
@@ -248,6 +296,18 @@ export const institutions: Institution[] = [
           'Tennis de table, babyfoot, billard',
         ],
         targetGroups: ['Enfants et adolescents (8–18 ans)'],
+      },
+      sq: {
+        description:
+          "Institucion i hapur i kohës së lirë për të rinj, me fokus te edukimi kulturor dhe pjesëmarrja – nga studio muzike dhe regjistrimi deri te teatri me dritë të zezë.",
+        offers: ["Zonë e hapur dhe kafene për të rinj", "Studio muzike dhe regjistrimi", "Teatër me dritë të zezë, vallëzim, gatim", "Projekte grafiti", "Ping-pong, futboll gjuhësor (kiker), bilardo"],
+        targetGroups: ["Fëmijë dhe të rinj (8–18 vjeç)"],
+      },
+      vi: {
+        description:
+          "Cơ sở sinh hoạt thanh thiếu niên mở, tập trung vào giáo dục văn hóa và sự tham gia – từ phòng thu âm nhạc đến sân khấu ánh sáng đen (Schwarzlichttheater).",
+        offers: ["Khu vực mở và quán cà phê thanh thiếu niên", "Phòng thu âm nhạc và thu âm", "Sân khấu ánh sáng đen, khiêu vũ, nấu ăn", "Dự án vẽ graffiti", "Bóng bàn, bàn bi lắc (kicker), billiards"],
+        targetGroups: ["Trẻ em và thanh thiếu niên (8–18 tuổi)"],
       },
     },
   },
@@ -300,6 +360,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Enfants', 'Adolescents', "Familles de l'arrondissement"],
       },
+      sq: {
+        description:
+          "Pika qendrore e kontaktit për pjesëmarrjen e fëmijëve dhe të rinjve në rrethin Marzahn-Hellersdorf – nga juria e fëmijëve deri te parlamenti i të rinjve.",
+        offers: ["Juria e fëmijëve dhe e të rinjve", "Parlamenti i fëmijëve dhe i të rinjve", "Edukim mbi të drejtat e fëmijëve", "Sondazhe dhe ditë aksioni", "Projekte dhe seminare (workshope)"],
+        targetGroups: ["Fëmijë", "Të rinj", "Familje në rreth"],
+      },
+      vi: {
+        description:
+          "Đầu mối trung tâm cho sự tham gia của trẻ em và thanh thiếu niên tại quận Marzahn-Hellersdorf – từ hội đồng giám khảo trẻ em đến nghị viện thanh thiếu niên.",
+        offers: ["Hội đồng giám khảo trẻ em và thanh thiếu niên", "Nghị viện trẻ em và thanh thiếu niên", "Giáo dục về quyền trẻ em", "Khảo sát và ngày hành động", "Dự án và hội thảo"],
+        targetGroups: ["Trẻ em", "Thanh thiếu niên", "Gia đình trong quận"],
+      },
     },
   },
   {
@@ -351,6 +423,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Adolescents et jeunes adultes (environ 14–27 ans)'],
       },
+      sq: {
+        description:
+          "Punë sociale rrugore mobile për të rinj dhe të rritur të rinj: Gangway është e pranishme atje ku qëndrojnë të rinjtë dhe i shoqëron ata me prag të ulët nëpër faza të vështira të jetës.",
+        offers: ["Punë sociale rrugore aktive/kërkuese", "Këshillim për probleme me prindërit, shkollën ose policinë", "Mbështetje për shkollën, formimin profesional dhe punën", "Shoqërim te institucionet zyrtare", "Projekte të kohës së lirë dhe sportit"],
+        targetGroups: ["Të rinj dhe të rritur të rinj (rreth 14–27 vjeç)"],
+      },
+      vi: {
+        description:
+          "Công tác xã hội đường phố lưu động dành cho thanh thiếu niên và thanh niên: Gangway có mặt ở những nơi giới trẻ tụ tập, đồng hành dễ tiếp cận cùng họ qua những giai đoạn khó khăn trong cuộc sống.",
+        offers: ["Công tác xã hội đường phố chủ động tiếp cận", "Tư vấn khi có vấn đề với cha mẹ, trường học hoặc cảnh sát", "Hỗ trợ về trường học, đào tạo nghề và công việc", "Đồng hành khi làm việc với cơ quan chức năng", "Dự án giải trí và thể thao"],
+        targetGroups: ["Thanh thiếu niên và thanh niên (khoảng 14–27 tuổi)"],
+      },
     },
   },
   {
@@ -383,6 +467,18 @@ export const institutions: Institution[] = [
           "Club de sport et de jeunesse ouvert avec une large offre de mouvement – du judo à l'escalade – pour les enfants et adolescents de tout le quartier.",
         offers: ['Football et basketball', 'Judo', 'Escalade', 'Appareils de musculation et de fitness', 'Tennis de table, billard, fléchettes'],
         targetGroups: ['Enfants et adolescents (environ 7–21 ans)'],
+      },
+      sq: {
+        description:
+          "Klub i hapur sportiv dhe i të rinjve me oferta të gjera lëvizjeje – nga xhudo deri te ngjitja (klettern) – për fëmijë dhe të rinj nga i gjithë hapësira sociale.",
+        offers: ["Futboll dhe basketboll", "Xhudo", "Ngjitje (Klettern)", "Pajisje force dhe fitnesi", "Ping-pong, bilardo, shigjeta (dart)"],
+        targetGroups: ["Fëmijë dhe të rinj (rreth 7–21 vjeç)"],
+      },
+      vi: {
+        description:
+          "Câu lạc bộ thể thao và thanh thiếu niên mở với nhiều hoạt động vận động – từ judo đến leo núi – dành cho trẻ em và thanh thiếu niên từ khắp khu vực xã hội.",
+        offers: ["Bóng đá và bóng rổ", "Judo", "Leo núi / leo tường", "Dụng cụ tập lực và thể hình", "Bóng bàn, billiards, phi tiêu (dart)"],
+        targetGroups: ["Trẻ em và thanh thiếu niên (khoảng 7–21 tuổi)"],
       },
     },
   },
@@ -423,6 +519,18 @@ export const institutions: Institution[] = [
         offers: ['Espace ouvert et projets', "Studio de musique et d'enregistrement", 'Aide aux devoirs', 'Voyages de vacances et rencontres internationales', 'Jardin'],
         targetGroups: ['Adolescents (environ 10–27 ans)', 'avec et sans handicap'],
       },
+      sq: {
+        description:
+          "Institucion gjithëpërfshirës për fëmijë dhe të rinj, i përshtatshëm për karrocat me rrota, ku fëmijë dhe të rinj me dhe pa aftësi të kufizuara kalojnë kohën së bashku.",
+        offers: ["Zonë e hapur dhe projekte", "Studio muzike dhe regjistrimi", "Ndihmë me detyrat e shtëpisë", "Udhëtime pushimesh dhe takime ndërkombëtare", "Kopsht"],
+        targetGroups: ["Të rinj (rreth 10–27 vjeç)", "me dhe pa aftësi të kufizuara"],
+      },
+      vi: {
+        description:
+          "Cơ sở hòa nhập dành cho trẻ em và thanh thiếu niên, có lối đi cho xe lăn, nơi trẻ em và thanh thiếu niên có và không có khuyết tật cùng nhau sinh hoạt giải trí.",
+        offers: ["Khu vực mở và các dự án", "Phòng thu âm nhạc và thu âm", "Hỗ trợ làm bài tập về nhà", "Chuyến đi nghỉ và giao lưu quốc tế", "Vườn"],
+        targetGroups: ["Thanh thiếu niên (khoảng 10–27 tuổi)", "có và không có khuyết tật"],
+      },
     },
   },
   {
@@ -455,6 +563,18 @@ export const institutions: Institution[] = [
           "Cirque pour enfants et jeunes depuis 1992 : pédagogie du cirque à pratiquer soi-même – de la jonglerie au trapèze – ainsi que des semaines de projet pour crèches et écoles.",
         offers: ['Entraînement de cirque (acrobatie, jonglerie, trampoline)', 'Trapèze et fil tendu', 'Danse', 'Semaines de projet scolaires et de vacances', 'Spectacles'],
         targetGroups: ['Enfants', 'Adolescents', "Groupes de crèches et d'écoles"],
+      },
+      sq: {
+        description:
+          "Cirk për fëmijë dhe të rinj që nga viti 1992: pedagogji cirku për t'u përfshirë – nga zhonglimi deri te trapezi – si dhe javë projektesh për kopshte dhe shkolla.",
+        offers: ["Stërvitje cirku (akrobaci, zhonglim, trampolinë)", "Trapez dhe vallëzim në litar", "Vallëzim", "Javë projektesh shkollore dhe pushimesh", "Shfaqje"],
+        targetGroups: ["Fëmijë", "Të rinj", "Grupe kopshtesh dhe shkollash"],
+      },
+      vi: {
+        description:
+          "Đoàn xiếc thiếu nhi và thanh thiếu niên từ năm 1992: giáo dục xiếc để cùng tham gia – từ tung hứng đến đu bay – cùng các tuần dự án cho nhà trẻ và trường học.",
+        offers: ["Tập luyện xiếc (nhào lộn, tung hứng, bạt lò xo)", "Đu bay và đi dây", "Khiêu vũ", "Tuần dự án cho trường học và kỳ nghỉ", "Buổi biểu diễn"],
+        targetGroups: ["Trẻ em", "Thanh thiếu niên", "Nhóm nhà trẻ và trường học"],
       },
     },
   },
@@ -506,6 +626,18 @@ export const institutions: Institution[] = [
           'Conseil social et en matière de migration',
         ],
         targetGroups: ['Familles', 'Couples', 'Enfants et adolescents', 'Femmes réfugiées'],
+      },
+      sq: {
+        description:
+          "Qendër këshillimi psikologjik e Immanuel Albertinen Diakonie, me një ofertë të gjerë për familje, çifte dhe të rinj në situata të vështira jete.",
+        offers: ["Këshillim edukativ dhe familjar", "Këshillim për ndarje dhe divorc", "Psikoterapi për fëmijë dhe të rinj", "Kafene për gra „IMAL“", "Këshillim social dhe migracioni"],
+        targetGroups: ["Familje", "Çifte", "Fëmijë dhe të rinj", "gra refugjate"],
+      },
+      vi: {
+        description:
+          "Trung tâm tư vấn tâm lý của tổ chức Immanuel Albertinen Diakonie với nhiều chương trình dành cho gia đình, các cặp đôi và người trẻ trong những hoàn cảnh sống khó khăn.",
+        offers: ["Tư vấn giáo dục và gia đình", "Tư vấn ly thân và ly hôn", "Trị liệu tâm lý cho trẻ em và thanh thiếu niên", "Quán cà phê dành cho phụ nữ „IMAL“", "Tư vấn xã hội và di cư"],
+        targetGroups: ["Gia đình", "Các cặp đôi", "Trẻ em và thanh thiếu niên", "phụ nữ tị nạn"],
       },
     },
   },
@@ -561,6 +693,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Parents', 'Familles avec nourrissons/tout-petits', 'Toutes générations'],
       },
+      sq: {
+        description:
+          "Ofertë ndër-brezash edukimi dhe takimi familjar në shtëpinë ndër-brezash për Marzahn-Süd/Biesdorf, e mbajtur nga pad gGmbH.",
+        offers: ["Kurse masazhi për bebe", "Grupe prind-fëmijë", "Këshillim konfliktesh dhe edukimi", "Kopsht i hapur me oferta loje dhe lëvizjeje", "„Mirë se vjen në lagje, bebi“ për të porsalindurit", "Kafene lagjeje dhe kurse ndër-brezash"],
+        targetGroups: ["Prindër", "Familje me foshnje/fëmijë të vegjël", "të gjithë brezat"],
+      },
+      vi: {
+        description:
+          "Chương trình giáo dục gia đình và giao lưu liên thế hệ tại ngôi nhà liên thế hệ dành cho khu vực Marzahn-Süd/Biesdorf, do tổ chức pad gGmbH điều hành.",
+        offers: ["Khóa học mát-xa cho trẻ sơ sinh", "Nhóm cha mẹ – con", "Tư vấn xung đột và giáo dục con cái", "Khu vườn mở với các hoạt động vui chơi, vận động", "„Chào mừng đến khu phố, bé yêu“ dành cho trẻ sơ sinh", "Quán cà phê khu phố và các khóa học liên thế hệ"],
+        targetGroups: ["Cha mẹ", "Gia đình có trẻ sơ sinh/trẻ nhỏ", "mọi thế hệ"],
+      },
     },
   },
   {
@@ -614,6 +758,18 @@ export const institutions: Institution[] = [
           'Aide aux devoirs pour les enfants du primaire',
         ],
         targetGroups: ['Familles avec jeunes enfants', 'Parents', 'Parents séparés'],
+      },
+      sq: {
+        description:
+          "Qendër për fëmijë, të rinj dhe familje e Kryqit të Kuq Gjerman (DRK), me fokus te forcimi i marrëdhënies prind-fëmijë dhe i kompetencës prindërore edukative.",
+        offers: ["Këshillim dhe trajnim (coaching) edukativ", "Grupe prind-fëmijë (0–3 vjeç)", "Mëngjes dhe pasdite familjare", "Kafene gjuhësore", "Takime të shoqëruara (kafene takimesh)", "Ndihmë me detyrat e shtëpisë për nxënës të shkollës fillore"],
+        targetGroups: ["Familje me fëmijë të vegjël", "Prindër", "prindër që jetojnë ndarazi"],
+      },
+      vi: {
+        description:
+          "Trung tâm trẻ em, thanh thiếu niên và gia đình của Hội Chữ thập đỏ Đức (DRK), tập trung vào việc củng cố mối quan hệ cha mẹ – con và năng lực nuôi dạy con của cha mẹ.",
+        offers: ["Tư vấn và huấn luyện về giáo dục con cái", "Nhóm cha mẹ – con (0–3 tuổi)", "Bữa sáng và buổi chiều gia đình", "Quán cà phê ngôn ngữ", "Gặp gỡ con có người hỗ trợ đi cùng (quán cà phê thăm con)", "Hỗ trợ bài tập về nhà cho học sinh tiểu học"],
+        targetGroups: ["Gia đình có con nhỏ", "Cha mẹ", "cha mẹ sống ly thân"],
       },
     },
   },
@@ -669,6 +825,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Familles avec enfants (0–18 ans)', 'Parents'],
       },
+      sq: {
+        description:
+          "Qendër e hapur për fëmijë, të rinj dhe familje e JAO gGmbH në „Haus Windspiel“ – në të njëjtën ndërtesë me këshillimin edukativ dhe familjar të Zyrës për Fëmijë dhe të Rinj (Jugendamt), por një ofertë e pavarur e një organizate tjetër mbajtëse.",
+        offers: ["Takim familjar me kurse për prindër dhe festa familjare", "Orë të hapura këshillimi nga „nënat e lagjes“", "Punëtori qëndisje/qepjeje", "Grupe prind-fëmijë", "Ndihmë me detyrat e shtëpisë", "Program për pushimet verore"],
+        targetGroups: ["Familje me fëmijë (0–18 vjeç)", "Prindër"],
+      },
+      vi: {
+        description:
+          "Trung tâm trẻ em, thanh thiếu niên và gia đình mở của tổ chức JAO gGmbH tại „Haus Windspiel“ – cùng tòa nhà với bộ phận tư vấn giáo dục và gia đình của Sở Thanh thiếu niên (Jugendamt), nhưng là một chương trình độc lập của một tổ chức chủ quản khác.",
+        offers: ["Điểm gặp gỡ gia đình với các khóa học cho cha mẹ và lễ hội gia đình", "Giờ tư vấn mở của các „bà mẹ khu phố“", "Xưởng may vá", "Nhóm cha mẹ – con", "Hỗ trợ bài tập về nhà", "Chương trình nghỉ hè"],
+        targetGroups: ["Gia đình có con (0–18 tuổi)", "Cha mẹ"],
+      },
     },
   },
   {
@@ -719,6 +887,18 @@ export const institutions: Institution[] = [
           'Conseil itinérant/mobile',
         ],
         targetGroups: ["Familles de l'arrondissement", 'Futurs parents', 'Familles monoparentales'],
+      },
+      sq: {
+        description:
+          "Pikë kontakti qendrore fillestare për familjet kur kanë nevojë për mbështetje, informacion ose orientim në sistemin e ndihmës së rrethit. Pikë e përbashkët kontakti e Zyrës për Fëmijë dhe të Rinj (Jugendamt) dhe pad gGmbH.",
+        offers: ["Këshillim fillestar për familje", "Ndihmë me kërkesa: pagesa prindërore (Elterngeld), kupon kopshti/klubi pasdite (Kita-/Hort-Gutschein), pagesë paraprake alimentacioni (Unterhaltsvorschuss)", "Këshillim për kujdestarinë prindërore (Sorgerecht) dhe njohjen e atësisë", "Referim te qendra këshillimi të specializuara", "Këshillim aktiv/mobil"],
+        targetGroups: ["Familje në rreth", "prindër që presin fëmijë", "prindër beqarë"],
+      },
+      vi: {
+        description:
+          "Đầu mối trung tâm đầu tiên dành cho các gia đình khi cần hỗ trợ, thông tin hoặc định hướng trong hệ thống hỗ trợ của quận. Đầu mối chung giữa Sở Thanh thiếu niên (Jugendamt) và tổ chức pad gGmbH.",
+        offers: ["Tư vấn ban đầu cho gia đình", "Hỗ trợ làm đơn: trợ cấp nuôi con (Elterngeld), phiếu nhà trẻ/bán trú (Kita-/Hort-Gutschein), trợ cấp cấp dưỡng nuôi con (Unterhaltsvorschuss)", "Tư vấn về quyền nuôi con (Sorgerecht) và nhận cha cho con", "Giới thiệu đến các cơ quan tư vấn chuyên môn", "Tư vấn chủ động tiếp cận/lưu động"],
+        targetGroups: ["Gia đình trong quận", "cha mẹ sắp sinh con", "cha mẹ đơn thân"],
       },
     },
   },
@@ -774,6 +954,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Familles', 'Parents avec nourrissons'],
       },
+      sq: {
+        description:
+          "Pikë kontakti për të gjitha familjet në Hellersdorf-Nord, për t'u takuar, shkëmbyer përvoja dhe marrë këshillim, e mbajtur nga pad gGmbH.",
+        offers: ["Këshillim social-pedagogjik", "Ndihmë me kërkesa dhe formularë", "Ambulancë për bebe që qajnë shumë (Schreibaby)", "Orë këshillimi për bebe", "Këshillim për gjidhënie dhe ushqyerje", "Takimi i lagjes Kastanie"],
+        targetGroups: ["Familje", "Prindër me foshnje"],
+      },
+      vi: {
+        description:
+          "Điểm liên hệ cho tất cả các gia đình ở Hellersdorf-Nord để gặp gỡ, trao đổi và được tư vấn, do tổ chức pad gGmbH điều hành.",
+        offers: ["Tư vấn công tác xã hội", "Hỗ trợ làm đơn và giấy tờ", "Phòng khám hỗ trợ trẻ sơ sinh quấy khóc nhiều (Schreibaby)", "Giờ tư vấn cho trẻ sơ sinh", "Tư vấn cho con bú và dinh dưỡng", "Điểm gặp gỡ khu phố Kastanie"],
+        targetGroups: ["Gia đình", "Cha mẹ có trẻ sơ sinh"],
+      },
     },
   },
   {
@@ -825,6 +1017,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Enfants d\'âge scolaire primaire', 'Adolescents'],
       },
+      sq: {
+        description:
+          "Institucion i hapur i kohës së lirë për fëmijë dhe të rinj, që ofron një pikë kontakti të qëndrueshme për fëmijë dhe të rinj në situata të vështira jete.",
+        offers: ["Takim i hapur i kohës së lirë (futboll gjuhësor, bilardo)", "Këshillim për të rinj dhe social", "Edukim mjedisor", "Oferta pushimesh", "Shpërndarje javore ushqimi dhe gatim së bashku"],
+        targetGroups: ["Fëmijë në moshë shkolle fillore", "Të rinj"],
+      },
+      vi: {
+        description:
+          "Cơ sở sinh hoạt giải trí mở dành cho trẻ em và thanh thiếu niên, mang lại một điểm tựa đáng tin cậy cho trẻ em và thanh thiếu niên trong hoàn cảnh sống khó khăn.",
+        offers: ["Điểm gặp gỡ giải trí mở (bàn bi lắc, billiards)", "Tư vấn thanh thiếu niên và xã hội", "Giáo dục môi trường", "Chương trình dịp nghỉ lễ", "Phát thực phẩm hằng tuần và cùng nhau nấu ăn"],
+        targetGroups: ["Trẻ em độ tuổi tiểu học", "Thanh thiếu niên"],
+      },
     },
   },
   {
@@ -874,6 +1078,18 @@ export const institutions: Institution[] = [
           'Jardin de quartier attenant « Paradiesgärten »',
         ],
         targetGroups: ['Familles avec enfants', 'Toutes générations', 'Nouveaux habitants du quartier'],
+      },
+      sq: {
+        description:
+          "Një vend për kohën e lirë dhe lëvizje: park lagjeje pa pengesa dhe gjithëpërfshirës, me zona tematike për grupmosha të ndryshme – jo një qendër klasike këshillimi, por një vend për lojë, ngjitje dhe qëndrim.",
+        offers: ["Zona lojërash „Shkretëtira & Stepa“ (2–6 vjeç)", "Parkur ngjitjeje „Pylli dhe Livadhi“ (6–12 vjeç)", "Oferta lëvizjeje për të gjithë brezat", "Zonë relaksi dhe sporti „Xhungla“ (12–16 vjeç)", "Kopshti fqinjësor ngjitur „Kopshtet e Parajsës“"],
+        targetGroups: ["Familje me fëmijë", "të gjithë brezat", "banorë të porsaardhur"],
+      },
+      vi: {
+        description:
+          "Một nơi để giải trí và vận động: công viên khu phố không rào cản, hòa nhập, với các khu vực chủ đề dành cho nhiều nhóm tuổi khác nhau – không phải một trung tâm tư vấn thông thường, mà là nơi để chơi, leo trèo và thư giãn.",
+        offers: ["Khu vui chơi „Sa mạc & Thảo nguyên“ (2–6 tuổi)", "Đường leo trèo „Rừng và Đồng cỏ“ (6–12 tuổi)", "Hoạt động vận động cho mọi thế hệ", "Khu thư giãn và thể thao „Rừng rậm“ (12–16 tuổi)", "Vườn cộng đồng liền kề „Những khu vườn thiên đường“"],
+        targetGroups: ["Gia đình có con", "mọi thế hệ", "cư dân mới chuyển đến"],
       },
     },
   },
@@ -928,6 +1144,18 @@ export const institutions: Institution[] = [
         ],
         targetGroups: ['Familles avec enfants'],
       },
+      sq: {
+        description:
+          "Qendra e këshillimit edukativ dhe familjar e Zyrës për Fëmijë dhe të Rinj (Jugendamt) Marzahn-Hellersdorf, në „Haus Windspiel“ – këshillim dhe terapi për çështje edukimi dhe kriza familjare. Në të njëjtën ndërtesë me KJFZ Haus Windspiel, por një ofertë e pavarur e administratës së rrethit.",
+        offers: ["Këshillim për çështje edukimi", "Këshillim për ndarje dhe divorc", "Këshillim mbi kujdestarinë prindërore", "Terapi për sjellje dhe vonesa në zhvillim", "Mbështetje për probleme shkollore"],
+        targetGroups: ["Familje me fëmijë"],
+      },
+      vi: {
+        description:
+          "Trung tâm tư vấn giáo dục và gia đình của Sở Thanh thiếu niên (Jugendamt) Marzahn-Hellersdorf tại „Haus Windspiel“ – tư vấn và trị liệu về các vấn đề giáo dục con cái và khủng hoảng gia đình. Cùng tòa nhà với KJFZ Haus Windspiel, nhưng là một chương trình độc lập của quận.",
+        offers: ["Tư vấn về các vấn đề giáo dục con cái", "Tư vấn ly thân và ly hôn", "Tư vấn về quyền nuôi con", "Trị liệu cho các vấn đề hành vi và phát triển", "Hỗ trợ khi gặp khó khăn ở trường học"],
+        targetGroups: ["Gia đình có con"],
+      },
     },
   },
   {
@@ -966,6 +1194,18 @@ export const institutions: Institution[] = [
           "L'office de la jeunesse de l'arrondissement est responsable des prestations d'aide à la jeunesse pour tout l'arrondissement de Marzahn-Hellersdorf – de l'inscription en crèche à la protection de l'enfance.",
         offers: ['Inscription en crèche et chèques crèche', 'Accueil familial de jour', 'Conseil familial', 'Avance sur pension alimentaire', "Protection de l'enfance"],
         targetGroups: ['Parents', 'Familles', "Enfants et adolescents de l'arrondissement"],
+      },
+      sq: {
+        description:
+          "Zyra e rrethit për Fëmijë dhe të Rinj (Jugendamt) është përgjegjëse për shërbimet e ndihmës për të rinj në të gjithë rrethin Marzahn-Hellersdorf – nga regjistrimi në kopsht deri te mbrojtja e fëmijëve.",
+        offers: ["Regjistrimi në kopsht dhe kuponët e kopshtit (Kita-Gutschein)", "Kujdes ditor për fëmijë te dado (Kindertagespflege)", "Këshillim familjar", "Pagesë paraprake alimentacioni (Unterhaltsvorschuss)", "Mbrojtja e fëmijëve"],
+        targetGroups: ["Prindër", "Familje", "Fëmijë dhe të rinj në rreth"],
+      },
+      vi: {
+        description:
+          "Sở Thanh thiếu niên (Jugendamt) của quận chịu trách nhiệm về các dịch vụ hỗ trợ thanh thiếu niên trên toàn quận Marzahn-Hellersdorf – từ đăng ký nhà trẻ đến bảo vệ trẻ em.",
+        offers: ["Đăng ký nhà trẻ và phiếu nhà trẻ (Kita-Gutschein)", "Dịch vụ giữ trẻ tại gia (Kindertagespflege)", "Tư vấn gia đình", "Trợ cấp cấp dưỡng nuôi con (Unterhaltsvorschuss)", "Bảo vệ trẻ em"],
+        targetGroups: ["Cha mẹ", "Gia đình", "Trẻ em và thanh thiếu niên trong quận"],
       },
     },
   },
